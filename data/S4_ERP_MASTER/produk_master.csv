@@ -1,0 +1,80 @@
+material_no,nama_produk,brand,kategori,sub_kategori,harga_pokok,supplier,status,berlaku_sejak
+P-1001,H&M Atasan Accusantium Pro,H&M,Pakaian,Atasan,4802720,PT Perum Dongoran Tbk,AKTIF,2022-01-01
+P-1001,H&M Atasan Accusantium Pro,H&M,Pakaian,Atasan,5020583,PT Perum Dongoran Tbk,AKTIF,2022-11-30
+P-1002,Apple Laptop Eos,Apple,Elektronik,Laptop,141684,PT UD Mandala,AKTIF,2022-01-01
+P-1003,UGREEN Aksesoris Elektronik Facilis,UGREEN,Elektronik,Aksesoris Elektronik,18480275,PT Perum Dongoran Tbk,AKTIF,2022-01-01
+P-1004,Erigo Atasan Dolor Pro,Erigo,Pakaian,Atasan,4811803,PT PD Purwanti Tbk,AKTIF,2022-01-01
+P-1004,Erigo Atasan Dolor Pro,Erigo,Pakaian,Atasan,4424337,PT PD Purwanti Tbk,AKTIF,2022-10-20
+P-1005,Samsung Smartphone Beatae Classic,Samsung,Elektronik,Smartphone,710600,PT PT Wulandari,AKTIF,2022-01-01
+P-1006,Logitech Aksesoris Elektronik Possimus,Logitech,Elektronik,Aksesoris Elektronik,18516785,PT Perum Damanik,AKTIF,2022-01-01
+P-1006,Logitech Aksesoris Elektronik Possimus,Logitech,Elektronik,Aksesoris Elektronik,16995241,PT Perum Damanik,AKTIF,2023-01-31
+P-1007,Uniqlo Atasan Maiores Pro,Uniqlo,Pakaian,Atasan,157923,PT Perum Damanik,AKTIF,2022-01-01
+P-1008,Compass Sepatu Facere,Compass,Pakaian,Sepatu,7873851,PT UD Mandala,AKTIF,2022-01-01
+P-1009,Adidas Sepatu Accusamus Pro,Adidas,Pakaian,Sepatu,757499,PT Perum Damanik,AKTIF,2022-01-01
+P-1009,Adidas Sepatu Accusamus Pro,Adidas,Pakaian,Sepatu,723084,PT Perum Damanik,AKTIF,2023-01-11
+P-1010,Compass Sepatu Nisi Series 2,Compass,Pakaian,Sepatu,12520346,PT PD Purwanti Tbk,AKTIF,2022-01-01
+P-1010,Compass Sepatu Nisi Series 2,Compass,Pakaian,Sepatu,13992882,PT PD Purwanti Tbk,AKTIF,2022-11-25
+P-1011,Acer Laptop Vitae,Acer,Elektronik,Laptop,1225333,PT PT Wulandari,AKTIF,2022-01-01
+P-1011,Acer Laptop Vitae,Acer,Elektronik,Laptop,1157922,PT PT Wulandari,AKTIF,2023-01-22
+P-1012,H&M Atasan Sunt,H&M,Pakaian,Atasan,2540760,PT Perum Damanik,AKTIF,2022-01-01
+P-1013,Adidas Sepatu Nisi,Adidas,Pakaian,Sepatu,10884612,PT UD Halimah Januar,AKTIF,2022-01-01
+P-1013,Adidas Sepatu Nisi,Adidas,Pakaian,Sepatu,10099418,PT UD Halimah Januar,AKTIF,2022-11-18
+P-1014,Informa Meja Reiciendis,Informa,Furnitur,Meja,7894506,PT PD Purwanti Tbk,AKTIF,2022-01-01
+P-1015,Informa Kursi Quaerat Lite,Informa,Furnitur,Kursi,149721,PT Perum Pradipta Nasyidah (Persero) Tbk,AKTIF,2022-01-01
+P-1016,Compass Sepatu Voluptatem Pro,Compass,Pakaian,Sepatu,2544204,PT PT Wulandari,AKTIF,2022-01-01
+P-1017,Samsung Smartphone Et Classic,Samsung,Elektronik,Smartphone,12476190,PT PT Aryani,AKTIF,2022-01-01
+P-1018,Oppo Smartphone Corporis Lite,Oppo,Elektronik,Smartphone,263199,PT UD Mandala,AKTIF,2022-01-01
+P-1019,Samsung Smartphone Atque 128GB,Samsung,Elektronik,Smartphone,1211823,PT PD Purwanti Tbk,AKTIF,2022-01-01
+P-1020,Oppo Smartphone Sint,Oppo,Elektronik,Smartphone,7874236,PT Perum Dongoran Tbk,AKTIF,2022-01-01
+P-1021,Logitech Aksesoris Elektronik Blanditiis,Logitech,Elektronik,Aksesoris Elektronik,10926911,PT UD Halimah Januar,AKTIF,2022-01-01
+P-1022,Oppo Smartphone Est 128GB,Oppo,Elektronik,Smartphone,331082,PT PT Wulandari,AKTIF,2022-01-01
+P-1023,Informa Lemari Ea 256GB,Informa,Furnitur,Lemari,4816732,PT Perum Dongoran Tbk,AKTIF,2022-01-01
+P-1023,Informa Lemari Ea 256GB,Informa,Furnitur,Lemari,4664645,PT Perum Dongoran Tbk,AKTIF,2022-10-05
+P-1024,Uniqlo Bawahan Aperiam 256GB,Uniqlo,Pakaian,Bawahan,4820388,PT PD Purwanti Tbk,AKTIF,2022-01-01
+P-1025,Erigo Bawahan Numquam Pro,Erigo,Pakaian,Bawahan,1212535,PT Perum Nasyiah (Persero) Tbk,AKTIF,2022-01-01
+P-1026,Informa Lemari Est,Informa,Furnitur,Lemari,295596,PT PT Aryani,AKTIF,2022-01-01
+P-1027,IKEA Kursi Vero Series 2,IKEA,Furnitur,Kursi,12507616,PT UD Halimah Januar,AKTIF,2022-01-01
+P-1028,Informa Kursi Ea Lite,Informa,Furnitur,Kursi,12486169,PT PD Purwanti Tbk,AKTIF,2022-01-01
+P-1029,Erigo Atasan Quos 256GB,Erigo,Pakaian,Atasan,10923196,PT Perum Nasyiah (Persero) Tbk,AKTIF,2022-01-01
+P-1030,Apple Smartphone Rem 256GB,Apple,Elektronik,Smartphone,10888998,PT Perum Damanik,AKTIF,2022-01-01
+P-1030,Apple Smartphone Rem 256GB,Apple,Elektronik,Smartphone,10190097,PT Perum Damanik,AKTIF,2022-12-05
+P-1031,Apple Laptop Pariatur,Apple,Elektronik,Laptop,716610,PT UD Mandala,AKTIF,2022-01-01
+P-1031,Apple Laptop Pariatur,Apple,Elektronik,Laptop,779822,PT UD Mandala,AKTIF,2023-01-31
+P-1032,IKEA Meja Nesciunt,IKEA,Furnitur,Meja,722621,PT PD Purwanti Tbk,AKTIF,2022-01-01
+P-1033,Olympic Kursi Ducimus,Olympic,Furnitur,Kursi,18450319,PT PT Ardianto,AKTIF,2022-01-01
+P-1034,IKEA Meja Quo,IKEA,Furnitur,Meja,18545808,PT UD Halimah Januar,AKTIF,2022-01-01
+P-1035,Compass Sepatu Architecto,Compass,Pakaian,Sepatu,12522719,PT UD Mandala,AKTIF,2022-01-01
+P-1036,Anker Aksesoris Elektronik Quidem Series 2,Anker,Elektronik,Aksesoris Elektronik,310579,PT Perum Damanik,AKTIF,2022-01-01
+P-1037,Graver Lemari Repellat Lite,Graver,Furnitur,Lemari,18485511,PT Perum Pradipta Nasyidah (Persero) Tbk,AKTIF,2022-01-01
+P-1038,Informa Lemari Ipsa Series 2,Informa,Furnitur,Lemari,1213305,PT PT Ardianto,AKTIF,2022-01-01
+P-1039,H&M Bawahan Ducimus,H&M,Pakaian,Bawahan,1253654,PT PD Purwanti Tbk,AKTIF,2022-01-01
+P-1040,H&M Atasan Ea Lite,H&M,Pakaian,Atasan,161241,PT Perum Damanik,AKTIF,2022-01-01
+P-1041,IKEA Meja Nulla 256GB,IKEA,Furnitur,Meja,1261910,PT UD Mandala,AKTIF,2022-01-01
+P-1042,IKEA Kursi Aliquid Lite,IKEA,Furnitur,Kursi,18506599,PT Perum Dongoran Tbk,AKTIF,2022-01-01
+P-1043,Acer Laptop Sapiente Series 2,Acer,Elektronik,Laptop,757060,PT Perum Dongoran Tbk,AKTIF,2022-01-01
+P-1043,Acer Laptop Sapiente Series 2,Acer,Elektronik,Laptop,767346,PT Perum Dongoran Tbk,AKTIF,2022-11-13
+P-1044,UGREEN Aksesoris Elektronik Eius 256GB,UGREEN,Elektronik,Aksesoris Elektronik,4820325,PT PD Purwanti Tbk,AKTIF,2022-01-01
+P-1044,UGREEN Aksesoris Elektronik Eius 256GB,UGREEN,Elektronik,Aksesoris Elektronik,5114485,PT PD Purwanti Tbk,AKTIF,2022-10-09
+P-1045,Erigo Atasan Cumque,Erigo,Pakaian,Atasan,307164,PT Perum Nasyiah (Persero) Tbk,AKTIF,2022-01-01
+P-1046,Graver Lemari Beatae,Graver,Furnitur,Lemari,10949051,PT Perum Damanik,AKTIF,2022-01-01
+P-1047,Olympic Meja Unde Classic,Olympic,Furnitur,Meja,787114,PT Perum Nasyiah (Persero) Tbk,AKTIF,2022-01-01
+P-1048,Asus Laptop Reiciendis Series 2,Asus,Elektronik,Laptop,12476130,PT PT Aryani,AKTIF,2022-01-01
+P-1049,Olympic Lemari Sed 128GB,Olympic,Furnitur,Lemari,18540049,PT Perum Damanik,AKTIF,2022-01-01
+P-1050,Apple Laptop Maiores,Apple,Elektronik,Laptop,154963,PT PD Purwanti Tbk,AKTIF,2022-01-01
+P-1051,Adidas Sepatu Quibusdam Series 2,Adidas,Pakaian,Sepatu,761646,PT PD Purwanti Tbk,AKTIF,2022-01-01
+P-1051,Adidas Sepatu Quibusdam Series 2,Adidas,Pakaian,Sepatu,728970,PT PD Purwanti Tbk,AKTIF,2022-11-28
+P-1052,Nike Sepatu Quidem Classic,Nike,Pakaian,Sepatu,262474,PT Perum Nasyiah (Persero) Tbk,AKTIF,2022-01-01
+P-1053,Erigo Atasan Beatae,Erigo,Pakaian,Atasan,12511285,PT Perum Nasyiah (Persero) Tbk,AKTIF,2022-01-01
+P-1054,Uniqlo Atasan Maxime,Uniqlo,Pakaian,Atasan,2491483,PT PT Aryani,AKTIF,2022-01-01
+P-1055,Uniqlo Atasan At Pro,Uniqlo,Pakaian,Atasan,4778576,PT UD Halimah Januar,AKTIF,2022-01-01
+P-1056,H&M Bawahan Ducimus,H&M,Pakaian,Bawahan,10889554,PT PT Ardianto,AKTIF,2022-01-01
+P-1057,Xiaomi Smartphone Nemo,Xiaomi,Elektronik,Smartphone,10881473,PT UD Mandala,AKTIF,2022-01-01
+P-1057,Xiaomi Smartphone Nemo,Xiaomi,Elektronik,Smartphone,10167084,PT UD Mandala,AKTIF,2022-12-28
+P-1058,Compass Sepatu Dolor Series 2,Compass,Pakaian,Sepatu,12475261,PT PT Wulandari,AKTIF,2022-01-01
+P-1059,Adidas Sepatu In Lite,Adidas,Pakaian,Sepatu,18456971,PT UD Mandala,AKTIF,2022-01-01
+P-1060,IKEA Kursi Ratione,IKEA,Furnitur,Kursi,10850610,PT PT Aryani,AKTIF,2022-01-01
+P-1014,Informa Meja Reiciendis,Informa,Furnitur,Meja,7894506,PT PD Purwanti Tbk,NONAKTIF,2023-02-07
+P-1057,Xiaomi Smartphone Nemo,Xiaomi,Elektronik,Smartphone,10881473,PT UD Mandala,NONAKTIF,2023-02-18
+P-1054,Uniqlo Atasan Maxime,Uniqlo,Pakaian,Atasan,2491483,PT PT Aryani,NONAKTIF,2023-02-21
+P-1037,Graver Lemari Repellat Lite,Graver,Furnitur,Lemari,18485511,PT Perum Pradipta Nasyidah (Persero) Tbk,NONAKTIF,2023-02-21
+P-1050,Apple Laptop Maiores,Apple,Elektronik,Laptop,154963,PT PD Purwanti Tbk,NONAKTIF,2023-03-11

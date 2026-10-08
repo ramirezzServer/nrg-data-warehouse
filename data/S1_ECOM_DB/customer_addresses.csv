@@ -1,0 +1,745 @@
+address_id,customer_id,label,address_line,city,province,postal_code,is_primary
+1,1,Rumah,Gg. Tubagus Ismail No. 59,Makassar,Sulawesi Selatan,90047,True
+2,2,Rumah,Gang Suniaraja No. 50,Malang,Jawa Timur,19719,True
+3,3,Rumah,Gg. Veteran No. 184,Surabaya,Jawa Timur,64581,True
+4,4,Rumah,Gg. Setiabudhi No. 36,Denpasar,Bali,01831,True
+5,4,Kantor,Gang Bangka Raya No. 742,Denpasar,Bali,65560,False
+6,5,Rumah,Jl. Otto Iskandardinata No. 59,Surabaya,Jawa Timur,68804,True
+7,6,Rumah,Gg. Kutisari Selatan No. 57,Yogyakarta,DI Yogyakarta,71591,True
+8,7,Rumah,Jalan Cihampelas No. 4,Medan,Sumatera Utara,95366,True
+9,8,Rumah,Gg. Cihampelas No. 36,Jakarta Selatan,DKI Jakarta,67734,True
+10,9,Rumah,Jl. Joyoboyo No. 9,Bekasi,Jawa Barat,95537,True
+11,9,Kantor,Jl. Veteran No. 289,Bekasi,Jawa Barat,75334,False
+12,10,Rumah,Jl. Rajiman No. 313,Medan,Sumatera Utara,38682,True
+13,11,Rumah,Gang Ronggowarsito No. 831,Semarang,Jawa Tengah,30019,True
+14,11,Kantor,Jl. Gedebage Selatan No. 706,Semarang,Jawa Tengah,71968,False
+15,12,Rumah,Jl. BKR No. 20,Semarang,Jawa Tengah,95024,True
+16,12,Kantor,Gg. Tubagus Ismail No. 4,Semarang,Jawa Tengah,39598,False
+17,13,Rumah,Gg. Laswi No. 8,Malang,Jawa Timur,37121,True
+18,14,Rumah,Jalan Cempaka No. 140,Medan,Sumatera Utara,79507,True
+19,14,Kantor,Gg. Cikutra Barat No. 25,Medan,Sumatera Utara,04870,False
+20,15,Rumah,Gg. Waringin No. 43,Semarang,Jawa Tengah,43848,True
+21,15,Kantor,Gang Cempaka No. 3,Semarang,Jawa Tengah,52067,False
+22,16,Rumah,Gang Jend. A. Yani No. 23,Bekasi,Jawa Barat,10570,True
+23,17,Rumah,Jl. Cikutra Timur No. 2,Jakarta Barat,DKI Jakarta,22118,True
+24,18,Rumah,Gg. Kebonjati No. 071,Bekasi,Jawa Barat,81280,True
+25,18,Kantor,Jl. Tubagus Ismail No. 2,Bekasi,Jawa Barat,82923,False
+26,19,Rumah,Jl. Monginsidi No. 42,Makassar,Sulawesi Selatan,82295,True
+27,20,Rumah,Jl. Otto Iskandardinata No. 232,Medan,Sumatera Utara,60451,True
+28,21,Rumah,Gang Cihampelas No. 45,Semarang,Jawa Tengah,93772,True
+29,22,Rumah,Jalan Ciumbuleuit No. 618,Semarang,Jawa Tengah,82771,True
+30,23,Rumah,Gang Jend. Sudirman No. 40,Malang,Jawa Timur,88192,True
+31,24,Rumah,Gg. Ahmad Dahlan No. 923,Denpasar,Bali,08356,True
+32,24,Kantor,Gang Pasir Koja No. 4,Denpasar,Bali,28940,False
+33,25,Rumah,Jl. Peta No. 4,Surabaya,Jawa Timur,36606,True
+34,25,Kantor,Gg. Suniaraja No. 46,Surabaya,Jawa Timur,76325,False
+35,26,Rumah,Gg. Pasirkoja No. 2,Jakarta Selatan,DKI Jakarta,85585,True
+36,27,Rumah,Gg. K.H. Wahid Hasyim No. 02,Malang,Jawa Timur,65408,True
+37,27,Kantor,Gg. Otto Iskandardinata No. 31,Malang,Jawa Timur,97653,False
+38,28,Rumah,Gg. H.J Maemunah No. 7,Palembang,Sumatera Selatan,77055,True
+39,29,Rumah,Gg. Suniaraja No. 810,Malang,Jawa Timur,11505,True
+40,30,Rumah,Gg. Monginsidi No. 185,Malang,Jawa Timur,40189,True
+41,31,Rumah,Jl. Pasir Koja No. 19,Surabaya,Jawa Timur,11866,True
+42,32,Rumah,Jl. Ir. H. Djuanda No. 1,Malang,Jawa Timur,04805,True
+43,33,Rumah,Gang Surapati No. 8,Malang,Jawa Timur,12036,True
+44,34,Rumah,Gang Antapani Lama No. 77,Medan,Sumatera Utara,08462,True
+45,35,Rumah,Gg. Ciwastra No. 40,Palembang,Sumatera Selatan,28604,True
+46,36,Rumah,Gang Moch. Ramdan No. 775,Malang,Jawa Timur,12265,True
+47,37,Rumah,Jl. HOS. Cokroaminoto No. 68,Medan,Sumatera Utara,71176,True
+48,38,Rumah,Jl. Ciwastra No. 23,Jakarta Barat,DKI Jakarta,44772,True
+49,38,Kantor,Gg. S. Parman No. 90,Jakarta Barat,DKI Jakarta,67272,False
+50,39,Rumah,Jl. Ahmad Dahlan No. 7,Surabaya,Jawa Timur,68903,True
+51,40,Rumah,Gang Kutai No. 53,Makassar,Sulawesi Selatan,68835,True
+52,41,Rumah,Gang Sentot Alibasa No. 927,Denpasar,Bali,68560,True
+53,42,Rumah,Jl. Kiaracondong No. 2,Surabaya,Jawa Timur,45465,True
+54,43,Rumah,Jalan Joyoboyo No. 3,Surabaya,Jawa Timur,20685,True
+55,44,Rumah,Gg. Peta No. 99,Bekasi,Jawa Barat,82009,True
+56,45,Rumah,Jl. Wonoayu No. 3,Surabaya,Jawa Timur,16493,True
+57,46,Rumah,Gg. M.T Haryono No. 851,Yogyakarta,DI Yogyakarta,99080,True
+58,46,Kantor,Gang Cihampelas No. 258,Yogyakarta,DI Yogyakarta,88981,False
+59,47,Rumah,Gg. Rajiman No. 34,Semarang,Jawa Tengah,88829,True
+60,48,Rumah,Jl. Dr. Djunjunan No. 605,Medan,Sumatera Utara,86632,True
+61,48,Kantor,Jalan Lembong No. 121,Medan,Sumatera Utara,58277,False
+62,49,Rumah,Jl. Moch. Toha No. 21,Surabaya,Jawa Timur,75102,True
+63,50,Rumah,Gang Ahmad Yani No. 613,Malang,Jawa Timur,92530,True
+64,51,Rumah,Jalan Otto Iskandardinata No. 13,Denpasar,Bali,93630,True
+65,52,Rumah,Gang Rajawali Timur No. 8,Yogyakarta,DI Yogyakarta,16470,True
+66,53,Rumah,Gang Asia Afrika No. 133,Semarang,Jawa Tengah,12183,True
+67,54,Rumah,Jalan Jamika No. 58,Denpasar,Bali,80689,True
+68,55,Rumah,Gg. Suryakencana No. 6,Denpasar,Bali,81730,True
+69,56,Rumah,Gang Sukajadi No. 451,Bandung,Jawa Barat,58258,True
+70,57,Rumah,Jalan Cikapayang No. 935,Jakarta Selatan,DKI Jakarta,17955,True
+71,58,Rumah,Gang KH Amin Jasuta No. 009,Surabaya,Jawa Timur,13810,True
+72,59,Rumah,Jalan Raya Ujungberung No. 2,Palembang,Sumatera Selatan,52056,True
+73,60,Rumah,Jalan Kiaracondong No. 7,Semarang,Jawa Tengah,48536,True
+74,61,Rumah,Gg. Kapten Muslihat No. 176,Denpasar,Bali,56039,True
+75,62,Rumah,Jl. Pasir Koja No. 9,Denpasar,Bali,70983,True
+76,63,Rumah,Gang Antapani Lama No. 708,Palembang,Sumatera Selatan,04495,True
+77,64,Rumah,Gang Stasiun Wonokromo No. 16,Denpasar,Bali,37680,True
+78,65,Rumah,Jl. Pasteur No. 823,Semarang,Jawa Tengah,91705,True
+79,65,Kantor,Jalan Jakarta No. 66,Semarang,Jawa Tengah,19640,False
+80,66,Rumah,Gang Sukajadi No. 7,Yogyakarta,DI Yogyakarta,99325,True
+81,67,Rumah,Gg. Yos Sudarso No. 73,Jakarta Selatan,DKI Jakarta,67221,True
+82,68,Rumah,Jalan Suryakencana No. 0,Denpasar,Bali,99534,True
+83,69,Rumah,Gg. Ronggowarsito No. 7,Jakarta Barat,DKI Jakarta,29544,True
+84,70,Rumah,Jalan Sadang Serang No. 894,Semarang,Jawa Tengah,09158,True
+85,70,Kantor,Gang Sukabumi No. 1,Semarang,Jawa Tengah,57357,False
+86,71,Rumah,Gang Rumah Sakit No. 715,Semarang,Jawa Tengah,63547,True
+87,71,Kantor,Gg. K.H. Wahid Hasyim No. 3,Semarang,Jawa Tengah,03510,False
+88,72,Rumah,Gang Pasirkoja No. 0,Bekasi,Jawa Barat,27088,True
+89,72,Kantor,Gang Kendalsari No. 2,Bekasi,Jawa Barat,48303,False
+90,73,Rumah,Jalan Pasir Koja No. 8,Bekasi,Jawa Barat,84871,True
+91,74,Rumah,Gang Moch. Ramdan No. 8,Jakarta Selatan,DKI Jakarta,60114,True
+92,75,Rumah,Gang Kiaracondong No. 44,Jakarta Selatan,DKI Jakarta,58749,True
+93,76,Rumah,Gang Dr. Djunjunan No. 511,Palembang,Sumatera Selatan,32123,True
+94,77,Rumah,Jalan Siliwangi No. 690,Bandung,Jawa Barat,28751,True
+95,78,Rumah,Jalan Setiabudhi No. 88,Jakarta Selatan,DKI Jakarta,93776,True
+96,79,Rumah,Gang Cikapayang No. 894,Bandung,Jawa Barat,94196,True
+97,80,Rumah,Gg. Dr. Djunjunan No. 44,Medan,Sumatera Utara,33016,True
+98,81,Rumah,Gg. Veteran No. 04,Palembang,Sumatera Selatan,49389,True
+99,82,Rumah,Gg. Sadang Serang No. 26,Jakarta Selatan,DKI Jakarta,94551,True
+100,83,Rumah,Jalan Peta No. 82,Jakarta Selatan,DKI Jakarta,25996,True
+101,83,Kantor,Jalan Abdul Muis No. 1,Jakarta Selatan,DKI Jakarta,66494,False
+102,84,Rumah,Jalan Gedebage Selatan No. 2,Bandung,Jawa Barat,31276,True
+103,85,Rumah,Jalan Cikapayang No. 075,Semarang,Jawa Tengah,82943,True
+104,86,Rumah,Jalan Yos Sudarso No. 425,Jakarta Barat,DKI Jakarta,41625,True
+105,87,Rumah,Gg. Pasirkoja No. 8,Palembang,Sumatera Selatan,42417,True
+106,88,Rumah,Jl. Ciumbuleuit No. 1,Malang,Jawa Timur,21472,True
+107,89,Rumah,Gang Moch. Toha No. 2,Malang,Jawa Timur,70710,True
+108,89,Kantor,Jalan Suniaraja No. 832,Malang,Jawa Timur,05889,False
+109,90,Rumah,Gg. PHH. Mustofa No. 068,Makassar,Sulawesi Selatan,93719,True
+110,91,Rumah,Gg. KH Amin Jasuta No. 97,Makassar,Sulawesi Selatan,78101,True
+111,92,Rumah,Gg. Pacuan Kuda No. 31,Palembang,Sumatera Selatan,02059,True
+112,93,Rumah,Gg. K.H. Wahid Hasyim No. 5,Jakarta Barat,DKI Jakarta,96550,True
+113,93,Kantor,Jl. R.E Martadinata No. 21,Jakarta Barat,DKI Jakarta,23147,False
+114,94,Rumah,Jalan BKR No. 139,Bekasi,Jawa Barat,63187,True
+115,94,Kantor,Jl. Jend. A. Yani No. 806,Bekasi,Jawa Barat,64349,False
+116,95,Rumah,Gang Gardujati No. 083,Makassar,Sulawesi Selatan,16700,True
+117,96,Rumah,Jl. Gegerkalong Hilir No. 24,Semarang,Jawa Tengah,76799,True
+118,96,Kantor,Gang Cihampelas No. 706,Semarang,Jawa Tengah,21264,False
+119,97,Rumah,Gang Rumah Sakit No. 74,Bekasi,Jawa Barat,94151,True
+120,98,Rumah,Gg. HOS. Cokroaminoto No. 1,Palembang,Sumatera Selatan,93827,True
+121,99,Rumah,Gg. Asia Afrika No. 54,Palembang,Sumatera Selatan,05046,True
+122,99,Kantor,Jl. W.R. Supratman No. 388,Palembang,Sumatera Selatan,67525,False
+123,100,Rumah,Gg. Pacuan Kuda No. 54,Makassar,Sulawesi Selatan,13622,True
+124,100,Kantor,Jl. Pelajar Pejuang No. 5,Makassar,Sulawesi Selatan,56146,False
+125,101,Rumah,Gang Ir. H. Djuanda No. 7,Jakarta Selatan,DKI Jakarta,78265,True
+126,102,Rumah,Jl. Sukajadi No. 04,Malang,Jawa Timur,00723,True
+127,103,Rumah,Gang KH Amin Jasuta No. 474,Malang,Jawa Timur,03107,True
+128,104,Rumah,Jl. Cikapayang No. 29,Surabaya,Jawa Timur,91100,True
+129,104,Kantor,Gang Siliwangi No. 43,Surabaya,Jawa Timur,66661,False
+130,105,Rumah,Jalan Rawamangun No. 29,Yogyakarta,DI Yogyakarta,29709,True
+131,105,Kantor,Jalan Lembong No. 3,Yogyakarta,DI Yogyakarta,24905,False
+132,106,Rumah,Jalan Surapati No. 3,Jakarta Barat,DKI Jakarta,11509,True
+133,107,Rumah,Jl. Gardujati No. 45,Medan,Sumatera Utara,47926,True
+134,107,Kantor,Jalan Tubagus Ismail No. 977,Medan,Sumatera Utara,88230,False
+135,108,Rumah,Gg. Monginsidi No. 54,Jakarta Barat,DKI Jakarta,13027,True
+136,109,Rumah,Jl. Ciwastra No. 364,Denpasar,Bali,84405,True
+137,109,Kantor,Gg. Kiaracondong No. 122,Denpasar,Bali,56883,False
+138,110,Rumah,Jl. Kapten Muslihat No. 09,Palembang,Sumatera Selatan,91401,True
+139,111,Rumah,Jl. Surapati No. 6,Makassar,Sulawesi Selatan,46870,True
+140,111,Kantor,Jalan Lembong No. 519,Makassar,Sulawesi Selatan,37275,False
+141,112,Rumah,Jalan Lembong No. 2,Bekasi,Jawa Barat,65127,True
+142,113,Rumah,Gang Asia Afrika No. 9,Jakarta Barat,DKI Jakarta,60225,True
+143,114,Rumah,Gang Setiabudhi No. 294,Denpasar,Bali,84576,True
+144,114,Kantor,Gg. Joyoboyo No. 7,Denpasar,Bali,22468,False
+145,115,Rumah,Jalan Raya Setiabudhi No. 999,Semarang,Jawa Tengah,53672,True
+146,116,Rumah,Jl. Abdul Muis No. 4,Jakarta Selatan,DKI Jakarta,74138,True
+147,116,Kantor,Jl. Pasir Koja No. 1,Jakarta Selatan,DKI Jakarta,06985,False
+148,117,Rumah,Jalan H.J Maemunah No. 0,Yogyakarta,DI Yogyakarta,43928,True
+149,118,Rumah,Jalan Dipatiukur No. 4,Yogyakarta,DI Yogyakarta,15027,True
+150,119,Rumah,Gg. Rajiman No. 893,Bandung,Jawa Barat,24507,True
+151,120,Rumah,Gang Rungkut Industri No. 0,Bekasi,Jawa Barat,67473,True
+152,121,Rumah,Gg. Cihampelas No. 5,Semarang,Jawa Tengah,97162,True
+153,122,Rumah,Jl. Ciumbuleuit No. 18,Malang,Jawa Timur,05628,True
+154,123,Rumah,Jl. Monginsidi No. 5,Jakarta Selatan,DKI Jakarta,39068,True
+155,123,Kantor,Jalan Cikapayang No. 56,Jakarta Selatan,DKI Jakarta,89648,False
+156,124,Rumah,Jalan Asia Afrika No. 192,Palembang,Sumatera Selatan,16777,True
+157,125,Rumah,Jalan Dr. Djunjunan No. 7,Bandung,Jawa Barat,94734,True
+158,126,Rumah,Gang Kutai No. 55,Jakarta Barat,DKI Jakarta,88300,True
+159,127,Rumah,Gang Jayawijaya No. 0,Malang,Jawa Timur,01232,True
+160,128,Rumah,Gang Abdul Muis No. 72,Surabaya,Jawa Timur,51484,True
+161,129,Rumah,Gg. Pasirkoja No. 287,Makassar,Sulawesi Selatan,56182,True
+162,129,Kantor,Gang Jend. Sudirman No. 64,Makassar,Sulawesi Selatan,60904,False
+163,130,Rumah,Jalan Ahmad Dahlan No. 0,Bekasi,Jawa Barat,12400,True
+164,131,Rumah,Jalan Rungkut Industri No. 366,Medan,Sumatera Utara,45816,True
+165,132,Rumah,Gang Rajawali Timur No. 2,Malang,Jawa Timur,61877,True
+166,133,Rumah,Gang Cihampelas No. 87,Semarang,Jawa Tengah,97199,True
+167,134,Rumah,Jalan Rungkut Industri No. 0,Denpasar,Bali,47498,True
+168,134,Kantor,Gg. Rajiman No. 65,Denpasar,Bali,34155,False
+169,135,Rumah,Gg. Joyoboyo No. 5,Semarang,Jawa Tengah,82465,True
+170,136,Rumah,Jl. Rumah Sakit No. 08,Semarang,Jawa Tengah,43718,True
+171,136,Kantor,Jl. Tebet Barat Dalam No. 053,Semarang,Jawa Tengah,31339,False
+172,137,Rumah,Jalan Astana Anyar No. 01,Bekasi,Jawa Barat,10398,True
+173,138,Rumah,Jl. M.H Thamrin No. 06,Malang,Jawa Timur,48511,True
+174,138,Kantor,Jalan Ahmad Yani No. 204,Malang,Jawa Timur,24127,False
+175,139,Rumah,Jl. Medokan Ayu No. 90,Makassar,Sulawesi Selatan,85412,True
+176,139,Kantor,Jl. Cikutra Barat No. 636,Makassar,Sulawesi Selatan,76294,False
+177,140,Rumah,Gg. Kutai No. 81,Bekasi,Jawa Barat,00020,True
+178,141,Rumah,Jalan Pasir Koja No. 31,Bekasi,Jawa Barat,15701,True
+179,142,Rumah,Gg. Siliwangi No. 454,Denpasar,Bali,88696,True
+180,143,Rumah,Jalan Peta No. 909,Bandung,Jawa Barat,81876,True
+181,143,Kantor,Jalan Indragiri No. 5,Bandung,Jawa Barat,64497,False
+182,144,Rumah,Jalan Dipenogoro No. 26,Jakarta Barat,DKI Jakarta,43394,True
+183,145,Rumah,Jalan Kendalsari No. 28,Jakarta Barat,DKI Jakarta,04804,True
+184,146,Rumah,Jl. Pelajar Pejuang No. 108,Surabaya,Jawa Timur,51792,True
+185,146,Kantor,Jl. Jayawijaya No. 18,Surabaya,Jawa Timur,04033,False
+186,147,Rumah,Gg. Dipatiukur No. 0,Bekasi,Jawa Barat,09884,True
+187,148,Rumah,Jl. PHH. Mustofa No. 73,Palembang,Sumatera Selatan,89280,True
+188,149,Rumah,Jl. Ciwastra No. 3,Medan,Sumatera Utara,81176,True
+189,150,Rumah,Jl. Raya Setiabudhi No. 33,Semarang,Jawa Tengah,37035,True
+190,151,Rumah,Jalan Dr. Djunjunan No. 6,Makassar,Sulawesi Selatan,52278,True
+191,152,Rumah,Jalan Rumah Sakit No. 137,Bandung,Jawa Barat,06960,True
+192,153,Rumah,Jl. Soekarno Hatta No. 0,Jakarta Selatan,DKI Jakarta,84177,True
+193,153,Kantor,Jl. Erlangga No. 829,Jakarta Selatan,DKI Jakarta,04628,False
+194,154,Rumah,Gg. Pasirkoja No. 835,Malang,Jawa Timur,60270,True
+195,155,Rumah,Gang Otto Iskandardinata No. 6,Bandung,Jawa Barat,07943,True
+196,156,Rumah,Gang Lembong No. 5,Jakarta Selatan,DKI Jakarta,33669,True
+197,157,Rumah,Jalan Cikutra Timur No. 6,Jakarta Selatan,DKI Jakarta,82234,True
+198,157,Kantor,Gg. Rajawali Barat No. 606,Jakarta Selatan,DKI Jakarta,18726,False
+199,158,Rumah,Gang Kutisari Selatan No. 546,Bandung,Jawa Barat,93852,True
+200,159,Rumah,Gg. Waringin No. 630,Medan,Sumatera Utara,51864,True
+201,160,Rumah,Gg. R.E Martadinata No. 408,Jakarta Barat,DKI Jakarta,56717,True
+202,161,Rumah,Gg. S. Parman No. 5,Bandung,Jawa Barat,11429,True
+203,162,Rumah,Gang Cihampelas No. 77,Jakarta Barat,DKI Jakarta,03060,True
+204,163,Rumah,Gg. Dr. Djunjunan No. 1,Bandung,Jawa Barat,33470,True
+205,164,Rumah,Gang Kutisari Selatan No. 8,Palembang,Sumatera Selatan,29218,True
+206,165,Rumah,Jalan Cihampelas No. 34,Jakarta Barat,DKI Jakarta,48361,True
+207,165,Kantor,Gg. Soekarno Hatta No. 923,Jakarta Barat,DKI Jakarta,04207,False
+208,166,Rumah,Gg. Jayawijaya No. 2,Denpasar,Bali,86737,True
+209,167,Rumah,Jl. Ahmad Yani No. 7,Palembang,Sumatera Selatan,68759,True
+210,168,Rumah,Gg. Pasirkoja No. 0,Bekasi,Jawa Barat,94107,True
+211,169,Rumah,Jl. Kutisari Selatan No. 459,Jakarta Selatan,DKI Jakarta,35164,True
+212,170,Rumah,Jl. R.E Martadinata No. 9,Malang,Jawa Timur,59033,True
+213,170,Kantor,Gg. Sadang Serang No. 1,Malang,Jawa Timur,31968,False
+214,171,Rumah,Gg. Raya Setiabudhi No. 007,Malang,Jawa Timur,93302,True
+215,171,Kantor,Jalan Kutisari Selatan No. 04,Malang,Jawa Timur,21271,False
+216,172,Rumah,Jalan Pasir Koja No. 18,Medan,Sumatera Utara,91521,True
+217,173,Rumah,Gg. Cikapayang No. 58,Palembang,Sumatera Selatan,91379,True
+218,174,Rumah,Gg. Abdul Muis No. 2,Yogyakarta,DI Yogyakarta,26071,True
+219,175,Rumah,Jalan Raya Ujungberung No. 11,Jakarta Selatan,DKI Jakarta,17682,True
+220,176,Rumah,Jalan Otto Iskandardinata No. 64,Bandung,Jawa Barat,27764,True
+221,177,Rumah,Gg. BKR No. 9,Denpasar,Bali,26537,True
+222,178,Rumah,Jalan Sadang Serang No. 393,Bekasi,Jawa Barat,17741,True
+223,179,Rumah,Gg. Ronggowarsito No. 75,Surabaya,Jawa Timur,96093,True
+224,180,Rumah,Jl. Veteran No. 957,Semarang,Jawa Tengah,27196,True
+225,181,Rumah,Jalan Ciwastra No. 2,Malang,Jawa Timur,17780,True
+226,182,Rumah,Jalan Suniaraja No. 741,Semarang,Jawa Tengah,02674,True
+227,183,Rumah,Gg. Antapani Lama No. 97,Bekasi,Jawa Barat,91432,True
+228,184,Rumah,Gg. Kutisari Selatan No. 5,Jakarta Selatan,DKI Jakarta,63561,True
+229,185,Rumah,Jalan Wonoayu No. 354,Makassar,Sulawesi Selatan,88158,True
+230,186,Rumah,Gg. Gedebage Selatan No. 1,Palembang,Sumatera Selatan,86303,True
+231,187,Rumah,Jl. R.E Martadinata No. 7,Surabaya,Jawa Timur,86887,True
+232,187,Kantor,Jl. Setiabudhi No. 6,Surabaya,Jawa Timur,62569,False
+233,188,Rumah,Gg. Setiabudhi No. 288,Surabaya,Jawa Timur,43878,True
+234,189,Rumah,Gg. Cikutra Barat No. 069,Bandung,Jawa Barat,32359,True
+235,190,Rumah,Gang Stasiun Wonokromo No. 4,Surabaya,Jawa Timur,81107,True
+236,191,Rumah,Gg. Cikutra Timur No. 419,Semarang,Jawa Tengah,50450,True
+237,192,Rumah,Jl. Antapani Lama No. 38,Makassar,Sulawesi Selatan,30572,True
+238,193,Rumah,Jalan HOS. Cokroaminoto No. 4,Jakarta Selatan,DKI Jakarta,54039,True
+239,194,Rumah,Jalan Rumah Sakit No. 982,Bandung,Jawa Barat,39215,True
+240,195,Rumah,Jalan Pelajar Pejuang No. 22,Medan,Sumatera Utara,82929,True
+241,196,Rumah,Jalan Kendalsari No. 97,Jakarta Barat,DKI Jakarta,20440,True
+242,196,Kantor,Gg. Rajiman No. 428,Jakarta Barat,DKI Jakarta,85609,False
+243,197,Rumah,Gang Kutisari Selatan No. 5,Bekasi,Jawa Barat,93683,True
+244,198,Rumah,Gang Gegerkalong Hilir No. 2,Jakarta Selatan,DKI Jakarta,75061,True
+245,199,Rumah,Gg. Suniaraja No. 590,Denpasar,Bali,74016,True
+246,200,Rumah,Jl. Stasiun Wonokromo No. 70,Yogyakarta,DI Yogyakarta,33899,True
+247,201,Rumah,Gg. Ciumbuleuit No. 3,Medan,Sumatera Utara,59754,True
+248,201,Kantor,Jalan Cihampelas No. 596,Medan,Sumatera Utara,96908,False
+249,202,Rumah,Jl. Kapten Muslihat No. 795,Bekasi,Jawa Barat,24394,True
+250,203,Rumah,Jalan Waringin No. 448,Semarang,Jawa Tengah,08157,True
+251,204,Rumah,Gg. Veteran No. 733,Malang,Jawa Timur,90566,True
+252,204,Kantor,Gang Bangka Raya No. 0,Malang,Jawa Timur,94417,False
+253,205,Rumah,Jl. Merdeka No. 84,Denpasar,Bali,86479,True
+254,206,Rumah,Jl. K.H. Wahid Hasyim No. 21,Yogyakarta,DI Yogyakarta,97851,True
+255,207,Rumah,Jalan Otto Iskandardinata No. 902,Bandung,Jawa Barat,70535,True
+256,208,Rumah,Jl. Tubagus Ismail No. 076,Bandung,Jawa Barat,07300,True
+257,209,Rumah,Jl. Kutai No. 5,Yogyakarta,DI Yogyakarta,83510,True
+258,210,Rumah,Jalan M.T Haryono No. 89,Jakarta Barat,DKI Jakarta,17713,True
+259,211,Rumah,Gang Sadang Serang No. 879,Bandung,Jawa Barat,75343,True
+260,212,Rumah,Jl. Pasirkoja No. 01,Jakarta Selatan,DKI Jakarta,16597,True
+261,213,Rumah,Jalan Ciwastra No. 902,Semarang,Jawa Tengah,08446,True
+262,214,Rumah,Jl. Medokan Ayu No. 2,Makassar,Sulawesi Selatan,41067,True
+263,215,Rumah,Jalan Medokan Ayu No. 57,Medan,Sumatera Utara,33476,True
+264,216,Rumah,Gang Cihampelas No. 1,Jakarta Selatan,DKI Jakarta,80713,True
+265,217,Rumah,Jl. Pasir Koja No. 32,Yogyakarta,DI Yogyakarta,84936,True
+266,218,Rumah,Jl. Sadang Serang No. 74,Bandung,Jawa Barat,45975,True
+267,218,Kantor,Gg. Dipatiukur No. 65,Bandung,Jawa Barat,39971,False
+268,219,Rumah,Jl. Astana Anyar No. 17,Denpasar,Bali,70527,True
+269,220,Rumah,Jl. Dipatiukur No. 67,Jakarta Barat,DKI Jakarta,19942,True
+270,221,Rumah,Jl. Cikutra Timur No. 128,Jakarta Selatan,DKI Jakarta,09909,True
+271,221,Kantor,Gg. Ahmad Yani No. 519,Jakarta Selatan,DKI Jakarta,22677,False
+272,222,Rumah,Jalan Cempaka No. 1,Semarang,Jawa Tengah,03516,True
+273,223,Rumah,Jalan Pelajar Pejuang No. 75,Denpasar,Bali,39990,True
+274,224,Rumah,Gang Jamika No. 2,Bandung,Jawa Barat,67947,True
+275,225,Rumah,Gg. HOS. Cokroaminoto No. 81,Malang,Jawa Timur,62947,True
+276,226,Rumah,Jl. Sentot Alibasa No. 61,Bandung,Jawa Barat,66267,True
+277,226,Kantor,Gang Monginsidi No. 6,Bandung,Jawa Barat,69603,False
+278,227,Rumah,Gang Kendalsari No. 34,Bekasi,Jawa Barat,84495,True
+279,228,Rumah,Jalan Peta No. 28,Semarang,Jawa Tengah,90099,True
+280,229,Rumah,Gg. Jamika No. 405,Yogyakarta,DI Yogyakarta,65190,True
+281,230,Rumah,Jl. Otto Iskandardinata No. 19,Medan,Sumatera Utara,91342,True
+282,231,Rumah,Jl. Merdeka No. 3,Semarang,Jawa Tengah,24620,True
+283,231,Kantor,Gg. Tubagus Ismail No. 66,Semarang,Jawa Tengah,05541,False
+284,232,Rumah,Gang Cikutra Timur No. 47,Jakarta Selatan,DKI Jakarta,97735,True
+285,233,Rumah,Gang Raya Setiabudhi No. 529,Bandung,Jawa Barat,62604,True
+286,234,Rumah,Jl. Cikutra Timur No. 68,Jakarta Selatan,DKI Jakarta,80075,True
+287,234,Kantor,Gang Pasteur No. 3,Jakarta Selatan,DKI Jakarta,17229,False
+288,235,Rumah,Gang Rajawali Timur No. 40,Makassar,Sulawesi Selatan,90301,True
+289,236,Rumah,Gg. Jayawijaya No. 5,Jakarta Barat,DKI Jakarta,99054,True
+290,237,Rumah,Gang Jayawijaya No. 937,Yogyakarta,DI Yogyakarta,79230,True
+291,238,Rumah,Jl. S. Parman No. 41,Palembang,Sumatera Selatan,26796,True
+292,239,Rumah,Gg. Cikapayang No. 3,Surabaya,Jawa Timur,92968,True
+293,240,Rumah,Jalan Laswi No. 46,Semarang,Jawa Tengah,95699,True
+294,240,Kantor,Gg. Cempaka No. 6,Semarang,Jawa Tengah,90500,False
+295,241,Rumah,Gang Waringin No. 137,Yogyakarta,DI Yogyakarta,08640,True
+296,242,Rumah,Jalan R.E Martadinata No. 107,Jakarta Barat,DKI Jakarta,55381,True
+297,242,Kantor,Gang Moch. Ramdan No. 126,Jakarta Barat,DKI Jakarta,76695,False
+298,243,Rumah,Jalan Raya Setiabudhi No. 403,Medan,Sumatera Utara,11715,True
+299,244,Rumah,Jalan Kebonjati No. 518,Semarang,Jawa Tengah,96601,True
+300,245,Rumah,Gg. H.J Maemunah No. 962,Bekasi,Jawa Barat,27126,True
+301,246,Rumah,Jl. Yos Sudarso No. 1,Yogyakarta,DI Yogyakarta,52407,True
+302,247,Rumah,Jl. Suniaraja No. 56,Palembang,Sumatera Selatan,68363,True
+303,248,Rumah,Jl. Ronggowarsito No. 1,Surabaya,Jawa Timur,19938,True
+304,249,Rumah,Jalan Cihampelas No. 531,Jakarta Selatan,DKI Jakarta,92631,True
+305,250,Rumah,Jl. Tebet Barat Dalam No. 245,Malang,Jawa Timur,11727,True
+306,251,Rumah,Jl. Dipatiukur No. 0,Jakarta Selatan,DKI Jakarta,84302,True
+307,252,Rumah,Jl. Rajawali Timur No. 90,Makassar,Sulawesi Selatan,49015,True
+308,253,Rumah,Jalan Kapten Muslihat No. 7,Denpasar,Bali,94128,True
+309,254,Rumah,Jalan Dipatiukur No. 796,Yogyakarta,DI Yogyakarta,30770,True
+310,255,Rumah,Jalan Suniaraja No. 99,Jakarta Selatan,DKI Jakarta,43963,True
+311,256,Rumah,Gg. Kebonjati No. 196,Surabaya,Jawa Timur,41103,True
+312,257,Rumah,Jalan Wonoayu No. 5,Jakarta Barat,DKI Jakarta,26814,True
+313,258,Rumah,Gg. Monginsidi No. 4,Bandung,Jawa Barat,19589,True
+314,259,Rumah,Jalan Dipatiukur No. 487,Denpasar,Bali,52374,True
+315,260,Rumah,Gg. Suryakencana No. 32,Bandung,Jawa Barat,15160,True
+316,261,Rumah,Jalan KH Amin Jasuta No. 24,Semarang,Jawa Tengah,99123,True
+317,262,Rumah,Gang Dipenogoro No. 7,Bekasi,Jawa Barat,14365,True
+318,263,Rumah,Gang Cihampelas No. 60,Jakarta Selatan,DKI Jakarta,03478,True
+319,264,Rumah,Gang Tubagus Ismail No. 135,Medan,Sumatera Utara,72191,True
+320,265,Rumah,Gang Rajawali Timur No. 767,Bekasi,Jawa Barat,95603,True
+321,266,Rumah,Gg. Jamika No. 524,Yogyakarta,DI Yogyakarta,03772,True
+322,266,Kantor,Gang W.R. Supratman No. 242,Yogyakarta,DI Yogyakarta,71281,False
+323,267,Rumah,Gang Raya Setiabudhi No. 50,Makassar,Sulawesi Selatan,09404,True
+324,267,Kantor,Gg. Cikutra Barat No. 05,Makassar,Sulawesi Selatan,09977,False
+325,268,Rumah,Jl. PHH. Mustofa No. 3,Malang,Jawa Timur,24215,True
+326,269,Rumah,Gang R.E Martadinata No. 24,Bekasi,Jawa Barat,79163,True
+327,270,Rumah,Jl. Gedebage Selatan No. 279,Semarang,Jawa Tengah,94751,True
+328,271,Rumah,Jalan Gedebage Selatan No. 1,Bekasi,Jawa Barat,53467,True
+329,272,Rumah,Jalan Abdul Muis No. 50,Malang,Jawa Timur,96824,True
+330,273,Rumah,Jalan Jamika No. 465,Medan,Sumatera Utara,80578,True
+331,274,Rumah,Gang Kebonjati No. 416,Yogyakarta,DI Yogyakarta,92142,True
+332,275,Rumah,Gg. Surapati No. 8,Denpasar,Bali,78725,True
+333,276,Rumah,Jalan Antapani Lama No. 015,Jakarta Selatan,DKI Jakarta,91817,True
+334,276,Kantor,Gg. Cikutra Timur No. 802,Jakarta Selatan,DKI Jakarta,98528,False
+335,277,Rumah,Gg. Raya Ujungberung No. 896,Bandung,Jawa Barat,02873,True
+336,278,Rumah,Gang Raya Setiabudhi No. 023,Bandung,Jawa Barat,19830,True
+337,279,Rumah,Jalan Moch. Toha No. 07,Bandung,Jawa Barat,98987,True
+338,280,Rumah,Jalan BKR No. 4,Semarang,Jawa Tengah,44160,True
+339,281,Rumah,Jalan Kebonjati No. 6,Malang,Jawa Timur,71631,True
+340,281,Kantor,Jalan Antapani Lama No. 06,Malang,Jawa Timur,07758,False
+341,282,Rumah,Gang Setiabudhi No. 586,Malang,Jawa Timur,05790,True
+342,283,Rumah,Gang Soekarno Hatta No. 988,Medan,Sumatera Utara,13228,True
+343,283,Kantor,Gg. Setiabudhi No. 686,Medan,Sumatera Utara,12390,False
+344,284,Rumah,Gang KH Amin Jasuta No. 58,Makassar,Sulawesi Selatan,57023,True
+345,284,Kantor,Gang Rungkut Industri No. 43,Makassar,Sulawesi Selatan,74816,False
+346,285,Rumah,Jl. Gedebage Selatan No. 30,Palembang,Sumatera Selatan,34038,True
+347,285,Kantor,Gg. Yos Sudarso No. 436,Palembang,Sumatera Selatan,06944,False
+348,286,Rumah,Jl. Laswi No. 869,Malang,Jawa Timur,70382,True
+349,287,Rumah,Gg. Yos Sudarso No. 841,Palembang,Sumatera Selatan,15259,True
+350,288,Rumah,Jalan S. Parman No. 8,Jakarta Selatan,DKI Jakarta,11193,True
+351,288,Kantor,Jalan Pacuan Kuda No. 76,Jakarta Selatan,DKI Jakarta,07659,False
+352,289,Rumah,Gang Lembong No. 895,Medan,Sumatera Utara,01991,True
+353,289,Kantor,Gg. Monginsidi No. 5,Medan,Sumatera Utara,81435,False
+354,290,Rumah,Gang PHH. Mustofa No. 04,Malang,Jawa Timur,62228,True
+355,290,Kantor,Jl. Suniaraja No. 57,Malang,Jawa Timur,38753,False
+356,291,Rumah,Gg. K.H. Wahid Hasyim No. 7,Bandung,Jawa Barat,28017,True
+357,292,Rumah,Gg. Gardujati No. 03,Jakarta Barat,DKI Jakarta,33740,True
+358,293,Rumah,Jalan Cihampelas No. 59,Malang,Jawa Timur,60084,True
+359,293,Kantor,Jl. Veteran No. 4,Malang,Jawa Timur,16827,False
+360,294,Rumah,Jl. Astana Anyar No. 859,Medan,Sumatera Utara,63189,True
+361,295,Rumah,Gg. Kebonjati No. 57,Medan,Sumatera Utara,53526,True
+362,296,Rumah,Jl. Kendalsari No. 913,Palembang,Sumatera Selatan,07778,True
+363,297,Rumah,Gang Cihampelas No. 218,Yogyakarta,DI Yogyakarta,04330,True
+364,298,Rumah,Jalan Jend. A. Yani No. 6,Palembang,Sumatera Selatan,32582,True
+365,299,Rumah,Gang Medokan Ayu No. 0,Surabaya,Jawa Timur,58825,True
+366,300,Rumah,Jalan Soekarno Hatta No. 7,Jakarta Selatan,DKI Jakarta,00304,True
+367,301,Rumah,Gang Jamika No. 358,Jakarta Barat,DKI Jakarta,21234,True
+368,302,Rumah,Jalan Pacuan Kuda No. 545,Bandung,Jawa Barat,68082,True
+369,302,Kantor,Jalan M.T Haryono No. 5,Bandung,Jawa Barat,15328,False
+370,303,Rumah,Jl. Sentot Alibasa No. 54,Jakarta Barat,DKI Jakarta,75938,True
+371,303,Kantor,Gang Dipatiukur No. 2,Jakarta Barat,DKI Jakarta,84541,False
+372,304,Rumah,Gg. Moch. Toha No. 427,Yogyakarta,DI Yogyakarta,62111,True
+373,305,Rumah,Gang Asia Afrika No. 86,Medan,Sumatera Utara,29612,True
+374,306,Rumah,Jalan R.E Martadinata No. 56,Surabaya,Jawa Timur,77079,True
+375,307,Rumah,Jl. Yos Sudarso No. 00,Palembang,Sumatera Selatan,12376,True
+376,308,Rumah,Gang Cikapayang No. 085,Bandung,Jawa Barat,15751,True
+377,309,Rumah,Jl. Ahmad Yani No. 226,Makassar,Sulawesi Selatan,25254,True
+378,310,Rumah,Gg. Ciumbuleuit No. 83,Jakarta Barat,DKI Jakarta,31293,True
+379,310,Kantor,Gg. Rawamangun No. 7,Jakarta Barat,DKI Jakarta,17507,False
+380,311,Rumah,Jl. Gedebage Selatan No. 205,Bekasi,Jawa Barat,06472,True
+381,312,Rumah,Jalan HOS. Cokroaminoto No. 211,Medan,Sumatera Utara,71255,True
+382,313,Rumah,Jl. Yos Sudarso No. 578,Semarang,Jawa Tengah,95628,True
+383,314,Rumah,Jalan Antapani Lama No. 133,Malang,Jawa Timur,02482,True
+384,314,Kantor,Gg. Jend. A. Yani No. 96,Malang,Jawa Timur,73921,False
+385,315,Rumah,Gang Rajawali Barat No. 033,Semarang,Jawa Tengah,55091,True
+386,316,Rumah,Gang Jayawijaya No. 6,Palembang,Sumatera Selatan,90225,True
+387,317,Rumah,Gang BKR No. 08,Semarang,Jawa Tengah,14916,True
+388,317,Kantor,Jalan Kebonjati No. 5,Semarang,Jawa Tengah,63956,False
+389,318,Rumah,Jalan Waringin No. 9,Makassar,Sulawesi Selatan,13808,True
+390,319,Rumah,Gg. Rumah Sakit No. 9,Malang,Jawa Timur,31842,True
+391,319,Kantor,Jl. KH Amin Jasuta No. 8,Malang,Jawa Timur,99346,False
+392,320,Rumah,Gang Gedebage Selatan No. 42,Makassar,Sulawesi Selatan,50955,True
+393,321,Rumah,Jalan Cikutra Barat No. 773,Jakarta Barat,DKI Jakarta,97227,True
+394,322,Rumah,Gg. Pasteur No. 885,Makassar,Sulawesi Selatan,33218,True
+395,323,Rumah,Jl. Dr. Djunjunan No. 7,Jakarta Barat,DKI Jakarta,27991,True
+396,324,Rumah,Gang Medokan Ayu No. 48,Makassar,Sulawesi Selatan,42776,True
+397,325,Rumah,Jl. Dr. Djunjunan No. 2,Denpasar,Bali,92771,True
+398,325,Kantor,Jl. Veteran No. 5,Denpasar,Bali,39328,False
+399,326,Rumah,Jl. Joyoboyo No. 59,Semarang,Jawa Tengah,57446,True
+400,327,Rumah,Jl. Otto Iskandardinata No. 537,Semarang,Jawa Tengah,30861,True
+401,328,Rumah,Jl. PHH. Mustofa No. 941,Surabaya,Jawa Timur,70719,True
+402,328,Kantor,Gg. Otto Iskandardinata No. 6,Surabaya,Jawa Timur,76408,False
+403,329,Rumah,Gang Lembong No. 259,Bandung,Jawa Barat,54294,True
+404,329,Kantor,Jl. Cikapayang No. 92,Bandung,Jawa Barat,39827,False
+405,330,Rumah,Jalan Moch. Ramdan No. 60,Palembang,Sumatera Selatan,84311,True
+406,330,Kantor,Gang Kapten Muslihat No. 188,Palembang,Sumatera Selatan,78027,False
+407,331,Rumah,Gg. Rawamangun No. 474,Makassar,Sulawesi Selatan,44458,True
+408,332,Rumah,Gg. Kendalsari No. 79,Semarang,Jawa Tengah,84455,True
+409,332,Kantor,Jl. Gardujati No. 781,Semarang,Jawa Tengah,81739,False
+410,333,Rumah,Jl. Merdeka No. 8,Yogyakarta,DI Yogyakarta,97362,True
+411,334,Rumah,Jl. Peta No. 737,Surabaya,Jawa Timur,08066,True
+412,335,Rumah,Gang Cempaka No. 649,Jakarta Barat,DKI Jakarta,48935,True
+413,336,Rumah,Jl. M.H Thamrin No. 36,Medan,Sumatera Utara,32794,True
+414,337,Rumah,Gang Ciwastra No. 9,Medan,Sumatera Utara,45196,True
+415,338,Rumah,Jl. Kapten Muslihat No. 9,Bandung,Jawa Barat,84478,True
+416,339,Rumah,Jl. Cikapayang No. 233,Palembang,Sumatera Selatan,89402,True
+417,340,Rumah,Gg. Sadang Serang No. 9,Medan,Sumatera Utara,87252,True
+418,340,Kantor,Jl. Rajiman No. 7,Medan,Sumatera Utara,53406,False
+419,341,Rumah,Jalan Jamika No. 991,Malang,Jawa Timur,77449,True
+420,342,Rumah,Jl. Indragiri No. 404,Makassar,Sulawesi Selatan,02805,True
+421,343,Rumah,Jl. M.T Haryono No. 112,Medan,Sumatera Utara,02294,True
+422,344,Rumah,Gang Cempaka No. 80,Bekasi,Jawa Barat,38298,True
+423,344,Kantor,Jl. Gedebage Selatan No. 196,Bekasi,Jawa Barat,64261,False
+424,345,Rumah,Gg. Sadang Serang No. 194,Bandung,Jawa Barat,04761,True
+425,346,Rumah,Jl. Sukajadi No. 297,Bandung,Jawa Barat,46320,True
+426,346,Kantor,Gg. Ciwastra No. 60,Bandung,Jawa Barat,19703,False
+427,347,Rumah,Jalan Pelajar Pejuang No. 923,Medan,Sumatera Utara,42334,True
+428,348,Rumah,Gg. Cihampelas No. 307,Jakarta Selatan,DKI Jakarta,65428,True
+429,349,Rumah,Gg. Erlangga No. 59,Denpasar,Bali,57349,True
+430,350,Rumah,Jl. Raya Ujungberung No. 06,Medan,Sumatera Utara,37967,True
+431,351,Rumah,Jalan Stasiun Wonokromo No. 01,Malang,Jawa Timur,76650,True
+432,351,Kantor,Gang Sukabumi No. 3,Malang,Jawa Timur,99217,False
+433,352,Rumah,Gang Stasiun Wonokromo No. 8,Makassar,Sulawesi Selatan,60802,True
+434,352,Kantor,Gg. Ciwastra No. 968,Makassar,Sulawesi Selatan,92168,False
+435,353,Rumah,Jl. Abdul Muis No. 8,Palembang,Sumatera Selatan,04314,True
+436,354,Rumah,Jalan Pasirkoja No. 25,Denpasar,Bali,16599,True
+437,355,Rumah,Jl. Peta No. 54,Palembang,Sumatera Selatan,59722,True
+438,356,Rumah,Jl. Erlangga No. 9,Medan,Sumatera Utara,75101,True
+439,357,Rumah,Gg. Sadang Serang No. 049,Medan,Sumatera Utara,53891,True
+440,358,Rumah,Gg. K.H. Wahid Hasyim No. 11,Medan,Sumatera Utara,85002,True
+441,359,Rumah,Gg. Kebonjati No. 27,Jakarta Barat,DKI Jakarta,90074,True
+442,359,Kantor,Gg. Abdul Muis No. 7,Jakarta Barat,DKI Jakarta,41505,False
+443,360,Rumah,Gg. Cihampelas No. 607,Malang,Jawa Timur,85340,True
+444,361,Rumah,Gang Raya Ujungberung No. 378,Jakarta Selatan,DKI Jakarta,90002,True
+445,361,Kantor,Jalan Otto Iskandardinata No. 18,Jakarta Selatan,DKI Jakarta,22632,False
+446,362,Rumah,Jl. Siliwangi No. 4,Semarang,Jawa Tengah,01423,True
+447,363,Rumah,Jalan PHH. Mustofa No. 75,Medan,Sumatera Utara,61319,True
+448,363,Kantor,Gang Abdul Muis No. 78,Medan,Sumatera Utara,49364,False
+449,364,Rumah,Gang Dipenogoro No. 868,Denpasar,Bali,24251,True
+450,365,Rumah,Jl. Dipatiukur No. 0,Medan,Sumatera Utara,48142,True
+451,366,Rumah,Gang Sadang Serang No. 12,Medan,Sumatera Utara,08398,True
+452,367,Rumah,Jalan Wonoayu No. 34,Malang,Jawa Timur,86022,True
+453,368,Rumah,Gg. Abdul Muis No. 85,Jakarta Selatan,DKI Jakarta,18315,True
+454,369,Rumah,Gang Jend. Sudirman No. 19,Yogyakarta,DI Yogyakarta,48174,True
+455,369,Kantor,Jalan Dipatiukur No. 098,Yogyakarta,DI Yogyakarta,57593,False
+456,370,Rumah,Gg. Pacuan Kuda No. 820,Yogyakarta,DI Yogyakarta,29461,True
+457,371,Rumah,Gang Jakarta No. 125,Yogyakarta,DI Yogyakarta,20007,True
+458,372,Rumah,Gg. Sadang Serang No. 69,Malang,Jawa Timur,25980,True
+459,373,Rumah,Gang Kebonjati No. 809,Jakarta Barat,DKI Jakarta,62626,True
+460,374,Rumah,Gang Cempaka No. 93,Bekasi,Jawa Barat,32187,True
+461,375,Rumah,Gang Bangka Raya No. 2,Makassar,Sulawesi Selatan,06576,True
+462,376,Rumah,Gg. Kutisari Selatan No. 97,Bekasi,Jawa Barat,00443,True
+463,377,Rumah,Gang Rajawali Timur No. 69,Makassar,Sulawesi Selatan,05449,True
+464,378,Rumah,Gang Raya Setiabudhi No. 05,Denpasar,Bali,38879,True
+465,378,Kantor,Gang Kutai No. 647,Denpasar,Bali,37832,False
+466,379,Rumah,Jl. Ronggowarsito No. 728,Jakarta Barat,DKI Jakarta,24974,True
+467,380,Rumah,Gang W.R. Supratman No. 447,Medan,Sumatera Utara,51256,True
+468,380,Kantor,Gg. Gegerkalong Hilir No. 89,Medan,Sumatera Utara,88499,False
+469,381,Rumah,Jalan Abdul Muis No. 319,Palembang,Sumatera Selatan,43501,True
+470,382,Rumah,Jalan Kapten Muslihat No. 2,Denpasar,Bali,39102,True
+471,382,Kantor,Jl. Cikutra Timur No. 561,Denpasar,Bali,50534,False
+472,383,Rumah,Gg. W.R. Supratman No. 2,Medan,Sumatera Utara,90795,True
+473,384,Rumah,Gg. Monginsidi No. 095,Bandung,Jawa Barat,98517,True
+474,384,Kantor,Gg. Sukabumi No. 86,Bandung,Jawa Barat,19357,False
+475,385,Rumah,Jl. Pasirkoja No. 018,Palembang,Sumatera Selatan,49688,True
+476,386,Rumah,Gg. Siliwangi No. 11,Denpasar,Bali,50461,True
+477,387,Rumah,Gg. W.R. Supratman No. 72,Medan,Sumatera Utara,48827,True
+478,387,Kantor,Jalan Ciwastra No. 747,Medan,Sumatera Utara,09299,False
+479,388,Rumah,Jl. Pasir Koja No. 679,Palembang,Sumatera Selatan,09083,True
+480,389,Rumah,Gg. Moch. Ramdan No. 6,Yogyakarta,DI Yogyakarta,75178,True
+481,390,Rumah,Jl. Ciumbuleuit No. 6,Palembang,Sumatera Selatan,17435,True
+482,390,Kantor,Jl. Moch. Toha No. 32,Palembang,Sumatera Selatan,26488,False
+483,391,Rumah,Gang K.H. Wahid Hasyim No. 99,Medan,Sumatera Utara,16507,True
+484,392,Rumah,Jl. Pelajar Pejuang No. 26,Yogyakarta,DI Yogyakarta,44369,True
+485,392,Kantor,Jalan Indragiri No. 4,Yogyakarta,DI Yogyakarta,97920,False
+486,393,Rumah,Jl. HOS. Cokroaminoto No. 3,Semarang,Jawa Tengah,92171,True
+487,393,Kantor,Jl. Moch. Ramdan No. 3,Semarang,Jawa Tengah,57364,False
+488,394,Rumah,Jl. Pasir Koja No. 5,Bekasi,Jawa Barat,14289,True
+489,395,Rumah,Gang Rungkut Industri No. 37,Bandung,Jawa Barat,04945,True
+490,395,Kantor,Jl. Antapani Lama No. 94,Bandung,Jawa Barat,99885,False
+491,396,Rumah,Gang PHH. Mustofa No. 842,Surabaya,Jawa Timur,63282,True
+492,397,Rumah,Jl. Cempaka No. 71,Bekasi,Jawa Barat,22904,True
+493,398,Rumah,Gang Bangka Raya No. 5,Semarang,Jawa Tengah,68237,True
+494,399,Rumah,Jalan Rajawali Barat No. 1,Jakarta Selatan,DKI Jakarta,18341,True
+495,400,Rumah,Gang Dipenogoro No. 73,Medan,Sumatera Utara,66344,True
+496,401,Rumah,Gang Siliwangi No. 78,Makassar,Sulawesi Selatan,52083,True
+497,402,Rumah,Jalan Indragiri No. 6,Jakarta Selatan,DKI Jakarta,13017,True
+498,403,Rumah,Gang Peta No. 02,Makassar,Sulawesi Selatan,48782,True
+499,404,Rumah,Gang Monginsidi No. 557,Semarang,Jawa Tengah,03166,True
+500,404,Kantor,Jalan Rungkut Industri No. 8,Semarang,Jawa Tengah,28691,False
+501,405,Rumah,Gang Waringin No. 710,Malang,Jawa Timur,47956,True
+502,405,Kantor,Jl. BKR No. 640,Malang,Jawa Timur,78565,False
+503,406,Rumah,Jl. Peta No. 77,Malang,Jawa Timur,38259,True
+504,407,Rumah,Jl. Cikapayang No. 73,Jakarta Selatan,DKI Jakarta,48419,True
+505,408,Rumah,Gang Yos Sudarso No. 60,Surabaya,Jawa Timur,69361,True
+506,409,Rumah,Jl. Ir. H. Djuanda No. 5,Makassar,Sulawesi Selatan,21210,True
+507,409,Kantor,Gg. Moch. Ramdan No. 4,Makassar,Sulawesi Selatan,80588,False
+508,410,Rumah,Jalan Ciwastra No. 0,Surabaya,Jawa Timur,45399,True
+509,411,Rumah,Jl. Merdeka No. 604,Medan,Sumatera Utara,87699,True
+510,412,Rumah,Gang Ahmad Yani No. 34,Semarang,Jawa Tengah,48272,True
+511,412,Kantor,Jl. Medokan Ayu No. 373,Semarang,Jawa Tengah,72412,False
+512,413,Rumah,Gg. Kiaracondong No. 1,Makassar,Sulawesi Selatan,85112,True
+513,413,Kantor,Jalan Raya Ujungberung No. 906,Makassar,Sulawesi Selatan,16659,False
+514,414,Rumah,Jl. Pasirkoja No. 241,Makassar,Sulawesi Selatan,78845,True
+515,415,Rumah,Gang H.J Maemunah No. 792,Jakarta Barat,DKI Jakarta,02052,True
+516,416,Rumah,Jalan Ronggowarsito No. 48,Bandung,Jawa Barat,57502,True
+517,417,Rumah,Jalan Cihampelas No. 953,Makassar,Sulawesi Selatan,84377,True
+518,418,Rumah,Jalan Astana Anyar No. 030,Denpasar,Bali,00191,True
+519,418,Kantor,Jl. Wonoayu No. 00,Denpasar,Bali,28856,False
+520,419,Rumah,Gg. Ronggowarsito No. 79,Jakarta Selatan,DKI Jakarta,15901,True
+521,420,Rumah,Gang Tebet Barat Dalam No. 953,Surabaya,Jawa Timur,24482,True
+522,421,Rumah,Gg. M.T Haryono No. 882,Jakarta Selatan,DKI Jakarta,52059,True
+523,422,Rumah,Jl. Pelajar Pejuang No. 617,Surabaya,Jawa Timur,13674,True
+524,423,Rumah,Jl. Pasir Koja No. 50,Palembang,Sumatera Selatan,65080,True
+525,423,Kantor,Jl. Kebonjati No. 440,Palembang,Sumatera Selatan,21417,False
+526,424,Rumah,Gang Rawamangun No. 6,Yogyakarta,DI Yogyakarta,80718,True
+527,425,Rumah,Gang Bangka Raya No. 310,Medan,Sumatera Utara,92600,True
+528,426,Rumah,Gg. Siliwangi No. 8,Jakarta Selatan,DKI Jakarta,55186,True
+529,427,Rumah,Jalan Cikutra Timur No. 744,Semarang,Jawa Tengah,90624,True
+530,428,Rumah,Gg. Kapten Muslihat No. 82,Bekasi,Jawa Barat,77972,True
+531,429,Rumah,Jalan Moch. Toha No. 752,Makassar,Sulawesi Selatan,89190,True
+532,429,Kantor,Gang Kebonjati No. 99,Makassar,Sulawesi Selatan,44585,False
+533,430,Rumah,Jalan Waringin No. 06,Bandung,Jawa Barat,73389,True
+534,431,Rumah,Jalan Joyoboyo No. 7,Medan,Sumatera Utara,98279,True
+535,432,Rumah,Jalan Astana Anyar No. 658,Jakarta Selatan,DKI Jakarta,61224,True
+536,433,Rumah,Jalan Rawamangun No. 15,Surabaya,Jawa Timur,64536,True
+537,434,Rumah,Jalan Rawamangun No. 8,Yogyakarta,DI Yogyakarta,51510,True
+538,435,Rumah,Gg. Jend. A. Yani No. 16,Palembang,Sumatera Selatan,18911,True
+539,435,Kantor,Jalan Soekarno Hatta No. 8,Palembang,Sumatera Selatan,92847,False
+540,436,Rumah,Gg. M.T Haryono No. 710,Jakarta Selatan,DKI Jakarta,71823,True
+541,437,Rumah,Gg. BKR No. 81,Makassar,Sulawesi Selatan,46023,True
+542,438,Rumah,Jalan Soekarno Hatta No. 669,Jakarta Selatan,DKI Jakarta,39083,True
+543,439,Rumah,Gang Yos Sudarso No. 9,Bekasi,Jawa Barat,84487,True
+544,440,Rumah,Jl. Joyoboyo No. 7,Surabaya,Jawa Timur,23116,True
+545,441,Rumah,Jl. Yos Sudarso No. 68,Bekasi,Jawa Barat,97434,True
+546,442,Rumah,Gang Sukabumi No. 96,Makassar,Sulawesi Selatan,67212,True
+547,443,Rumah,Gang Dr. Djunjunan No. 07,Bekasi,Jawa Barat,92626,True
+548,444,Rumah,Gang Bangka Raya No. 30,Bandung,Jawa Barat,51569,True
+549,444,Kantor,Gang Sukajadi No. 91,Bandung,Jawa Barat,14221,False
+550,445,Rumah,Jalan Kapten Muslihat No. 75,Semarang,Jawa Tengah,31788,True
+551,445,Kantor,Gg. M.H Thamrin No. 6,Semarang,Jawa Tengah,97299,False
+552,446,Rumah,Gg. Ir. H. Djuanda No. 11,Malang,Jawa Timur,06947,True
+553,447,Rumah,Gg. Siliwangi No. 52,Bekasi,Jawa Barat,34885,True
+554,448,Rumah,Jl. Rumah Sakit No. 8,Jakarta Barat,DKI Jakarta,48353,True
+555,448,Kantor,Jl. Kiaracondong No. 5,Jakarta Barat,DKI Jakarta,06593,False
+556,449,Rumah,Jl. Sukajadi No. 7,Bandung,Jawa Barat,98708,True
+557,450,Rumah,Jalan Ir. H. Djuanda No. 9,Palembang,Sumatera Selatan,47740,True
+558,451,Rumah,Jalan Gedebage Selatan No. 131,Medan,Sumatera Utara,99780,True
+559,452,Rumah,Jl. Kebonjati No. 75,Medan,Sumatera Utara,49855,True
+560,452,Kantor,Jl. Rajawali Barat No. 2,Medan,Sumatera Utara,17065,False
+561,453,Rumah,Gang Kutai No. 5,Bandung,Jawa Barat,38606,True
+562,453,Kantor,Gang M.T Haryono No. 255,Bandung,Jawa Barat,87805,False
+563,454,Rumah,Jalan Cempaka No. 10,Yogyakarta,DI Yogyakarta,85853,True
+564,455,Rumah,Gg. Setiabudhi No. 7,Semarang,Jawa Tengah,20042,True
+565,455,Kantor,Gg. Moch. Toha No. 68,Semarang,Jawa Tengah,57732,False
+566,456,Rumah,Gang Ahmad Yani No. 501,Bekasi,Jawa Barat,03708,True
+567,457,Rumah,Gang Bangka Raya No. 012,Medan,Sumatera Utara,45468,True
+568,458,Rumah,Jl. Jamika No. 58,Makassar,Sulawesi Selatan,10905,True
+569,459,Rumah,Jl. Setiabudhi No. 00,Semarang,Jawa Tengah,56598,True
+570,460,Rumah,Jalan Yos Sudarso No. 1,Palembang,Sumatera Selatan,52464,True
+571,460,Kantor,Gang Laswi No. 00,Palembang,Sumatera Selatan,93406,False
+572,461,Rumah,Jl. Ir. H. Djuanda No. 1,Denpasar,Bali,26822,True
+573,462,Rumah,Gang Rajawali Timur No. 0,Semarang,Jawa Tengah,91210,True
+574,463,Rumah,Gg. Gegerkalong Hilir No. 6,Yogyakarta,DI Yogyakarta,35972,True
+575,464,Rumah,Gang Sukajadi No. 1,Jakarta Barat,DKI Jakarta,50889,True
+576,465,Rumah,Jl. Lembong No. 84,Bandung,Jawa Barat,97088,True
+577,465,Kantor,Gg. Ronggowarsito No. 86,Bandung,Jawa Barat,81492,False
+578,466,Rumah,Jalan Laswi No. 44,Yogyakarta,DI Yogyakarta,14456,True
+579,467,Rumah,Jalan Waringin No. 6,Jakarta Selatan,DKI Jakarta,33752,True
+580,468,Rumah,Gang Surapati No. 2,Jakarta Barat,DKI Jakarta,64781,True
+581,469,Rumah,Jl. Kutai No. 80,Makassar,Sulawesi Selatan,51668,True
+582,470,Rumah,Jalan M.H Thamrin No. 80,Jakarta Barat,DKI Jakarta,79558,True
+583,471,Rumah,Gg. Sukabumi No. 85,Semarang,Jawa Tengah,21884,True
+584,472,Rumah,Jalan Ir. H. Djuanda No. 34,Bekasi,Jawa Barat,06246,True
+585,472,Kantor,Jl. Lembong No. 95,Bekasi,Jawa Barat,42695,False
+586,473,Rumah,Jalan Jend. A. Yani No. 46,Bekasi,Jawa Barat,99328,True
+587,474,Rumah,Jl. Rungkut Industri No. 6,Jakarta Selatan,DKI Jakarta,13079,True
+588,475,Rumah,Jl. Raya Ujungberung No. 7,Makassar,Sulawesi Selatan,57588,True
+589,476,Rumah,Jl. Ronggowarsito No. 6,Jakarta Selatan,DKI Jakarta,99570,True
+590,477,Rumah,Gg. Laswi No. 458,Palembang,Sumatera Selatan,51096,True
+591,478,Rumah,Gang Pelajar Pejuang No. 628,Malang,Jawa Timur,83231,True
+592,479,Rumah,Gg. Monginsidi No. 5,Jakarta Selatan,DKI Jakarta,67887,True
+593,480,Rumah,Jl. Cihampelas No. 0,Semarang,Jawa Tengah,70345,True
+594,481,Rumah,Jl. Lembong No. 13,Malang,Jawa Timur,07782,True
+595,482,Rumah,Jl. Cihampelas No. 452,Surabaya,Jawa Timur,04572,True
+596,483,Rumah,Gang Monginsidi No. 28,Malang,Jawa Timur,71858,True
+597,484,Rumah,Gg. Indragiri No. 6,Medan,Sumatera Utara,63844,True
+598,485,Rumah,Jalan Cikutra Barat No. 8,Malang,Jawa Timur,41457,True
+599,485,Kantor,Jl. Rumah Sakit No. 4,Malang,Jawa Timur,43690,False
+600,486,Rumah,Jalan Cihampelas No. 72,Medan,Sumatera Utara,18460,True
+601,487,Rumah,Jl. Astana Anyar No. 505,Bekasi,Jawa Barat,78069,True
+602,488,Rumah,Gang Abdul Muis No. 155,Jakarta Barat,DKI Jakarta,71931,True
+603,489,Rumah,Gang Ciumbuleuit No. 3,Denpasar,Bali,57801,True
+604,489,Kantor,Jalan Suniaraja No. 1,Denpasar,Bali,25083,False
+605,490,Rumah,Gg. Laswi No. 1,Medan,Sumatera Utara,45352,True
+606,490,Kantor,Jl. Cikutra Barat No. 502,Medan,Sumatera Utara,77115,False
+607,491,Rumah,Jl. Jend. Sudirman No. 3,Yogyakarta,DI Yogyakarta,49786,True
+608,492,Rumah,Jl. Suryakencana No. 18,Palembang,Sumatera Selatan,27770,True
+609,493,Rumah,Gang Lembong No. 05,Denpasar,Bali,80820,True
+610,494,Rumah,Gang Kapten Muslihat No. 486,Surabaya,Jawa Timur,51945,True
+611,494,Kantor,Jl. Rajawali Barat No. 19,Surabaya,Jawa Timur,48001,False
+612,495,Rumah,Jalan Veteran No. 16,Malang,Jawa Timur,13856,True
+613,495,Kantor,Gg. Veteran No. 363,Malang,Jawa Timur,65378,False
+614,496,Rumah,Gang Raya Ujungberung No. 083,Denpasar,Bali,71222,True
+615,496,Kantor,Gang Jamika No. 023,Denpasar,Bali,96558,False
+616,497,Rumah,Jalan Rawamangun No. 787,Jakarta Barat,DKI Jakarta,90475,True
+617,498,Rumah,Gang Kiaracondong No. 7,Malang,Jawa Timur,06806,True
+618,499,Rumah,Jl. Kebonjati No. 72,Palembang,Sumatera Selatan,73217,True
+619,500,Rumah,Gg. Cikapayang No. 4,Bandung,Jawa Barat,55247,True
+620,501,Rumah,Gang Antapani Lama No. 52,Jakarta Selatan,DKI Jakarta,03653,True
+621,502,Rumah,Gang Moch. Ramdan No. 248,Bekasi,Jawa Barat,26540,True
+622,502,Kantor,Gang Astana Anyar No. 510,Bekasi,Jawa Barat,97619,False
+623,503,Rumah,Gg. Yos Sudarso No. 3,Semarang,Jawa Tengah,89766,True
+624,504,Rumah,Jl. Cihampelas No. 849,Yogyakarta,DI Yogyakarta,58228,True
+625,504,Kantor,Jl. Abdul Muis No. 0,Yogyakarta,DI Yogyakarta,35713,False
+626,505,Rumah,Gang Ir. H. Djuanda No. 10,Bekasi,Jawa Barat,32232,True
+627,506,Rumah,Gg. Abdul Muis No. 88,Denpasar,Bali,07333,True
+628,507,Rumah,Jalan Ir. H. Djuanda No. 5,Medan,Sumatera Utara,80152,True
+629,508,Rumah,Gg. Pacuan Kuda No. 465,Jakarta Selatan,DKI Jakarta,87916,True
+630,509,Rumah,Jalan Rungkut Industri No. 433,Semarang,Jawa Tengah,54436,True
+631,509,Kantor,Jalan Setiabudhi No. 955,Semarang,Jawa Tengah,02183,False
+632,510,Rumah,Jl. Tubagus Ismail No. 38,Makassar,Sulawesi Selatan,94913,True
+633,511,Rumah,Jalan PHH. Mustofa No. 163,Semarang,Jawa Tengah,50654,True
+634,512,Rumah,Jl. Abdul Muis No. 94,Makassar,Sulawesi Selatan,26391,True
+635,512,Kantor,Jl. Ahmad Dahlan No. 013,Makassar,Sulawesi Selatan,92465,False
+636,513,Rumah,Jalan Gegerkalong Hilir No. 2,Bekasi,Jawa Barat,53180,True
+637,513,Kantor,Gang Laswi No. 8,Bekasi,Jawa Barat,99818,False
+638,514,Rumah,Gg. Laswi No. 4,Jakarta Barat,DKI Jakarta,65128,True
+639,515,Rumah,Jalan Laswi No. 598,Semarang,Jawa Tengah,78055,True
+640,516,Rumah,Gg. S. Parman No. 79,Makassar,Sulawesi Selatan,64561,True
+641,517,Rumah,Jalan Lembong No. 38,Yogyakarta,DI Yogyakarta,98758,True
+642,518,Rumah,Gg. M.T Haryono No. 1,Semarang,Jawa Tengah,89512,True
+643,518,Kantor,Gang HOS. Cokroaminoto No. 8,Semarang,Jawa Tengah,41147,False
+644,519,Rumah,Gg. Ir. H. Djuanda No. 708,Denpasar,Bali,38370,True
+645,520,Rumah,Jl. Gedebage Selatan No. 4,Palembang,Sumatera Selatan,29159,True
+646,520,Kantor,Gang S. Parman No. 80,Palembang,Sumatera Selatan,47207,False
+647,521,Rumah,Jalan Rungkut Industri No. 1,Bandung,Jawa Barat,68898,True
+648,522,Rumah,Gg. Medokan Ayu No. 04,Bandung,Jawa Barat,30538,True
+649,523,Rumah,Jl. Suryakencana No. 76,Surabaya,Jawa Timur,67316,True
+650,524,Rumah,Jl. Joyoboyo No. 22,Malang,Jawa Timur,18060,True
+651,525,Rumah,Jl. M.H Thamrin No. 17,Jakarta Selatan,DKI Jakarta,06708,True
+652,526,Rumah,Jl. Cikutra Timur No. 725,Surabaya,Jawa Timur,78480,True
+653,526,Kantor,Gg. Yos Sudarso No. 336,Surabaya,Jawa Timur,18328,False
+654,527,Rumah,Jl. M.T Haryono No. 49,Jakarta Selatan,DKI Jakarta,42535,True
+655,528,Rumah,Gg. Abdul Muis No. 98,Yogyakarta,DI Yogyakarta,45088,True
+656,528,Kantor,Jalan Pasir Koja No. 06,Yogyakarta,DI Yogyakarta,25505,False
+657,529,Rumah,Jalan Soekarno Hatta No. 39,Yogyakarta,DI Yogyakarta,27541,True
+658,530,Rumah,Gg. S. Parman No. 21,Yogyakarta,DI Yogyakarta,30791,True
+659,530,Kantor,Gang Kiaracondong No. 840,Yogyakarta,DI Yogyakarta,65667,False
+660,531,Rumah,Jalan Ahmad Dahlan No. 40,Jakarta Barat,DKI Jakarta,79706,True
+661,531,Kantor,Gg. Stasiun Wonokromo No. 9,Jakarta Barat,DKI Jakarta,84910,False
+662,532,Rumah,Gg. K.H. Wahid Hasyim No. 416,Yogyakarta,DI Yogyakarta,73592,True
+663,533,Rumah,Gg. Sukabumi No. 8,Jakarta Barat,DKI Jakarta,90282,True
+664,534,Rumah,Jl. Moch. Ramdan No. 0,Malang,Jawa Timur,57866,True
+665,534,Kantor,Gang Kutisari Selatan No. 341,Malang,Jawa Timur,65273,False
+666,535,Rumah,Gang Lembong No. 05,Jakarta Selatan,DKI Jakarta,87000,True
+667,535,Kantor,Gg. Pasteur No. 2,Jakarta Selatan,DKI Jakarta,47789,False
+668,536,Rumah,Jl. Cikutra Timur No. 606,Yogyakarta,DI Yogyakarta,08737,True
+669,537,Rumah,Gg. Gegerkalong Hilir No. 4,Medan,Sumatera Utara,72280,True
+670,537,Kantor,Jl. Ciwastra No. 957,Medan,Sumatera Utara,15568,False
+671,538,Rumah,Jl. Cikutra Barat No. 9,Yogyakarta,DI Yogyakarta,82622,True
+672,538,Kantor,Gang Erlangga No. 11,Yogyakarta,DI Yogyakarta,92294,False
+673,539,Rumah,Gang Cihampelas No. 0,Denpasar,Bali,97082,True
+674,540,Rumah,Jalan Jakarta No. 6,Makassar,Sulawesi Selatan,05029,True
+675,541,Rumah,Gg. M.H Thamrin No. 164,Bekasi,Jawa Barat,23711,True
+676,541,Kantor,Jl. Medokan Ayu No. 18,Bekasi,Jawa Barat,85932,False
+677,542,Rumah,Gang Ahmad Yani No. 40,Surabaya,Jawa Timur,00661,True
+678,543,Rumah,Jalan Abdul Muis No. 5,Surabaya,Jawa Timur,79614,True
+679,544,Rumah,Jalan Lembong No. 2,Medan,Sumatera Utara,63172,True
+680,545,Rumah,Jalan Waringin No. 022,Surabaya,Jawa Timur,84314,True
+681,546,Rumah,Gg. Soekarno Hatta No. 3,Denpasar,Bali,54300,True
+682,547,Rumah,Jalan Suniaraja No. 731,Jakarta Selatan,DKI Jakarta,09267,True
+683,548,Rumah,Jalan Veteran No. 5,Denpasar,Bali,54775,True
+684,549,Rumah,Jl. Dr. Djunjunan No. 2,Bandung,Jawa Barat,56904,True
+685,550,Rumah,Gg. Pasirkoja No. 579,Makassar,Sulawesi Selatan,47934,True
+686,551,Rumah,Gang Indragiri No. 725,Denpasar,Bali,34035,True
+687,552,Rumah,Gg. Pacuan Kuda No. 95,Jakarta Barat,DKI Jakarta,67396,True
+688,553,Rumah,Jalan Pasir Koja No. 717,Jakarta Barat,DKI Jakarta,57964,True
+689,553,Kantor,Gang Kapten Muslihat No. 289,Jakarta Barat,DKI Jakarta,87300,False
+690,554,Rumah,Gg. Soekarno Hatta No. 00,Palembang,Sumatera Selatan,38283,True
+691,555,Rumah,Jl. R.E Martadinata No. 8,Bandung,Jawa Barat,70333,True
+692,555,Kantor,Gang Moch. Ramdan No. 2,Bandung,Jawa Barat,45404,False
+693,556,Rumah,Gg. Rawamangun No. 9,Medan,Sumatera Utara,15906,True
+694,557,Rumah,Jl. Yos Sudarso No. 7,Medan,Sumatera Utara,10205,True
+695,558,Rumah,Jalan W.R. Supratman No. 6,Palembang,Sumatera Selatan,45456,True
+696,559,Rumah,Gg. Ir. H. Djuanda No. 532,Makassar,Sulawesi Selatan,85053,True
+697,559,Kantor,Gg. Cikutra Timur No. 2,Makassar,Sulawesi Selatan,94451,False
+698,560,Rumah,Gg. Asia Afrika No. 646,Jakarta Barat,DKI Jakarta,59993,True
+699,561,Rumah,Jl. Rajiman No. 6,Semarang,Jawa Tengah,29410,True
+700,561,Kantor,Jl. Erlangga No. 40,Semarang,Jawa Tengah,34883,False
+701,562,Rumah,Jalan Cempaka No. 5,Bekasi,Jawa Barat,81225,True
+702,563,Rumah,Jl. Ciwastra No. 6,Jakarta Barat,DKI Jakarta,21204,True
+703,564,Rumah,Gang Jayawijaya No. 63,Semarang,Jawa Tengah,19493,True
+704,565,Rumah,Jl. Jend. Sudirman No. 359,Denpasar,Bali,05574,True
+705,566,Rumah,Jl. Moch. Toha No. 8,Bekasi,Jawa Barat,48318,True
+706,567,Rumah,Jl. Rajawali Barat No. 97,Medan,Sumatera Utara,16915,True
+707,567,Kantor,Gang Bangka Raya No. 4,Medan,Sumatera Utara,83263,False
+708,568,Rumah,Gg. Astana Anyar No. 4,Denpasar,Bali,31045,True
+709,569,Rumah,Jalan Soekarno Hatta No. 87,Semarang,Jawa Tengah,93738,True
+710,570,Rumah,Gang Jend. A. Yani No. 14,Malang,Jawa Timur,03459,True
+711,571,Rumah,Gang Otto Iskandardinata No. 35,Makassar,Sulawesi Selatan,08198,True
+712,572,Rumah,Gg. Waringin No. 7,Bandung,Jawa Barat,02403,True
+713,573,Rumah,Gg. S. Parman No. 6,Jakarta Barat,DKI Jakarta,26869,True
+714,574,Rumah,Jalan Jend. Sudirman No. 965,Semarang,Jawa Tengah,21987,True
+715,575,Rumah,Jl. Tubagus Ismail No. 0,Surabaya,Jawa Timur,51909,True
+716,576,Rumah,Jl. Ir. H. Djuanda No. 3,Bandung,Jawa Barat,66650,True
+717,577,Rumah,Jl. Cihampelas No. 283,Jakarta Selatan,DKI Jakarta,04649,True
+718,577,Kantor,Gang Suryakencana No. 72,Jakarta Selatan,DKI Jakarta,32464,False
+719,578,Rumah,Gang Pasir Koja No. 06,Bandung,Jawa Barat,73782,True
+720,579,Rumah,Gg. W.R. Supratman No. 61,Jakarta Barat,DKI Jakarta,84649,True
+721,579,Kantor,Jalan Gardujati No. 4,Jakarta Barat,DKI Jakarta,72141,False
+722,580,Rumah,Jl. Sadang Serang No. 043,Bekasi,Jawa Barat,32252,True
+723,581,Rumah,Gang Rawamangun No. 133,Medan,Sumatera Utara,89463,True
+724,582,Rumah,Jalan Moch. Ramdan No. 7,Denpasar,Bali,17562,True
+725,583,Rumah,Gang Jamika No. 511,Bekasi,Jawa Barat,95722,True
+726,584,Rumah,Gang Ronggowarsito No. 86,Bandung,Jawa Barat,69467,True
+727,584,Kantor,Jl. Kebonjati No. 01,Bandung,Jawa Barat,19140,False
+728,585,Rumah,Gang Stasiun Wonokromo No. 945,Surabaya,Jawa Timur,64439,True
+729,586,Rumah,Gang W.R. Supratman No. 494,Jakarta Selatan,DKI Jakarta,69689,True
+730,587,Rumah,Jl. Astana Anyar No. 86,Yogyakarta,DI Yogyakarta,07266,True
+731,587,Kantor,Gg. H.J Maemunah No. 1,Yogyakarta,DI Yogyakarta,85234,False
+732,588,Rumah,Jalan Jayawijaya No. 1,Bekasi,Jawa Barat,08305,True
+733,589,Rumah,Jalan Tebet Barat Dalam No. 70,Bekasi,Jawa Barat,02314,True
+734,590,Rumah,Jl. PHH. Mustofa No. 270,Jakarta Barat,DKI Jakarta,53704,True
+735,591,Rumah,Gg. Rumah Sakit No. 9,Surabaya,Jawa Timur,74675,True
+736,592,Rumah,Jl. Sukajadi No. 0,Malang,Jawa Timur,10253,True
+737,593,Rumah,Gg. M.T Haryono No. 172,Semarang,Jawa Tengah,89409,True
+738,594,Rumah,Jalan Ahmad Yani No. 9,Makassar,Sulawesi Selatan,30239,True
+739,595,Rumah,Gg. Moch. Ramdan No. 53,Medan,Sumatera Utara,61207,True
+740,596,Rumah,Gg. Soekarno Hatta No. 4,Jakarta Selatan,DKI Jakarta,19352,True
+741,597,Rumah,Jalan Ciumbuleuit No. 277,Makassar,Sulawesi Selatan,78208,True
+742,598,Rumah,Jalan Peta No. 595,Jakarta Barat,DKI Jakarta,74743,True
+743,599,Rumah,Jalan Kutai No. 5,Bekasi,Jawa Barat,68740,True
+744,600,Rumah,Jalan Ahmad Dahlan No. 757,Jakarta Selatan,DKI Jakarta,75461,True

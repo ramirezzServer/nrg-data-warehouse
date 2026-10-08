@@ -1,0 +1,13 @@
+category_id,parent_category_id,category_name
+1,,Elektronik
+2,1,Smartphone
+3,1,Laptop
+4,1,Aksesoris Elektronik
+5,,Furnitur
+6,5,Meja
+7,5,Kursi
+8,5,Lemari
+9,,Pakaian
+10,9,Atasan
+11,9,Bawahan
+12,9,Sepatu

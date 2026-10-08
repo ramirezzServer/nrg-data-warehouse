@@ -1,0 +1,2338 @@
+{
+  "page": 1,
+  "pulled_at": "2026-09-19T13:20:59.499764",
+  "records": [
+    {
+      "invoice": "INV/20220818/MPB/9027",
+      "paid_at": "2022-08-18T21:39:16Z",
+      "channel": "marketplace_b",
+      "buyer": {
+        "hash": "8ef52634",
+        "city": "Medan"
+      },
+      "items": [
+        {
+          "seller_sku": "SAMSUN1005",
+          "qty": 1,
+          "price": 1078920,
+          "voucher": 107892
+        },
+        {
+          "seller_sku": "SAMSUN1019",
+          "qty": 2,
+          "price": 1590630,
+          "voucher": 0
+        }
+      ],
+      "fees": {
+        "commission": 213009,
+        "service": 23800
+      },
+      "diambil_pada": "2022-08-18T23:07:16"
+    },
+    {
+      "invoice": "INV/20220131/MPB/9610",
+      "paid_at": "2022-01-31T16:34:55Z",
+      "channel": "marketplace_b",
+      "buyer": {
+        "hash": "c3af247c",
+        "city": "Bekasi"
+      },
+      "items": [
+        {
+          "seller_sku": "INFORM1015",
+          "qty": 1,
+          "price": 199800,
+          "voucher": 0
+        }
+      ],
+      "fees": {
+        "commission": 9990,
+        "service": 3499
+      },
+      "diambil_pada": "2022-01-31T17:59:55"
+    },
+    {
+      "invoice": "INV/20220131/MPB/9881",
+      "paid_at": "2022-01-31T11:52:53Z",
+      "channel": "marketplace_b",
+      "buyer": {
+        "hash": "85e659d7",
+        "city": "Malang"
+      },
+      "items": [
+        {
+          "seller_sku": "COMPAS1010",
+          "qty": 1,
+          "price": 16314780,
+          "voucher": 815739
+        }
+      ],
+      "fees": {
+        "commission": 815739,
+        "service": 84073
+      },
+      "diambil_pada": "2022-01-31T12:33:53"
+    },
+    {
+      "invoice": "INV/20230330/MPB/10133",
+      "paid_at": "2023-03-30T09:26:17Z",
+      "channel": "marketplace_b",
+      "buyer": {
+        "hash": "995d9428",
+        "city": "Jakarta Selatan"
+      },
+      "items": [
+        {
+          "seller_sku": "INFORM1014",
+          "qty": 1,
+          "price": 10900200,
+          "voucher": 0
+        },
+        {
+          "seller_sku": "LOGITE1006",
+          "qty": 1,
+          "price": 28340520,
+          "voucher": 2834052
+        }
+      ],
+      "fees": {
+        "commission": 1962036,
+        "service": 198703
+      },
+      "diambil_pada": "2023-03-30T10:50:17"
+    },
+    {
+      "invoice": "INV/20220810/MPL/9970",
+      "paid_at": "2022-08-10T14:29:01Z",
+      "channel": "marketplace_a",
+      "buyer": {
+        "hash": "410d6019",
+        "city": "Yogyakarta"
+      },
+      "items": [
+        {
+          "seller_sku": "COMPAS1035",
+          "qty": 3,
+          "price": 17612370,
+          "voucher": 5283711
+        }
+      ],
+      "fees": {
+        "commission": 2641855,
+        "service": 266685
+      },
+      "diambil_pada": "2022-08-10T15:32:01"
+    },
+    {
+      "invoice": "INV/20220203/MPB/10188",
+      "paid_at": "2022-02-03T06:46:46Z",
+      "channel": "marketplace_b",
+      "buyer": {
+        "hash": "a0b5b400",
+        "city": "Malang"
+      },
+      "items": [
+        {
+          "seller_sku": "ADIDAS1009",
+          "qty": 2,
+          "price": 975690,
+          "voucher": 0
+        }
+      ],
+      "fees": {
+        "commission": 97569,
+        "service": 12256
+      },
+      "diambil_pada": "2022-02-03T07:19:46"
+    },
+    {
+      "invoice": "INV/20220527/MPL/9804",
+      "paid_at": "2022-05-27T23:29:39Z",
+      "channel": "marketplace_a",
+      "buyer": {
+        "hash": "0715d192",
+        "city": "Medan"
+      },
+      "items": [
+        {
+          "seller_sku": "INFORM1026",
+          "qty": 1,
+          "price": 429570,
+          "voucher": 0
+        },
+        {
+          "seller_sku": "APPLEL1050",
+          "qty": 1,
+          "price": 236430,
+          "voucher": 0
+        }
+      ],
+      "fees": {
+        "commission": 33300,
+        "service": 5830
+      },
+      "diambil_pada": "2022-05-28T00:42:39"
+    },
+    {
+      "invoice": "INV/20220611/MPL/10244",
+      "paid_at": "2022-06-11T17:09:07Z",
+      "channel": "marketplace_a",
+      "buyer": {
+        "hash": "757ccdcd",
+        "city": "Makassar"
+      },
+      "items": [
+        {
+          "seller_sku": "ERIGOA1004",
+          "qty": 2,
+          "price": 6301470,
+          "voucher": 630147
+        }
+      ],
+      "fees": {
+        "commission": 630147,
+        "service": 65514
+      },
+      "diambil_pada": "2022-06-11T18:31:07"
+    },
+    {
+      "invoice": "INV/20220522/MPL/9997",
+      "paid_at": "2022-05-22T21:56:12Z",
+      "channel": "marketplace_a",
+      "buyer": {
+        "hash": "96498cdd",
+        "city": "Palembang"
+      },
+      "items": [
+        {
+          "seller_sku": "ADIDAS1013",
+          "qty": 1,
+          "price": 14182470,
+          "voucher": 709123
+        },
+        {
+          "seller_sku": "OPPOSM1022",
+          "qty": 1,
+          "price": 451770,
+          "voucher": 45177
+        }
+      ],
+      "fees": {
+        "commission": 731712,
+        "service": 75671
+      },
+      "diambil_pada": "2022-05-22T22:57:12"
+    },
+    {
+      "invoice": "INV/20230325/MPL/9883",
+      "paid_at": "2023-03-25T20:06:53Z",
+      "channel": "marketplace_a",
+      "buyer": {
+        "hash": "e749b1ff",
+        "city": "Yogyakarta"
+      },
+      "items": [
+        {
+          "seller_sku": "ERIGOA1004",
+          "qty": 1,
+          "price": 6301470,
+          "voucher": 0
+        }
+      ],
+      "fees": {
+        "commission": 315073,
+        "service": 34007
+      },
+      "diambil_pada": "2023-03-25T20:36:53"
+    },
+    {
+      "invoice": "INV/20220626/MPB/9505",
+      "paid_at": "2022-06-26T17:35:00Z",
+      "channel": "marketplace_b",
+      "buyer": {
+        "hash": "fa21e0ba",
+        "city": "Semarang"
+      },
+      "items": [
+        {
+          "seller_sku": "ANKERA1036",
+          "qty": 3,
+          "price": 449550,
+          "voucher": 0
+        }
+      ],
+      "fees": {
+        "commission": 67432,
+        "service": 9243
+      },
+      "diambil_pada": "2022-06-26T18:51:00"
+    },
+    {
+      "invoice": "INV/20220806/MPB/9660",
+      "paid_at": "2022-08-06T19:12:33Z",
+      "channel": "marketplace_b",
+      "buyer": {
+        "hash": "bd1aa1ef",
+        "city": "Jakarta Selatan"
+      },
+      "items": [
+        {
+          "seller_sku": "APPLEL1031",
+          "qty": 1,
+          "price": 932400,
+          "voucher": 93240
+        }
+      ],
+      "fees": {
+        "commission": 46620,
+        "service": 7162
+      },
+      "diambil_pada": "2022-08-06T20:16:33"
+    },
+    {
+      "invoice": "INV/20221208/MPB/9723",
+      "paid_at": "2022-12-08T16:24:50Z",
+      "channel": "marketplace_b",
+      "buyer": {
+        "hash": "205ed2e7",
+        "city": "Denpasar"
+      },
+      "items": [
+        {
+          "seller_sku": "ACERLA1011",
+          "qty": 1,
+          "price": 1597290,
+          "voucher": 159729
+        }
+      ],
+      "fees": {
+        "commission": 79864,
+        "service": 10486
+      },
+      "diambil_pada": "2022-12-08T16:39:50"
+    },
+    {
+      "invoice": "INV/20221117/MPL/9683",
+      "paid_at": "2022-11-17T18:30:30Z",
+      "channel": "marketplace_a",
+      "buyer": {
+        "hash": "f4e7adc1",
+        "city": "Surabaya"
+      },
+      "items": [
+        {
+          "seller_sku": "INFORM1015",
+          "qty": 1,
+          "price": 199800,
+          "voucher": 9990
+        }
+      ],
+      "fees": {
+        "commission": 9990,
+        "service": 3499
+      },
+      "diambil_pada": "2022-11-17T19:38:30"
+    },
+    {
+      "invoice": "INV/20230208/MPB/9243",
+      "paid_at": "2023-02-08T23:05:04Z",
+      "channel": "marketplace_b",
+      "buyer": {
+        "hash": "7a6a979b",
+        "city": "Jakarta Barat"
+      },
+      "items": [
+        {
+          "seller_sku": "OPPOSM1020",
+          "qty": 1,
+          "price": 10264170,
+          "voucher": 0
+        }
+      ],
+      "fees": {
+        "commission": 513208,
+        "service": 53820
+      },
+      "diambil_pada": "2023-02-09T00:06:04"
+    },
+    {
+      "invoice": "INV/20221125/MPL/9941",
+      "paid_at": "2022-11-25T09:02:26Z",
+      "channel": "marketplace_a",
+      "buyer": {
+        "hash": "8b64bc62",
+        "city": "Semarang"
+      },
+      "items": [
+        {
+          "seller_sku": "ERIGOA1053",
+          "qty": 1,
+          "price": 17362620,
+          "voucher": 1736262
+        }
+      ],
+      "fees": {
+        "commission": 868131,
+        "service": 89313
+      },
+      "diambil_pada": "2022-11-25T09:17:26"
+    },
+    {
+      "invoice": "INV/20220610/MPB/9066",
+      "paid_at": "2022-06-10T02:15:57Z",
+      "channel": "marketplace_b",
+      "buyer": {
+        "hash": "6a68b7f9",
+        "city": "Jakarta Barat"
+      },
+      "items": [
+        {
+          "seller_sku": "GRAVER1046",
+          "qty": 1,
+          "price": 15631020,
+          "voucher": 0
+        }
+      ],
+      "fees": {
+        "commission": 781551,
+        "service": 80655
+      },
+      "diambil_pada": "2022-06-10T02:43:57"
+    },
+    {
+      "invoice": "INV/20220801/MPL/9738",
+      "paid_at": "2022-08-01T09:30:56Z",
+      "channel": "marketplace_a",
+      "buyer": {
+        "hash": "381a8fe5",
+        "city": "Medan"
+      },
+      "items": [
+        {
+          "seller_sku": "IKEAME1034",
+          "qty": 1,
+          "price": 25200330,
+          "voucher": 2520033
+        }
+      ],
+      "fees": {
+        "commission": 1260016,
+        "service": 128501
+      },
+      "diambil_pada": "2022-08-01T10:36:56"
+    },
+    {
+      "invoice": "INV/20220402/MPB/9546",
+      "paid_at": "2022-04-02T15:53:11Z",
+      "channel": "marketplace_b",
+      "buyer": {
+        "hash": "2ad2cc26",
+        "city": "Makassar"
+      },
+      "items": [
+        {
+          "seller_sku": "COMPAS1035",
+          "qty": 2,
+          "price": 17612370,
+          "voucher": 3522474
+        },
+        {
+          "seller_sku": "ERIGOA1053",
+          "qty": 1,
+          "price": 17362620,
+          "voucher": 868131
+        }
+      ],
+      "fees": {
+        "commission": 2629368,
+        "service": 265436
+      },
+      "diambil_pada": "2022-04-02T16:55:11"
+    },
+    {
+      "invoice": "INV/20220215/MPL/9081",
+      "paid_at": "2022-02-15T10:19:17Z",
+      "channel": "marketplace_a",
+      "buyer": {
+        "hash": "957d7cb2",
+        "city": "Jakarta Barat"
+      },
+      "items": [
+        {
+          "seller_sku": "ADIDAS1009",
+          "qty": 1,
+          "price": 975690,
+          "voucher": 0
+        }
+      ],
+      "fees": {
+        "commission": 48784,
+        "service": 7378
+      },
+      "diambil_pada": "2022-02-15T10:59:17"
+    },
+    {
+      "invoice": "INV/20220708/MPL/9790",
+      "paid_at": "2022-07-08T20:05:29Z",
+      "channel": "marketplace_a",
+      "buyer": {
+        "hash": "ee2d1892",
+        "city": "Yogyakarta"
+      },
+      "items": [
+        {
+          "seller_sku": "ERIGOA1029",
+          "qty": 1,
+          "price": 16359180,
+          "voucher": 817959
+        }
+      ],
+      "fees": {
+        "commission": 817959,
+        "service": 84295
+      },
+      "diambil_pada": "2022-07-08T21:00:29"
+    },
+    {
+      "invoice": "INV/20221127/MPL/10247",
+      "paid_at": "2022-11-27T23:29:16Z",
+      "channel": "marketplace_a",
+      "buyer": {
+        "hash": "9a614b3e",
+        "city": "Denpasar"
+      },
+      "items": [
+        {
+          "seller_sku": "HMBAWA1056",
+          "qty": 1,
+          "price": 15275820,
+          "voucher": 763791
+        }
+      ],
+      "fees": {
+        "commission": 763791,
+        "service": 78879
+      },
+      "diambil_pada": "2022-11-28T00:20:16"
+    },
+    {
+      "invoice": "INV/20221120/MPB/10438",
+      "paid_at": "2022-11-20T08:06:15Z",
+      "channel": "marketplace_b",
+      "buyer": {
+        "hash": "38f41935",
+        "city": "Makassar"
+      },
+      "items": [
+        {
+          "seller_sku": "ACERLA1011",
+          "qty": 1,
+          "price": 1597290,
+          "voucher": 79864
+        }
+      ],
+      "fees": {
+        "commission": 79864,
+        "service": 10486
+      },
+      "diambil_pada": "2022-11-20T08:26:15"
+    },
+    {
+      "invoice": "INV/20220809/MPB/9854",
+      "paid_at": "2022-08-09T12:29:25Z",
+      "channel": "marketplace_b",
+      "buyer": {
+        "hash": "24ea9112",
+        "city": "Bekasi"
+      },
+      "items": [
+        {
+          "seller_sku": "UNIQLO1054",
+          "qty": 1,
+          "price": 3919410,
+          "voucher": 195970
+        }
+      ],
+      "fees": {
+        "commission": 195970,
+        "service": 22097
+      },
+      "diambil_pada": "2022-08-09T13:53:25"
+    },
+    {
+      "invoice": "INV/20220217/MPL/9441",
+      "paid_at": "2022-02-17T11:53:34Z",
+      "channel": "marketplace_a",
+      "buyer": {
+        "hash": "e8d6d3b0",
+        "city": "Makassar"
+      },
+      "items": [
+        {
+          "seller_sku": "INFORM1026",
+          "qty": 1,
+          "price": 429570,
+          "voucher": 21478
+        }
+      ],
+      "fees": {
+        "commission": 21478,
+        "service": 4647
+      },
+      "diambil_pada": "2022-02-17T13:19:34"
+    },
+    {
+      "invoice": "INV/20220124/MPL/9707",
+      "paid_at": "2022-01-24T08:19:01Z",
+      "channel": "marketplace_a",
+      "buyer": {
+        "hash": "23a87399",
+        "city": "Palembang"
+      },
+      "items": [
+        {
+          "seller_sku": "UNIQLO1054",
+          "qty": 1,
+          "price": 3919410,
+          "voucher": 391941
+        }
+      ],
+      "fees": {
+        "commission": 195970,
+        "service": 22097
+      },
+      "diambil_pada": "2022-01-24T08:36:01"
+    },
+    {
+      "invoice": "INV/20221117/MPL/9227",
+      "paid_at": "2022-11-17T12:02:24Z",
+      "channel": "marketplace_a",
+      "buyer": {
+        "hash": "4bbd697b",
+        "city": "Jakarta Barat"
+      },
+      "items": [
+        {
+          "seller_sku": "OLYMPI1047",
+          "qty": 1,
+          "price": 1014540,
+          "voucher": 0
+        }
+      ],
+      "fees": {
+        "commission": 50727,
+        "service": 7572
+      },
+      "diambil_pada": "2022-11-17T13:12:24"
+    },
+    {
+      "invoice": "INV/20220819/MPB/10238",
+      "paid_at": "2022-08-19T19:28:13Z",
+      "channel": "marketplace_b",
+      "buyer": {
+        "hash": "5ae7b9ba",
+        "city": "Surabaya"
+      },
+      "items": [
+        {
+          "seller_sku": "HMBAWA1056",
+          "qty": 1,
+          "price": 15275820,
+          "voucher": 763791
+        },
+        {
+          "seller_sku": "ACERLA1043",
+          "qty": 2,
+          "price": 1048950,
+          "voucher": 209790
+        }
+      ],
+      "fees": {
+        "commission": 868686,
+        "service": 89368
+      },
+      "diambil_pada": "2022-08-19T19:36:13"
+    },
+    {
+      "invoice": "INV/20221130/MPB/9602",
+      "paid_at": "2022-11-30T04:03:43Z",
+      "channel": "marketplace_b",
+      "buyer": {
+        "hash": "473a6033",
+        "city": "Jakarta Barat"
+      },
+      "items": [
+        {
+          "seller_sku": "COMPAS1058",
+          "qty": 1,
+          "price": 19803510,
+          "voucher": 0
+        }
+      ],
+      "fees": {
+        "commission": 990175,
+        "service": 101517
+      },
+      "diambil_pada": "2022-11-30T04:49:43"
+    },
+    {
+      "invoice": "INV/20220928/MPL/10266",
+      "paid_at": "2022-09-28T18:41:25Z",
+      "channel": "marketplace_a",
+      "buyer": {
+        "hash": "d4927817",
+        "city": "Surabaya"
+      },
+      "items": [
+        {
+          "seller_sku": "GRAVER1037",
+          "qty": 1,
+          "price": 26605590,
+          "voucher": 1330279
+        }
+      ],
+      "fees": {
+        "commission": 1330279,
+        "service": 135527
+      },
+      "diambil_pada": "2022-09-28T19:33:25"
+    },
+    {
+      "invoice": "INV/20220116/MPB/9400",
+      "paid_at": "2022-01-16T03:10:21Z",
+      "channel": "marketplace_b",
+      "buyer": {
+        "hash": "6003cbd9",
+        "city": "Jakarta Barat"
+      },
+      "items": [
+        {
+          "seller_sku": "OLYMPI1033",
+          "qty": 2,
+          "price": 24816270,
+          "voucher": 0
+        }
+      ],
+      "fees": {
+        "commission": 2481627,
+        "service": 250662
+      },
+      "diambil_pada": "2022-01-16T04:26:21"
+    },
+    {
+      "invoice": "INV/20220610/MPB/9026",
+      "paid_at": "2022-06-10T19:47:51Z",
+      "channel": "marketplace_b",
+      "buyer": {
+        "hash": "685668c7",
+        "city": "Bandung"
+      },
+      "items": [
+        {
+          "seller_sku": "ANKERA1036",
+          "qty": 2,
+          "price": 449550,
+          "voucher": 44955
+        }
+      ],
+      "fees": {
+        "commission": 44955,
+        "service": 6995
+      },
+      "diambil_pada": "2022-06-10T21:11:51"
+    },
+    {
+      "invoice": "INV/20220929/MPL/9580",
+      "paid_at": "2022-09-29T06:59:46Z",
+      "channel": "marketplace_a",
+      "buyer": {
+        "hash": "6596b3d8",
+        "city": "Jakarta Barat"
+      },
+      "items": [
+        {
+          "seller_sku": "HMBAWA1056",
+          "qty": 3,
+          "price": 15275820,
+          "voucher": 2291373
+        }
+      ],
+      "fees": {
+        "commission": 2291373,
+        "service": 231637
+      },
+      "diambil_pada": "2022-09-29T07:14:46"
+    },
+    {
+      "invoice": "INV/20220504/MPB/9809",
+      "paid_at": "2022-05-04T00:07:37Z",
+      "channel": "marketplace_b",
+      "buyer": {
+        "hash": "c230046f",
+        "city": "Denpasar"
+      },
+      "items": [
+        {
+          "seller_sku": "HMBAWA1039",
+          "qty": 1,
+          "price": 1962480,
+          "voucher": 98124
+        }
+      ],
+      "fees": {
+        "commission": 98124,
+        "service": 12312
+      },
+      "diambil_pada": "2022-05-04T00:31:37"
+    },
+    {
+      "invoice": "INV/20221230/MPL/9481",
+      "paid_at": "2022-12-30T16:06:45Z",
+      "channel": "marketplace_a",
+      "buyer": {
+        "hash": "6b2bea81",
+        "city": "Bekasi"
+      },
+      "items": [
+        {
+          "seller_sku": "SAMSUN1005",
+          "qty": 1,
+          "price": 1078920,
+          "voucher": 0
+        }
+      ],
+      "fees": {
+        "commission": 53946,
+        "service": 7894
+      },
+      "diambil_pada": "2022-12-30T17:33:45"
+    },
+    {
+      "invoice": "INV/20220417/MPB/10080",
+      "paid_at": "2022-04-17T13:26:11Z",
+      "channel": "marketplace_b",
+      "buyer": {
+        "hash": "76c75416",
+        "city": "Palembang"
+      },
+      "items": [
+        {
+          "seller_sku": "HMATAS1001",
+          "qty": 1,
+          "price": 7282710,
+          "voucher": 364135
+        },
+        {
+          "seller_sku": "COMPAS1058",
+          "qty": 2,
+          "price": 19803510,
+          "voucher": 1980351
+        }
+      ],
+      "fees": {
+        "commission": 2344486,
+        "service": 236948
+      },
+      "diambil_pada": "2022-04-17T13:59:11"
+    },
+    {
+      "invoice": "INV/20220105/MPL/9113",
+      "paid_at": "2022-01-05T00:50:46Z",
+      "channel": "marketplace_a",
+      "buyer": {
+        "hash": "d35967c9",
+        "city": "Semarang"
+      },
+      "items": [
+        {
+          "seller_sku": "APPLEL1050",
+          "qty": 1,
+          "price": 236430,
+          "voucher": 23643
+        }
+      ],
+      "fees": {
+        "commission": 11821,
+        "service": 3682
+      },
+      "diambil_pada": "2022-01-05T01:01:46"
+    },
+    {
+      "invoice": "INV/20230225/MPB/9826",
+      "paid_at": "2023-02-25T06:56:57Z",
+      "channel": "marketplace_b",
+      "buyer": {
+        "hash": "2facc165",
+        "city": "Surabaya"
+      },
+      "items": [
+        {
+          "seller_sku": "ERIGOA1029",
+          "qty": 1,
+          "price": 16359180,
+          "voucher": 0
+        }
+      ],
+      "fees": {
+        "commission": 817959,
+        "service": 84295
+      },
+      "diambil_pada": "2023-02-25T07:32:57"
+    },
+    {
+      "invoice": "INV/20221222/MPB/9017",
+      "paid_at": "2022-12-22T00:00:19Z",
+      "channel": "marketplace_b",
+      "buyer": {
+        "hash": "6ac06c7c",
+        "city": "Semarang"
+      },
+      "items": [
+        {
+          "seller_sku": "ANKERA1036",
+          "qty": 1,
+          "price": 449550,
+          "voucher": 22477
+        }
+      ],
+      "fees": {
+        "commission": 22477,
+        "service": 4747
+      },
+      "diambil_pada": "2022-12-22T00:22:19"
+    },
+    {
+      "invoice": "INV/20221022/MPB/9306",
+      "paid_at": "2022-10-22T15:22:30Z",
+      "channel": "marketplace_b",
+      "buyer": {
+        "hash": "1bf84d93",
+        "city": "Bekasi"
+      },
+      "items": [
+        {
+          "seller_sku": "OLYMPI1033",
+          "qty": 1,
+          "price": 24816270,
+          "voucher": 0
+        }
+      ],
+      "fees": {
+        "commission": 1240813,
+        "service": 126581
+      },
+      "diambil_pada": "2022-10-22T15:55:30"
+    },
+    {
+      "invoice": "INV/20220406/MPB/9589",
+      "paid_at": "2022-04-06T21:18:17Z",
+      "channel": "marketplace_b",
+      "buyer": {
+        "hash": "3c8bc275",
+        "city": "Surabaya"
+      },
+      "items": [
+        {
+          "seller_sku": "UNIQLO1054",
+          "qty": 1,
+          "price": 3919410,
+          "voucher": 391941
+        }
+      ],
+      "fees": {
+        "commission": 195970,
+        "service": 22097
+      },
+      "diambil_pada": "2022-04-06T21:29:17"
+    },
+    {
+      "invoice": "INV/20220802/MPB/9339",
+      "paid_at": "2022-08-02T03:17:08Z",
+      "channel": "marketplace_b",
+      "buyer": {
+        "hash": "5851eb3d",
+        "city": "Bandung"
+      },
+      "items": [
+        {
+          "seller_sku": "HMBAWA1039",
+          "qty": 1,
+          "price": 1962480,
+          "voucher": 98124
+        },
+        {
+          "seller_sku": "OLYMPI1049",
+          "qty": 1,
+          "price": 29713590,
+          "voucher": 1485679
+        }
+      ],
+      "fees": {
+        "commission": 1583803,
+        "service": 160880
+      },
+      "diambil_pada": "2022-08-02T04:18:08"
+    },
+    {
+      "invoice": "INV/20220313/MPB/10374",
+      "paid_at": "2022-03-13T06:12:20Z",
+      "channel": "marketplace_b",
+      "buyer": {
+        "hash": "755e204f",
+        "city": "Semarang"
+      },
+      "items": [
+        {
+          "seller_sku": "NIKESE1052",
+          "qty": 1,
+          "price": 355200,
+          "voucher": 0
+        }
+      ],
+      "fees": {
+        "commission": 17760,
+        "service": 4276
+      },
+      "diambil_pada": "2022-03-13T06:18:20"
+    },
+    {
+      "invoice": "INV/20221020/MPB/10436",
+      "paid_at": "2022-10-20T10:25:26Z",
+      "channel": "marketplace_b",
+      "buyer": {
+        "hash": "0157de87",
+        "city": "Makassar"
+      },
+      "items": [
+        {
+          "seller_sku": "UNIQLO1055",
+          "qty": 1,
+          "price": 6739920,
+          "voucher": 0
+        }
+      ],
+      "fees": {
+        "commission": 336996,
+        "service": 36199
+      },
+      "diambil_pada": "2022-10-20T10:43:26"
+    },
+    {
+      "invoice": "INV/20220628/MPL/9771",
+      "paid_at": "2022-06-28T08:57:01Z",
+      "channel": "marketplace_a",
+      "buyer": {
+        "hash": "29327171",
+        "city": "Denpasar"
+      },
+      "items": [
+        {
+          "seller_sku": "INFORM1015",
+          "qty": 2,
+          "price": 199800,
+          "voucher": 0
+        },
+        {
+          "seller_sku": "HMBAWA1039",
+          "qty": 1,
+          "price": 1962480,
+          "voucher": 196248
+        }
+      ],
+      "fees": {
+        "commission": 118104,
+        "service": 14310
+      },
+      "diambil_pada": "2022-06-28T09:53:01"
+    },
+    {
+      "invoice": "INV/20221211/MPB/9517",
+      "paid_at": "2022-12-11T02:33:59Z",
+      "channel": "marketplace_b",
+      "buyer": {
+        "hash": "3bb2c689",
+        "city": "Semarang"
+      },
+      "items": [
+        {
+          "seller_sku": "APPLES1030",
+          "qty": 3,
+          "price": 13992660,
+          "voucher": 0
+        }
+      ],
+      "fees": {
+        "commission": 2098899,
+        "service": 212389
+      },
+      "diambil_pada": "2022-12-11T03:56:59"
+    },
+    {
+      "invoice": "INV/20220413/MPL/9709",
+      "paid_at": "2022-04-13T13:21:55Z",
+      "channel": "marketplace_a",
+      "buyer": {
+        "hash": "51ad9bcb",
+        "city": "Bekasi"
+      },
+      "items": [
+        {
+          "seller_sku": "APPLEL1031",
+          "qty": 3,
+          "price": 932400,
+          "voucher": 0
+        }
+      ],
+      "fees": {
+        "commission": 139860,
+        "service": 16486
+      },
+      "diambil_pada": "2022-04-13T14:38:55"
+    },
+    {
+      "invoice": "INV/20230102/MPL/9004",
+      "paid_at": "2023-01-02T11:38:19Z",
+      "channel": "marketplace_a",
+      "buyer": {
+        "hash": "a0692694",
+        "city": "Bekasi"
+      },
+      "items": [
+        {
+          "seller_sku": "UNIQLO1024",
+          "qty": 1,
+          "price": 7155060,
+          "voucher": 357753
+        }
+      ],
+      "fees": {
+        "commission": 357753,
+        "service": 38275
+      },
+      "diambil_pada": "2023-01-02T12:22:19"
+    },
+    {
+      "invoice": "INV/20220707/MPL/9076",
+      "paid_at": "2022-07-07T20:08:04Z",
+      "channel": "marketplace_a",
+      "buyer": {
+        "hash": "63d453e4",
+        "city": "Bandung"
+      },
+      "items": [
+        {
+          "seller_sku": "APPLES1030",
+          "qty": 1,
+          "price": 13992660,
+          "voucher": 1399266
+        },
+        {
+          "seller_sku": "UNIQLO1024",
+          "qty": 1,
+          "price": 7155060,
+          "voucher": 357753
+        }
+      ],
+      "fees": {
+        "commission": 1057386,
+        "service": 108238
+      },
+      "diambil_pada": "2022-07-07T20:35:04"
+    },
+    {
+      "invoice": "INV/20220418/MPB/9043",
+      "paid_at": "2022-04-18T03:36:04Z",
+      "channel": "marketplace_b",
+      "buyer": {
+        "hash": "ea7fe860",
+        "city": "Bandung"
+      },
+      "items": [
+        {
+          "seller_sku": "IKEAME1032",
+          "qty": 1,
+          "price": 977910,
+          "voucher": 0
+        }
+      ],
+      "fees": {
+        "commission": 48895,
+        "service": 7389
+      },
+      "diambil_pada": "2022-04-18T05:04:04"
+    },
+    {
+      "invoice": "INV/20220327/MPL/10220",
+      "paid_at": "2022-03-27T05:46:42Z",
+      "channel": "marketplace_a",
+      "buyer": {
+        "hash": "b3752bca",
+        "city": "Jakarta Barat"
+      },
+      "items": [
+        {
+          "seller_sku": "SAMSUN1019",
+          "qty": 1,
+          "price": 1590630,
+          "voucher": 0
+        }
+      ],
+      "fees": {
+        "commission": 79531,
+        "service": 10453
+      },
+      "diambil_pada": "2022-03-27T05:55:42"
+    },
+    {
+      "invoice": "INV/20220720/MPB/9801",
+      "paid_at": "2022-07-20T15:50:58Z",
+      "channel": "marketplace_b",
+      "buyer": {
+        "hash": "21606472",
+        "city": "Jakarta Selatan"
+      },
+      "items": [
+        {
+          "seller_sku": "APPLEL1031",
+          "qty": 1,
+          "price": 932400,
+          "voucher": 46620
+        }
+      ],
+      "fees": {
+        "commission": 46620,
+        "service": 7162
+      },
+      "diambil_pada": "2022-07-20T16:45:58"
+    },
+    {
+      "invoice": "INV/20230208/MPL/9518",
+      "paid_at": "2023-02-08T11:44:53Z",
+      "channel": "marketplace_a",
+      "buyer": {
+        "hash": "6596b3d8",
+        "city": "Malang"
+      },
+      "items": [
+        {
+          "seller_sku": "GRAVER1037",
+          "qty": 1,
+          "price": 26605590,
+          "voucher": 0
+        },
+        {
+          "seller_sku": "COMPAS1035",
+          "qty": 1,
+          "price": 17612370,
+          "voucher": 0
+        }
+      ],
+      "fees": {
+        "commission": 2210898,
+        "service": 223589
+      },
+      "diambil_pada": "2023-02-08T12:37:53"
+    },
+    {
+      "invoice": "INV/20220730/MPB/9686",
+      "paid_at": "2022-07-30T13:05:22Z",
+      "channel": "marketplace_b",
+      "buyer": {
+        "hash": "cb455751",
+        "city": "Bandung"
+      },
+      "items": [
+        {
+          "seller_sku": "APPLES1030",
+          "qty": 1,
+          "price": 13992660,
+          "voucher": 0
+        }
+      ],
+      "fees": {
+        "commission": 699633,
+        "service": 72463
+      },
+      "diambil_pada": "2022-07-30T14:13:22"
+    },
+    {
+      "invoice": "INV/20230213/MPL/9898",
+      "paid_at": "2023-02-13T05:08:46Z",
+      "channel": "marketplace_a",
+      "buyer": {
+        "hash": "d3b0111b",
+        "city": "Bandung"
+      },
+      "items": [
+        {
+          "seller_sku": "INFORM1014",
+          "qty": 1,
+          "price": 10900200,
+          "voucher": 0
+        }
+      ],
+      "fees": {
+        "commission": 545010,
+        "service": 57001
+      },
+      "diambil_pada": "2023-02-13T05:22:46"
+    },
+    {
+      "invoice": "INV/20220123/MPB/9091",
+      "paid_at": "2022-01-23T22:23:45Z",
+      "channel": "marketplace_b",
+      "buyer": {
+        "hash": "35e6367f",
+        "city": "Denpasar"
+      },
+      "items": [
+        {
+          "seller_sku": "UNIQLO1054",
+          "qty": 1,
+          "price": 3919410,
+          "voucher": 195970
+        }
+      ],
+      "fees": {
+        "commission": 195970,
+        "service": 22097
+      },
+      "diambil_pada": "2022-01-23T22:37:45"
+    },
+    {
+      "invoice": "INV/20220217/MPL/10447",
+      "paid_at": "2022-02-17T12:47:59Z",
+      "channel": "marketplace_a",
+      "buyer": {
+        "hash": "37cef01c",
+        "city": "Jakarta Selatan"
+      },
+      "items": [
+        {
+          "seller_sku": "APPLEL1031",
+          "qty": 1,
+          "price": 932400,
+          "voucher": 0
+        }
+      ],
+      "fees": {
+        "commission": 46620,
+        "service": 7162
+      },
+      "diambil_pada": "2022-02-17T12:52:59"
+    },
+    {
+      "invoice": "INV/20220215/MPB/9646",
+      "paid_at": "2022-02-15T21:55:31Z",
+      "channel": "marketplace_b",
+      "buyer": {
+        "hash": "f0902f30",
+        "city": "Denpasar"
+      },
+      "items": [
+        {
+          "seller_sku": "IKEAME1041",
+          "qty": 3,
+          "price": 1928070,
+          "voucher": 578421
+        }
+      ],
+      "fees": {
+        "commission": 289210,
+        "service": 31421
+      },
+      "diambil_pada": "2022-02-15T22:19:31"
+    },
+    {
+      "invoice": "INV/20220909/MPB/9843",
+      "paid_at": "2022-09-09T22:40:22Z",
+      "channel": "marketplace_b",
+      "buyer": {
+        "hash": "7432e21e",
+        "city": "Surabaya"
+      },
+      "items": [
+        {
+          "seller_sku": "UGREEN1003",
+          "qty": 2,
+          "price": 26880870,
+          "voucher": 5376174
+        }
+      ],
+      "fees": {
+        "commission": 2688087,
+        "service": 271308
+      },
+      "diambil_pada": "2022-09-09T23:56:22"
+    },
+    {
+      "invoice": "INV/20220714/MPB/9724",
+      "paid_at": "2022-07-14T03:02:54Z",
+      "channel": "marketplace_b",
+      "buyer": {
+        "hash": "b5c69be8",
+        "city": "Palembang"
+      },
+      "items": [
+        {
+          "seller_sku": "IKEAME1041",
+          "qty": 1,
+          "price": 1928070,
+          "voucher": 0
+        }
+      ],
+      "fees": {
+        "commission": 96403,
+        "service": 12140
+      },
+      "diambil_pada": "2022-07-14T03:28:54"
+    },
+    {
+      "invoice": "INV/20220612/MPL/10202",
+      "paid_at": "2022-06-12T07:55:50Z",
+      "channel": "marketplace_a",
+      "buyer": {
+        "hash": "76df6972",
+        "city": "Bekasi"
+      },
+      "items": [
+        {
+          "seller_sku": "INFORM1023",
+          "qty": 1,
+          "price": 6580080,
+          "voucher": 658008
+        },
+        {
+          "seller_sku": "ASUSLA1048",
+          "qty": 1,
+          "price": 20024400,
+          "voucher": 0
+        }
+      ],
+      "fees": {
+        "commission": 1330224,
+        "service": 135522
+      },
+      "diambil_pada": "2022-06-12T09:02:50"
+    },
+    {
+      "invoice": "INV/20220527/MPL/10350",
+      "paid_at": "2022-05-27T00:50:28Z",
+      "channel": "marketplace_a",
+      "buyer": {
+        "hash": "689d8fa5",
+        "city": "Yogyakarta"
+      },
+      "items": [
+        {
+          "seller_sku": "ERIGOB1025",
+          "qty": 2,
+          "price": 1727160,
+          "voucher": 345432
+        }
+      ],
+      "fees": {
+        "commission": 172716,
+        "service": 19771
+      },
+      "diambil_pada": "2022-05-27T01:47:28"
+    },
+    {
+      "invoice": "INV/20220611/MPB/9851",
+      "paid_at": "2022-06-11T06:03:57Z",
+      "channel": "marketplace_b",
+      "buyer": {
+        "hash": "c3370075",
+        "city": "Medan"
+      },
+      "items": [
+        {
+          "seller_sku": "UNIQLO1007",
+          "qty": 2,
+          "price": 240870,
+          "voucher": 0
+        },
+        {
+          "seller_sku": "INFORM1026",
+          "qty": 2,
+          "price": 429570,
+          "voucher": 85914
+        }
+      ],
+      "fees": {
+        "commission": 67044,
+        "service": 9204
+      },
+      "diambil_pada": "2022-06-11T07:11:57"
+    },
+    {
+      "invoice": "INV/20220916/MPL/9315",
+      "paid_at": "2022-09-16T19:46:30Z",
+      "channel": "marketplace_a",
+      "buyer": {
+        "hash": "9fe551fa",
+        "city": "Yogyakarta"
+      },
+      "items": [
+        {
+          "seller_sku": "UGREEN1044",
+          "qty": 2,
+          "price": 7307130,
+          "voucher": 0
+        },
+        {
+          "seller_sku": "IKEAME1041",
+          "qty": 1,
+          "price": 1928070,
+          "voucher": 192807
+        }
+      ],
+      "fees": {
+        "commission": 827116,
+        "service": 85211
+      },
+      "diambil_pada": "2022-09-16T20:02:30"
+    },
+    {
+      "invoice": "INV/20230114/MPL/9858",
+      "paid_at": "2023-01-14T16:03:01Z",
+      "channel": "marketplace_a",
+      "buyer": {
+        "hash": "459af4ed",
+        "city": "Bandung"
+      },
+      "items": [
+        {
+          "seller_sku": "ADIDAS1013",
+          "qty": 1,
+          "price": 14182470,
+          "voucher": 1418247
+        },
+        {
+          "seller_sku": "ACERLA1011",
+          "qty": 1,
+          "price": 1597290,
+          "voucher": 0
+        }
+      ],
+      "fees": {
+        "commission": 788988,
+        "service": 81398
+      },
+      "diambil_pada": "2023-01-14T16:45:01"
+    },
+    {
+      "invoice": "INV/20220330/MPB/9070",
+      "paid_at": "2022-03-30T17:17:25Z",
+      "channel": "marketplace_b",
+      "buyer": {
+        "hash": "995d9428",
+        "city": "Malang"
+      },
+      "items": [
+        {
+          "seller_sku": "UNIQLO1055",
+          "qty": 1,
+          "price": 6739920,
+          "voucher": 336996
+        }
+      ],
+      "fees": {
+        "commission": 336996,
+        "service": 36199
+      },
+      "diambil_pada": "2022-03-30T17:56:25"
+    },
+    {
+      "invoice": "INV/20220131/MPL/10378",
+      "paid_at": "2022-01-31T06:25:52Z",
+      "channel": "marketplace_a",
+      "buyer": {
+        "hash": "ec8f7730",
+        "city": "Surabaya"
+      },
+      "items": [
+        {
+          "seller_sku": "OLYMPI1047",
+          "qty": 1,
+          "price": 1014540,
+          "voucher": 0
+        }
+      ],
+      "fees": {
+        "commission": 50727,
+        "service": 7572
+      },
+      "diambil_pada": "2022-01-31T06:56:52"
+    },
+    {
+      "invoice": "INV/20220808/MPB/9577",
+      "paid_at": "2022-08-08T23:33:54Z",
+      "channel": "marketplace_b",
+      "buyer": {
+        "hash": "dbf62d0d",
+        "city": "Malang"
+      },
+      "items": [
+        {
+          "seller_sku": "HMATAS1001",
+          "qty": 3,
+          "price": 7282710,
+          "voucher": 0
+        },
+        {
+          "seller_sku": "OPPOSM1020",
+          "qty": 1,
+          "price": 10264170,
+          "voucher": 0
+        }
+      ],
+      "fees": {
+        "commission": 1605615,
+        "service": 163061
+      },
+      "diambil_pada": "2022-08-09T00:17:54"
+    },
+    {
+      "invoice": "INV/20220529/MPL/10401",
+      "paid_at": "2022-05-29T14:44:55Z",
+      "channel": "marketplace_a",
+      "buyer": {
+        "hash": "b1459bc4",
+        "city": "Semarang"
+      },
+      "items": [
+        {
+          "seller_sku": "COMPAS1010",
+          "qty": 1,
+          "price": 16314780,
+          "voucher": 815739
+        }
+      ],
+      "fees": {
+        "commission": 815739,
+        "service": 84073
+      },
+      "diambil_pada": "2022-05-29T15:10:55"
+    },
+    {
+      "invoice": "INV/20220523/MPL/9554",
+      "paid_at": "2022-05-23T14:14:45Z",
+      "channel": "marketplace_a",
+      "buyer": {
+        "hash": "41a3987d",
+        "city": "Makassar"
+      },
+      "items": [
+        {
+          "seller_sku": "UNIQLO1054",
+          "qty": 1,
+          "price": 3919410,
+          "voucher": 195970
+        }
+      ],
+      "fees": {
+        "commission": 195970,
+        "service": 22097
+      },
+      "diambil_pada": "2022-05-23T15:30:45"
+    },
+    {
+      "invoice": "INV/20220921/MPB/9986",
+      "paid_at": "2022-09-21T19:09:41Z",
+      "channel": "marketplace_b",
+      "buyer": {
+        "hash": "122e2fcd",
+        "city": "Bandung"
+      },
+      "items": [
+        {
+          "seller_sku": "IKEAME1041",
+          "qty": 1,
+          "price": 1928070,
+          "voucher": 192807
+        }
+      ],
+      "fees": {
+        "commission": 96403,
+        "service": 12140
+      },
+      "diambil_pada": "2022-09-21T20:19:41"
+    },
+    {
+      "invoice": "INV/20220607/MPL/9899",
+      "paid_at": "2022-06-07T05:28:49Z",
+      "channel": "marketplace_a",
+      "buyer": {
+        "hash": "02fc715b",
+        "city": "Semarang"
+      },
+      "items": [
+        {
+          "seller_sku": "INFORM1014",
+          "qty": 1,
+          "price": 10900200,
+          "voucher": 545010
+        },
+        {
+          "seller_sku": "HMATAS1040",
+          "qty": 1,
+          "price": 214230,
+          "voucher": 0
+        }
+      ],
+      "fees": {
+        "commission": 555721,
+        "service": 58072
+      },
+      "diambil_pada": "2022-06-07T06:21:49"
+    },
+    {
+      "invoice": "INV/20221210/MPL/10315",
+      "paid_at": "2022-12-10T01:15:41Z",
+      "channel": "marketplace_a",
+      "buyer": {
+        "hash": "c954fb1b",
+        "city": "Palembang"
+      },
+      "items": [
+        {
+          "seller_sku": "UNIQLO1054",
+          "qty": 1,
+          "price": 3919410,
+          "voucher": 0
+        }
+      ],
+      "fees": {
+        "commission": 195970,
+        "service": 22097
+      },
+      "diambil_pada": "2022-12-10T02:42:41"
+    },
+    {
+      "invoice": "INV/20220601/MPL/9744",
+      "paid_at": "2022-06-01T21:20:23Z",
+      "channel": "marketplace_a",
+      "buyer": {
+        "hash": "d4a19d12",
+        "city": "Denpasar"
+      },
+      "items": [
+        {
+          "seller_sku": "ACERLA1011",
+          "qty": 1,
+          "price": 1597290,
+          "voucher": 79864
+        }
+      ],
+      "fees": {
+        "commission": 79864,
+        "service": 10486
+      },
+      "diambil_pada": "2022-06-01T21:41:23"
+    },
+    {
+      "invoice": "INV/20220526/MPL/9265",
+      "paid_at": "2022-05-26T10:40:11Z",
+      "channel": "marketplace_a",
+      "buyer": {
+        "hash": "185f9c87",
+        "city": "Palembang"
+      },
+      "items": [
+        {
+          "seller_sku": "ERIGOA1053",
+          "qty": 2,
+          "price": 17362620,
+          "voucher": 1736262
+        },
+        {
+          "seller_sku": "IKEAKU1042",
+          "qty": 1,
+          "price": 25364610,
+          "voucher": 2536461
+        }
+      ],
+      "fees": {
+        "commission": 3004492,
+        "service": 302949
+      },
+      "diambil_pada": "2022-05-26T11:26:11"
+    },
+    {
+      "invoice": "INV/20220806/MPL/9494",
+      "paid_at": "2022-08-06T11:02:40Z",
+      "channel": "marketplace_a",
+      "buyer": {
+        "hash": "a3f575b0",
+        "city": "Makassar"
+      },
+      "items": [
+        {
+          "seller_sku": "ACERLA1043",
+          "qty": 1,
+          "price": 1048950,
+          "voucher": 104895
+        }
+      ],
+      "fees": {
+        "commission": 52447,
+        "service": 7744
+      },
+      "diambil_pada": "2022-08-06T11:22:40"
+    },
+    {
+      "invoice": "INV/20220531/MPB/9663",
+      "paid_at": "2022-05-31T01:06:36Z",
+      "channel": "marketplace_b",
+      "buyer": {
+        "hash": "3b025f44",
+        "city": "Palembang"
+      },
+      "items": [
+        {
+          "seller_sku": "IKEAKU1042",
+          "qty": 1,
+          "price": 25364610,
+          "voucher": 0
+        }
+      ],
+      "fees": {
+        "commission": 1268230,
+        "service": 129323
+      },
+      "diambil_pada": "2022-05-31T01:44:36"
+    },
+    {
+      "invoice": "INV/20220204/MPB/9183",
+      "paid_at": "2022-02-04T00:42:55Z",
+      "channel": "marketplace_b",
+      "buyer": {
+        "hash": "205ed2e7",
+        "city": "Bekasi"
+      },
+      "items": [
+        {
+          "seller_sku": "INFORM1028",
+          "qty": 1,
+          "price": 18742350,
+          "voucher": 0
+        }
+      ],
+      "fees": {
+        "commission": 937117,
+        "service": 96211
+      },
+      "diambil_pada": "2022-02-04T01:22:55"
+    },
+    {
+      "invoice": "INV/20220801/MPB/9474",
+      "paid_at": "2022-08-01T17:51:56Z",
+      "channel": "marketplace_b",
+      "buyer": {
+        "hash": "891f1fb6",
+        "city": "Yogyakarta"
+      },
+      "items": [
+        {
+          "seller_sku": "INFORM1028",
+          "qty": 2,
+          "price": 18742350,
+          "voucher": 1874235
+        }
+      ],
+      "fees": {
+        "commission": 1874235,
+        "service": 189923
+      },
+      "diambil_pada": "2022-08-01T18:10:56"
+    },
+    {
+      "invoice": "INV/20220821/MPB/9454",
+      "paid_at": "2022-08-21T08:48:08Z",
+      "channel": "marketplace_b",
+      "buyer": {
+        "hash": "0c044db0",
+        "city": "Medan"
+      },
+      "items": [
+        {
+          "seller_sku": "IKEAKU1042",
+          "qty": 1,
+          "price": 25364610,
+          "voucher": 0
+        }
+      ],
+      "fees": {
+        "commission": 1268230,
+        "service": 129323
+      },
+      "diambil_pada": "2022-08-21T09:16:08"
+    },
+    {
+      "invoice": "INV/20220413/MPL/9290",
+      "paid_at": "2022-04-13T18:07:10Z",
+      "channel": "marketplace_a",
+      "buyer": {
+        "hash": "9a508b3c",
+        "city": "Yogyakarta"
+      },
+      "items": [
+        {
+          "seller_sku": "COMPAS1058",
+          "qty": 1,
+          "price": 19803510,
+          "voucher": 0
+        }
+      ],
+      "fees": {
+        "commission": 990175,
+        "service": 101517
+      },
+      "diambil_pada": "2022-04-13T18:39:10"
+    },
+    {
+      "invoice": "INV/20220808/MPL/10192",
+      "paid_at": "2022-08-08T20:11:35Z",
+      "channel": "marketplace_a",
+      "buyer": {
+        "hash": "693e4b11",
+        "city": "Bandung"
+      },
+      "items": [
+        {
+          "seller_sku": "HMATAS1012",
+          "qty": 3,
+          "price": 3434340,
+          "voucher": 515151
+        }
+      ],
+      "fees": {
+        "commission": 515151,
+        "service": 54015
+      },
+      "diambil_pada": "2022-08-08T20:34:35"
+    },
+    {
+      "invoice": "INV/20220423/MPB/9853",
+      "paid_at": "2022-04-23T01:43:26Z",
+      "channel": "marketplace_b",
+      "buyer": {
+        "hash": "15ee1793",
+        "city": "Malang"
+      },
+      "items": [
+        {
+          "seller_sku": "IKEAME1041",
+          "qty": 1,
+          "price": 1928070,
+          "voucher": 96403
+        }
+      ],
+      "fees": {
+        "commission": 96403,
+        "service": 12140
+      },
+      "diambil_pada": "2022-04-23T02:14:26"
+    },
+    {
+      "invoice": "INV/20220514/MPL/9375",
+      "paid_at": "2022-05-14T14:42:19Z",
+      "channel": "marketplace_a",
+      "buyer": {
+        "hash": "a8cfe1b5",
+        "city": "Medan"
+      },
+      "items": [
+        {
+          "seller_sku": "UNIQLO1024",
+          "qty": 3,
+          "price": 7155060,
+          "voucher": 1073259
+        }
+      ],
+      "fees": {
+        "commission": 1073259,
+        "service": 109825
+      },
+      "diambil_pada": "2022-05-14T15:04:19"
+    },
+    {
+      "invoice": "INV/20220401/MPL/9995",
+      "paid_at": "2022-04-01T09:07:49Z",
+      "channel": "marketplace_a",
+      "buyer": {
+        "hash": "b4862972",
+        "city": "Bekasi"
+      },
+      "items": [
+        {
+          "seller_sku": "ADIDAS1009",
+          "qty": 1,
+          "price": 975690,
+          "voucher": 97569
+        }
+      ],
+      "fees": {
+        "commission": 48784,
+        "service": 7378
+      },
+      "diambil_pada": "2022-04-01T09:37:49"
+    },
+    {
+      "invoice": "INV/20220202/MPB/9266",
+      "paid_at": "2022-02-02T14:21:05Z",
+      "channel": "marketplace_b",
+      "buyer": {
+        "hash": "8dd28b35",
+        "city": "Medan"
+      },
+      "items": [
+        {
+          "seller_sku": "ADIDAS1009",
+          "qty": 2,
+          "price": 975690,
+          "voucher": 97569
+        }
+      ],
+      "fees": {
+        "commission": 97569,
+        "service": 12256
+      },
+      "diambil_pada": "2022-02-02T14:45:05"
+    },
+    {
+      "invoice": "INV/20220617/MPL/9406",
+      "paid_at": "2022-06-17T08:30:15Z",
+      "channel": "marketplace_a",
+      "buyer": {
+        "hash": "7e96baeb",
+        "city": "Jakarta Barat"
+      },
+      "items": [
+        {
+          "seller_sku": "ADIDAS1059",
+          "qty": 1,
+          "price": 24367830,
+          "voucher": 2436783
+        }
+      ],
+      "fees": {
+        "commission": 1218391,
+        "service": 124339
+      },
+      "diambil_pada": "2022-06-17T09:31:15"
+    },
+    {
+      "invoice": "INV/20221211/MPL/9286",
+      "paid_at": "2022-12-11T07:45:25Z",
+      "channel": "marketplace_a",
+      "buyer": {
+        "hash": "b3752bca",
+        "city": "Jakarta Barat"
+      },
+      "items": [
+        {
+          "seller_sku": "INFORM1014",
+          "qty": 1,
+          "price": 10900200,
+          "voucher": 0
+        },
+        {
+          "seller_sku": "IKEAME1034",
+          "qty": 1,
+          "price": 25200330,
+          "voucher": 0
+        }
+      ],
+      "fees": {
+        "commission": 1805026,
+        "service": 183002
+      },
+      "diambil_pada": "2022-12-11T07:57:25"
+    },
+    {
+      "invoice": "INV/20230204/MPB/10288",
+      "paid_at": "2023-02-04T23:37:53Z",
+      "channel": "marketplace_b",
+      "buyer": {
+        "hash": "4808e233",
+        "city": "Semarang"
+      },
+      "items": [
+        {
+          "seller_sku": "ERIGOA1029",
+          "qty": 1,
+          "price": 16359180,
+          "voucher": 0
+        }
+      ],
+      "fees": {
+        "commission": 817959,
+        "service": 84295
+      },
+      "diambil_pada": "2023-02-04T23:57:53"
+    },
+    {
+      "invoice": "INV/20220218/MPL/9939",
+      "paid_at": "2022-02-18T14:23:18Z",
+      "channel": "marketplace_a",
+      "buyer": {
+        "hash": "0e82b8f6",
+        "city": "Jakarta Selatan"
+      },
+      "items": [
+        {
+          "seller_sku": "COMPAS1010",
+          "qty": 1,
+          "price": 16314780,
+          "voucher": 0
+        },
+        {
+          "seller_sku": "GRAVER1037",
+          "qty": 1,
+          "price": 26605590,
+          "voucher": 0
+        }
+      ],
+      "fees": {
+        "commission": 2146018,
+        "service": 217101
+      },
+      "diambil_pada": "2022-02-18T15:20:18"
+    },
+    {
+      "invoice": "INV/20220403/MPL/10351",
+      "paid_at": "2022-04-03T04:38:19Z",
+      "channel": "marketplace_a",
+      "buyer": {
+        "hash": "995d9428",
+        "city": "Medan"
+      },
+      "items": [
+        {
+          "seller_sku": "INFORM1026",
+          "qty": 1,
+          "price": 429570,
+          "voucher": 42957
+        }
+      ],
+      "fees": {
+        "commission": 21478,
+        "service": 4647
+      },
+      "diambil_pada": "2022-04-03T04:46:19"
+    },
+    {
+      "invoice": "INV/20221201/MPL/10093",
+      "paid_at": "2022-12-01T03:50:56Z",
+      "channel": "marketplace_a",
+      "buyer": {
+        "hash": "bd1aa1ef",
+        "city": "Jakarta Barat"
+      },
+      "items": [
+        {
+          "seller_sku": "COMPAS1058",
+          "qty": 1,
+          "price": 19803510,
+          "voucher": 990175
+        }
+      ],
+      "fees": {
+        "commission": 990175,
+        "service": 101517
+      },
+      "diambil_pada": "2022-12-01T04:37:56"
+    },
+    {
+      "invoice": "INV/20230210/MPL/9551",
+      "paid_at": "2023-02-10T11:57:02Z",
+      "channel": "marketplace_a",
+      "buyer": {
+        "hash": "166c8ea1",
+        "city": "Denpasar"
+      },
+      "items": [
+        {
+          "seller_sku": "UNIQLO1055",
+          "qty": 1,
+          "price": 6739920,
+          "voucher": 0
+        }
+      ],
+      "fees": {
+        "commission": 336996,
+        "service": 36199
+      },
+      "diambil_pada": "2023-02-10T12:23:02"
+    },
+    {
+      "invoice": "INV/20220323/MPB/9360",
+      "paid_at": "2022-03-23T07:39:24Z",
+      "channel": "marketplace_b",
+      "buyer": {
+        "hash": "bc70ce4e",
+        "city": "Malang"
+      },
+      "items": [
+        {
+          "seller_sku": "APPLEL1002",
+          "qty": 3,
+          "price": 208680,
+          "voucher": 31302
+        },
+        {
+          "seller_sku": "ACERLA1011",
+          "qty": 1,
+          "price": 1597290,
+          "voucher": 79864
+        }
+      ],
+      "fees": {
+        "commission": 111166,
+        "service": 13616
+      },
+      "diambil_pada": "2022-03-23T08:21:24"
+    },
+    {
+      "invoice": "INV/20220210/MPB/9205",
+      "paid_at": "2022-02-10T03:11:40Z",
+      "channel": "marketplace_b",
+      "buyer": {
+        "hash": "c0b37956",
+        "city": "Jakarta Selatan"
+      },
+      "items": [
+        {
+          "seller_sku": "INFORM1014",
+          "qty": 1,
+          "price": 10900200,
+          "voucher": 0
+        }
+      ],
+      "fees": {
+        "commission": 545010,
+        "service": 57001
+      },
+      "diambil_pada": "2022-02-10T04:05:40"
+    },
+    {
+      "invoice": "INV/20221225/MPL/9414",
+      "paid_at": "2022-12-25T06:02:30Z",
+      "channel": "marketplace_a",
+      "buyer": {
+        "hash": "76a41453",
+        "city": "Medan"
+      },
+      "items": [
+        {
+          "seller_sku": "INFORM1028",
+          "qty": 2,
+          "price": 18742350,
+          "voucher": 3748470
+        },
+        {
+          "seller_sku": "ADIDAS1013",
+          "qty": 1,
+          "price": 14182470,
+          "voucher": 0
+        }
+      ],
+      "fees": {
+        "commission": 2583358,
+        "service": 260835
+      },
+      "diambil_pada": "2022-12-25T06:59:30"
+    },
+    {
+      "invoice": "INV/20221024/MPL/9232",
+      "paid_at": "2022-10-24T06:12:47Z",
+      "channel": "marketplace_a",
+      "buyer": {
+        "hash": "543eb7ac",
+        "city": "Denpasar"
+      },
+      "items": [
+        {
+          "seller_sku": "HMATAS1001",
+          "qty": 3,
+          "price": 7282710,
+          "voucher": 0
+        }
+      ],
+      "fees": {
+        "commission": 1092406,
+        "service": 111740
+      },
+      "diambil_pada": "2022-10-24T07:06:47"
+    },
+    {
+      "invoice": "INV/20220706/MPL/9556",
+      "paid_at": "2022-07-06T21:55:53Z",
+      "channel": "marketplace_a",
+      "buyer": {
+        "hash": "ecd70204",
+        "city": "Makassar"
+      },
+      "items": [
+        {
+          "seller_sku": "SAMSUN1019",
+          "qty": 3,
+          "price": 1590630,
+          "voucher": 238594
+        }
+      ],
+      "fees": {
+        "commission": 238594,
+        "service": 26359
+      },
+      "diambil_pada": "2022-07-06T22:54:53"
+    },
+    {
+      "invoice": "INV/20220218/MPL/9294",
+      "paid_at": "2022-02-18T01:37:49Z",
+      "channel": "marketplace_a",
+      "buyer": {
+        "hash": "434626f2",
+        "city": "Bandung"
+      },
+      "items": [
+        {
+          "seller_sku": "APPLES1030",
+          "qty": 2,
+          "price": 13992660,
+          "voucher": 1399266
+        }
+      ],
+      "fees": {
+        "commission": 1399266,
+        "service": 142426
+      },
+      "diambil_pada": "2022-02-18T02:47:49"
+    },
+    {
+      "invoice": "INV/20220530/MPL/9877",
+      "paid_at": "2022-05-30T16:48:33Z",
+      "channel": "marketplace_a",
+      "buyer": {
+        "hash": "602c2776",
+        "city": "Makassar"
+      },
+      "items": [
+        {
+          "seller_sku": "INFORM1015",
+          "qty": 1,
+          "price": 199800,
+          "voucher": 9990
+        }
+      ],
+      "fees": {
+        "commission": 9990,
+        "service": 3499
+      },
+      "diambil_pada": "2022-05-30T17:26:33"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+kode_promo,nama_kampanye,jenis_promo,kanal,tgl_mulai,tgl_selesai,target_diskon_persen,pic
+NEWYEAR10,Diskon Tahun Baru,Voucher,Semua Kanal,17-05-2022,16-06-2022,5,Lili
+RAMADAN23,Promo Ramadan 2023,Voucher,Toko Fisik,01-09-2022,27-09-2022,10,Mursita
+GAJIAN25,Promo Gajian,Cashback,Toko Fisik,28-06-2022,19-07-2022,sepuluh,Halima
+,,,,,,,
+GAJIAN25,Promo Gajian,Cashback,Toko Fisik,29-07-2022,18-08-2022,5,Gandewa
+FLASH50,  Flash Sale Akhir Bulan  ,Voucher,Toko Fisik,19-11-2022,11-12-2022,5,Iriana
+MEMBER15,Diskon Member,Voucher,Toko Fisik,23-03-2022,08-04-2022,10,Fathonah
+BUNDLE2,Beli 2 Diskon,Bundling,Situs Web,14-03-2022,04-04-2022,20,Latika
+BUNDLE2,Beli 2 Diskon,Bundling,Semua Kanal,06-10-2022,13-10-2022,5,Bagya
+IMLEK24,Promo Imlek,Voucher,Situs Web,26-05-2022,04-06-2022,15,Restu
+IMLEK24,Promo Imlek,Voucher,Semua Kanal,18-09-2022,13-10-2022,10,Mahfud
+HARBOLNAS,Hari Belanja Online Nasional,Voucher,Situs Web,20-01-2023,10-02-2023,20,Nova
+HARBOLNAS,Hari Belanja Online Nasional,Voucher,Semua Kanal,16-02-2022,13-03-2022,15,Taufik
+BACKSCHOOL,Promo Back to School,Voucher,Marketplace,21-02-2022,22-03-2022,10,Cemeti
+BACKSCHOOL,Promo Back to School,Voucher,Semua Kanal,09-01-2023,24-01-2023,5,Bakijan
+WEEKEND20,Diskon Akhir Pekan,Voucher,Toko Fisik,07-12-2022,06-01-2023,5,Halima
+WEEKEND20,Diskon Akhir Pekan,Voucher,Semua Kanal,14-03-2022,12-04-2022,15,Jamal
+newyear10 ,Diskon Tahun Baru,Voucher,Semua Kanal,17-05-2022,16-06-2022,5,Lili
+RAMADAN23,Promo Ramadan 2023,Voucher,Toko Fisik,01-09-2022,27-09-2022,10,Mursita

@@ -1,0 +1,119 @@
+employee_id,employee_code,store_id,full_name,position,hired_at
+1,C-001,1,Shania Yolanda,Kasir,2020-09-06
+2,C-002,1,Lutfan Suartini,Kasir,2017-05-15
+3,C-003,1,"Prabowo Kurniawan, M.M.",Supervisor Toko,2017-10-24
+4,C-004,2,Rahmi Mulyani,Supervisor Toko,2022-01-27
+5,C-005,2,Aurora Nasyiah,Kasir,2016-05-25
+6,C-006,3,Dr. Legawa Rahayu,Kasir,2017-11-08
+7,C-007,3,Bakiono Mansur,Supervisor Toko,2017-12-20
+8,C-008,3,Ir. Sabar Agustina,Kasir,2017-08-24
+9,C-009,3,Sadina Sihombing,Kasir,2019-11-22
+10,C-010,4,dr. Harjasa Lailasari,Kasir,2021-10-17
+11,C-011,4,Mustofa Suryatmi,Kasir,2017-07-15
+12,C-012,4,Ir. Hasim Megantara,Kasir,2019-10-31
+13,C-013,5,Pandu Firmansyah,Kasir,2016-11-22
+14,C-014,5,Jatmiko Simanjuntak,Supervisor Toko,2017-03-14
+15,C-015,6,"Winda Adriansyah, S.I.Kom",Kasir,2017-06-05
+16,C-016,6,R. Bakda Pranowo,Kasir,2017-06-13
+17,C-017,6,Karsa Budiyanto,Kasir,2018-03-03
+18,C-018,6,"T. Tasdik Napitupulu, S.Ked",Supervisor Toko,2019-02-26
+19,C-019,7,"Drs. Ulva Mahendra, S.H.",Kasir,2020-11-14
+20,C-020,7,Ozy Kuswandari,Supervisor Toko,2022-03-04
+21,C-021,7,Imam Mandasari,Supervisor Toko,2019-11-13
+22,C-022,8,"Dr. Ozy Mandasari, S.H.",Supervisor Toko,2020-09-30
+23,C-023,8,"Asman Habibi, S.Gz",Kasir,2017-10-19
+24,C-024,8,Emas Firmansyah,Kasir,2018-02-25
+25,C-025,8,Parman Wibisono,Kasir,2022-08-11
+26,C-026,9,"Elisa Namaga, S.Psi",Supervisor Toko,2021-07-25
+27,C-027,9,"Sutan Dimaz Pudjiastuti, S.Psi",Kasir,2022-05-14
+28,C-028,9,Tina Nainggolan,Kasir,2021-03-05
+29,C-029,10,"Titi Haryanti, S.Ked",Kasir,2017-02-24
+30,C-030,10,Keisha Laksita,Supervisor Toko,2021-05-24
+31,C-031,10,Mursinin Pranowo,Kasir,2022-10-12
+32,C-032,11,Wulan Hakim,Kasir,2016-08-19
+33,C-033,11,Ihsan Prakasa,Supervisor Toko,2021-10-09
+34,C-034,11,Wadi Maulana,Kasir,2021-05-25
+35,C-035,12,T. Atma Utami,Supervisor Toko,2021-12-22
+36,C-036,12,"R. Hadi Suartini, S.I.Kom",Kasir,2022-03-24
+37,C-037,13,Langgeng Riyanti,Kasir,2022-01-21
+38,C-038,13,Emil Pradana,Kasir,2020-07-21
+39,C-039,14,Nasrullah Safitri,Supervisor Toko,2016-07-29
+40,C-040,14,Ana Halim,Kasir,2022-03-22
+41,C-041,14,drg. Nadine Najmudin,Kasir,2019-07-22
+42,C-042,15,Dartono Suryono,Supervisor Toko,2018-11-20
+43,C-043,15,"R. Ciaobella Setiawan, S.Pt",Kasir,2016-12-08
+44,C-044,16,Hamima Lazuardi,Kasir,2018-08-07
+45,C-045,16,Violet Habibi,Kasir,2020-11-18
+46,C-046,16,"Silvia Haryanti, M.Farm",Supervisor Toko,2020-04-18
+47,C-047,16,Victoria Pertiwi,Kasir,2017-12-22
+48,C-048,17,Maimunah Hutapea,Kasir,2018-06-16
+49,C-049,17,"Cahyanto Haryanto, S.Pt",Kasir,2019-11-08
+50,C-050,17,"KH. Koko Winarsih, M.Kom.",Supervisor Toko,2018-03-23
+51,C-051,18,Kasim Lazuardi,Kasir,2018-07-17
+52,C-052,18,Putri Prasasta,Supervisor Toko,2017-09-24
+53,C-053,18,Cinthia Nasyiah,Supervisor Toko,2018-02-01
+54,C-054,19,Mila Prakasa,Kasir,2020-11-11
+55,C-055,19,Puti Kartika Pertiwi,Kasir,2018-12-24
+56,C-056,20,Darmanto Puspasari,Kasir,2018-03-08
+57,C-057,20,"Bambang Prasetyo, S.T.",Kasir,2019-06-22
+58,C-058,21,"Ophelia Yuliarti, M.Kom.",Supervisor Toko,2021-09-28
+59,C-059,21,"Hasta Santoso, S.IP",Supervisor Toko,2018-06-01
+60,C-060,22,Farah Puspasari,Kasir,2021-01-24
+61,C-061,22,Among Hutagalung,Kasir,2022-04-04
+62,C-062,22,Diah Suwarno,Supervisor Toko,2016-07-29
+63,C-063,22,Tgk. Ciaobella Sihotang,Supervisor Toko,2020-08-05
+64,C-064,23,Halima Gunawan,Supervisor Toko,2017-05-01
+65,C-065,23,Najwa Uyainah,Supervisor Toko,2019-09-27
+66,C-066,24,"Gaiman Pranowo, M.M.",Kasir,2022-10-07
+67,C-067,24,"dr. Rahmi Nasyidah, S.Pt",Kasir,2021-11-10
+68,C-068,24,Gilda Wahyuni,Supervisor Toko,2018-06-10
+69,C-069,25,Zalindra Rahmawati,Kasir,2017-09-06
+70,C-070,25,Kayla Haryanto,Kasir,2017-12-10
+71,C-071,26,Devi Simanjuntak,Kasir,2020-05-09
+72,C-072,26,Prabu Prastuti,Supervisor Toko,2018-11-12
+73,C-073,26,Cakrajiya Prakasa,Kasir,2018-02-17
+74,C-074,26,Kasiyah Megantara,Supervisor Toko,2020-10-23
+75,C-075,27,Daliono Yuliarti,Supervisor Toko,2022-08-15
+76,C-076,27,"Vera Wibowo, S.Gz",Kasir,2018-04-26
+77,C-077,27,"Ika Saptono, S.H.",Supervisor Toko,2021-09-04
+78,C-078,28,"Ir. Cakrawala Yuniar, S.I.Kom",Kasir,2017-09-07
+79,C-079,28,Mursinin Suartini,Kasir,2021-05-12
+80,C-080,28,Radit Farida,Supervisor Toko,2022-08-08
+81,C-081,29,"T. Bakiono Susanti, M.Ak",Supervisor Toko,2017-08-28
+82,C-082,29,"Tgk. Cemani Hidayanto, S.Sos",Kasir,2016-11-02
+83,C-083,29,Radit Mustofa,Kasir,2018-03-13
+84,C-084,29,Indah Mahendra,Kasir,2017-09-10
+85,C-085,30,Purwadi Dongoran,Supervisor Toko,2016-08-12
+86,C-086,30,"Kasiran Wijayanti, S.Gz",Supervisor Toko,2019-04-28
+87,C-087,30,Maryanto Hutapea,Supervisor Toko,2017-04-28
+88,C-088,31,Ellis Sihombing,Kasir,2016-09-26
+89,C-089,31,Janet Prakasa,Supervisor Toko,2019-01-30
+90,C-090,31,Anita Prakasa,Kasir,2017-12-19
+91,C-091,32,Jatmiko Novitasari,Supervisor Toko,2018-12-22
+92,C-092,32,Ajeng Adriansyah,Kasir,2019-09-06
+93,C-093,32,Yosef Maryadi,Supervisor Toko,2018-01-10
+94,C-094,33,Gambira Palastri,Kasir,2017-10-13
+95,C-095,33,"Gilang Adriansyah, S.T.",Kasir,2022-07-04
+96,C-096,33,drg. Yessi Wahyuni,Kasir,2022-08-11
+97,C-097,34,Sakura Anggriawan,Kasir,2019-06-08
+98,C-098,34,Lasmono Purwanti,Kasir,2022-04-06
+99,C-099,34,Kani Hasanah,Supervisor Toko,2021-06-09
+100,C-100,34,Pia Mardhiyah,Kasir,2022-11-22
+101,C-101,35,"Irma Riyanti, S.Sos",Kasir,2020-02-09
+102,C-102,35,Puti Jailani,Kasir,2021-03-09
+103,C-103,36,Elon Mansur,Kasir,2021-11-21
+104,C-104,36,Sarah Widodo,Kasir,2021-01-16
+105,C-105,37,Hairyanto Pratiwi,Supervisor Toko,2018-06-12
+106,C-106,37,"drg. Indra Sihombing, M.Pd",Supervisor Toko,2019-08-18
+107,C-107,37,Farah Nugroho,Kasir,2021-08-18
+108,C-108,38,R. Vanya Januar,Kasir,2016-01-11
+109,C-109,38,Zamira Mangunsong,Supervisor Toko,2016-04-27
+110,C-110,39,"Naradi Permata, S.Gz",Kasir,2020-11-15
+111,C-111,39,Sutan Rizki Hutasoit,Kasir,2020-10-04
+112,C-112,40,Dadap Rajasa,Kasir,2019-01-06
+113,C-113,40,Ana Rajasa,Kasir,2018-01-12
+114,C-114,40,Lamar Suryatmi,Kasir,2017-12-11
+115,C-115,41,Cut Latika Mayasari,Supervisor Toko,2019-09-18
+116,C-116,41,Caturangga Prasasta,Supervisor Toko,2018-05-23
+117,C-117,42,Naradi Yuniar,Kasir,2019-11-12
+118,C-118,42,"T. Cahya Irawan, M.Pd",Kasir,2016-08-27

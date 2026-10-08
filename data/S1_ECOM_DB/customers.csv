@@ -1,0 +1,601 @@
+customer_id,full_name,email,phone,gender,birth_date,registered_at
+1,T. Mustofa Prasetyo,kemalwidiastuti@hotmail.com,+6286733185134,L,1982-12-21,2022-03-03
+2,"Dt. Agus Utami, M.Pd",usirait@gmail.com,+6286674168097,L,1978-11-25,2020-09-05
+3,"Kemba Winarsih, S.E.I",asirwanda58@yahoo.com,+6281563306263,L,1987-07-30,2021-08-02
+4,Daryani Kusumo,gprakasa@gmail.com,+6281234834227,L,1996-01-12,2020-01-20
+5,Manah Hutagalung,anggriawanrudi@yahoo.com,+6288509023031,L,1990-02-10,2021-04-24
+6,Ir. Dian Nasyiah,bakiman06@gmail.com,+6286215429777,L,2004-01-08,2022-04-17
+7,"Drs. Hasna Usamah, S.Pd",tampubolonsamsul@gmail.com,+6281940545315,P,1986-08-06,2019-06-26
+8,Utama Kuswoyo,dtamba@yahoo.com,+6281589813972,L,1995-11-28,2021-10-29
+9,Malika Siregar,ehutasoit@hotmail.com,+6285371580277,P,1978-06-01,2021-02-07
+10,Puti Umi Kusmawati,tasdiknashiruddin@gmail.com,+6284709384130,P,1994-06-01,2020-01-26
+11,Najam Rahayu,inugroho@gmail.com,+6280174063226,P,1977-07-21,2022-05-24
+12,Daru Haryanto,raditya58@hotmail.com,+6283012635972,L,1977-10-01,2019-05-25
+13,"Najam Sudiati, S.H.",gmegantara@hotmail.com,+6280399997247,L,1989-03-26,2019-03-21
+14,Padma Hidayat,gawatisaefullah@hotmail.com,+6288886022251,P,1974-02-27,2019-02-28
+15,Febi Januar,rahayuagus@hotmail.com,+6289394756581,P,1998-03-21,2019-08-20
+16,Ghaliyati Anggriawan,nmarpaung@gmail.com,+6284463661490,P,1968-10-31,2019-01-03
+17,Melinda Kuswandari,oliviaastuti@yahoo.com,+6283706137007,P,1981-04-19,2019-10-27
+18,"Ina Januar, S.Pd",kuswoyoyance@yahoo.com,+6282434752657,L,2001-08-17,2021-06-04
+19,"Queen Rahimah, M.Kom.",ihasanah@gmail.com,+6288132816779,P,1997-09-26,2020-08-01
+20,Dartono Sihotang,mursininpurwanti@gmail.com,+6284743942079,L,1996-03-24,2020-08-11
+21,Belinda Anggraini,hariyahbahuwirya@yahoo.com,+6282248609735,P,1967-10-04,2019-07-15
+22,Balapati Nurdiyanti,saputracawuk@gmail.com,+6285128452720,L,1992-01-28,2022-04-10
+23,"Murti Hassanah, S.T.",artamaryati@yahoo.com,+6283378368752,P,1976-08-02,2020-02-15
+24,Eka Mayasari,edi87@yahoo.com,+6285023823253,L,1967-04-22,2020-08-11
+25,Halima Aryani,nainggolansalsabila@hotmail.com,+6287746953358,P,1974-09-20,2022-02-14
+26,Cahyadi Wasita,nurdiyantivicky@yahoo.com,+6285836598539,L,1995-06-25,2021-01-30
+27,"Wasis Budiyanto, S.E.",prabowomulyono@hotmail.com,+6285777022315,L,1999-10-16,2022-01-11
+28,"Sutan Bakijan Rahmawati, M.Ak",kajen36@hotmail.com,+6283343553227,P,1970-02-10,2022-01-12
+29,Gangsa Dongoran,okto45@hotmail.com,+6287048677445,L,1971-01-31,2019-03-18
+30,Puji Fujiati,dimasprasetyo@hotmail.com,+6285447803866,L,1991-11-08,2021-07-08
+31,Juli Utama,ghaliyati14@hotmail.com,+6288665405955,L,1976-07-10,2020-12-14
+32,Yunita Megantara,sihombingputi@yahoo.com,+6284434768457,P,1989-09-05,2020-04-21
+33,Lukman Mangunsong,narpatihumaira@hotmail.com,+6289670166330,L,1981-10-10,2021-07-12
+34,Lasmono Zulkarnain,janetpadmasari@hotmail.com,+6280026195591,P,1977-10-20,2019-06-19
+35,Marsito Aryani,laksitaunggul@gmail.com,+6280554718193,P,1972-10-16,2021-04-27
+36,Tgk. Imam Anggraini,xpratama@hotmail.com,+6283650921543,L,1969-08-27,2019-08-28
+37,"Carub Dongoran, S.Psi",baktihardiansyah@gmail.com,+6283321143986,P,1991-07-19,2021-10-02
+38,Jasmin Mulyani,ldamanik@hotmail.com,+6288121291930,P,1989-03-16,2021-07-27
+39,Ega Wibowo,mustofafarhunnisa@gmail.com,+6283465630944,L,1992-11-01,2021-02-25
+40,Belinda Mustofa,waskitaviolet@hotmail.com,+6283078365722,L,1978-01-25,2019-10-01
+41,"dr. Jagapati Mayasari, S.Farm",maulanabahuwirya@hotmail.com,+6280721062523,P,1979-04-25,2021-09-13
+42,"Dr. Rika Siregar, S.Gz",bakda70@yahoo.com,+6281794671863,L,1984-08-03,2020-10-04
+43,"R.A. Lalita Prasasta, S.I.Kom",ihabibi@gmail.com,+6281226308375,P,1989-02-03,2020-09-12
+44,Dian Kurniawan,dina89@yahoo.com,+6282655895908,P,1968-02-12,2019-06-30
+45,Wira Yulianti,permadijamalia@yahoo.com,+6289401217849,P,1980-09-30,2022-01-07
+46,Lulut Wijayanti,qlaksmiwati@gmail.com,+6285696511664,P,2004-02-28,2022-04-23
+47,Dt. Respati Nasyidah,raisa99@hotmail.com,+6288829858322,L,1997-09-24,2019-10-10
+48,Jaga Handayani,fsimanjuntak@gmail.com,+6288815068885,L,1984-04-20,2020-02-22
+49,"Drs. Karsa Lestari, S.Sos",hairyantosihombing@gmail.com,+6283189829897,L,1981-04-04,2022-01-11
+50,Farhunnisa Wibowo,ulya64@hotmail.com,+6286083082794,P,1973-08-04,2021-03-30
+51,Julia Dabukke,manahmegantara@gmail.com,+6289492208770,P,2002-10-02,2020-03-02
+52,"Ir. Utama Sihotang, S.E.",ardiantocengkal@hotmail.com,+6280860665836,L,1965-10-28,2022-05-05
+53,Gawati Waluyo,permatacinthia@gmail.com,+6282625816268,L,1969-09-03,2021-06-24
+54,Raina Tampubolon,bwibowo@yahoo.com,+6283806272482,P,1993-05-15,2021-06-14
+55,"Diah Widiastuti, M.Farm",mursitasudiati@gmail.com,+6282159182420,P,1987-03-31,2019-05-10
+56,Ir. Kasusra Utama,cahyantokurniawan@yahoo.com,+6280073256442,L,1991-11-20,2022-06-02
+57,KH. Elvin Nugroho,gatra26@gmail.com,+6282708802471,P,1980-09-07,2021-12-27
+58,Ajeng Anggriawan,dsihotang@yahoo.com,+6289282649957,L,1997-05-14,2019-11-10
+59,Danang Nasyiah,ian31@gmail.com,+6288623865225,L,1979-04-20,2022-05-17
+60,"Panji Agustina, S.T.",mursininfirgantoro@hotmail.com,+6282331668337,P,1988-11-27,2021-07-15
+61,Saka Mayasari,winarnokarsa@gmail.com,+6286480046412,L,1994-05-29,2021-09-24
+62,"Intan Natsir, S.Gz",sarahjailani@gmail.com,+6280432494826,L,1995-03-08,2020-02-27
+63,Dt. Cayadi Suwarno,omarbun@hotmail.com,+6285857804451,P,1995-06-03,2021-10-05
+64,"Gasti Farida, M.Ak",tania91@gmail.com,+6281943536876,L,1990-05-12,2020-08-01
+65,Hana Rahmawati,mahmud95@hotmail.com,+6286740065254,P,1974-06-17,2019-09-25
+66,"Wulan Kurniawan, S.Psi",usmanwulandari@gmail.com,+6282716926243,L,2000-07-02,2021-09-28
+67,Putri Siregar,fujiatijefri@hotmail.com,+6287635624685,P,1987-05-24,2019-01-30
+68,Gawati Kusmawati,kurniawanprakosa@hotmail.com,+6284804800126,L,1987-08-03,2020-08-20
+69,Jelita Yolanda,usadarafi@yahoo.com,+6281473573361,L,1967-01-04,2021-04-22
+70,Estiono Rahimah,anurdiyanti@yahoo.com,+6285044861204,L,1989-12-27,2021-05-28
+71,Fitriani Yulianti,galarwijaya@yahoo.com,+6283280479003,L,1975-11-05,2019-08-02
+72,Ir. Irsad Pratiwi,fhasanah@gmail.com,+6283129882763,P,1968-06-19,2019-09-11
+73,Aisyah Agustina,lembah58@yahoo.com,+6287011633009,L,1994-03-14,2022-05-27
+74,R. Ana Prasetyo,mhalimah@hotmail.com,+6288318794515,P,1985-12-10,2021-06-12
+75,Catur Saragih,bagiya40@yahoo.com,+6288066316769,P,2000-12-20,2022-03-12
+76,"Hj. Zaenab Pangestu, S.Pd",cinta40@hotmail.com,+6287717150787,L,1992-01-07,2019-01-28
+77,Atmaja Widodo,humairawinarno@yahoo.com,+6282119288916,P,2002-01-02,2020-09-30
+78,"R.A. Elisa Saragih, S.Ked",pprabowo@gmail.com,+6282164202138,P,1970-10-04,2021-09-02
+79,Zalindra Nashiruddin,jati07@yahoo.com,+6284568013009,L,2003-08-15,2019-10-22
+80,Cut Mutia Irawan,artawanmayasari@hotmail.com,+6288237369139,P,1990-05-17,2022-04-28
+81,Bagus Waskita,bahuwarnayuniar@yahoo.com,+6281466534696,P,2001-12-28,2021-09-30
+82,Lembah Wastuti,satya20@hotmail.com,+6284068961695,P,1985-08-03,2021-01-23
+83,KH. Luis Saputra,uwaisgenta@gmail.com,+6282676412493,P,1987-02-10,2021-05-19
+84,"Dr. Mahmud Agustina, M.Ak",wahyudinganda@hotmail.com,+6289053901477,P,2003-12-10,2020-04-20
+85,Ikin Suryono,tampubolondirja@yahoo.com,+6283876821082,L,1979-04-06,2020-05-26
+86,"Zulfa Mahendra, M.Pd",darunahutapea@hotmail.com,+6283517071246,L,1985-11-26,2019-08-16
+87,Yuliana Siregar,emassalahudin@yahoo.com,+6289574847681,L,2002-09-08,2021-06-24
+88,"Omar Irawan, S.Psi",jnasyiah@yahoo.com,+6287015817445,L,1965-10-06,2019-09-05
+89,Kayun Prakasa,raharja09@hotmail.com,+6289781208337,L,1976-08-13,2019-05-13
+90,Maya Dongoran,jharyanto@gmail.com,+6285383094172,P,1989-09-08,2021-08-18
+91,Drs. Eja Manullang,mahfudhartati@gmail.com,+6289158995329,L,1992-12-28,2020-04-12
+92,Rangga Prastuti,karyaharyanto@hotmail.com,+6283709338467,P,1987-12-17,2021-12-07
+93,T. Najam Dabukke,putri00@yahoo.com,+6284287837440,P,1971-02-06,2020-06-11
+94,"Nadia Jailani, M.Ak",sidiqfujiati@yahoo.com,+6280066117418,L,1967-02-15,2020-05-30
+95,Uli Sinaga,cahyanto97@yahoo.com,+6287999581089,L,1968-04-18,2021-04-02
+96,"Nurul Sinaga, M.Pd",oman93@hotmail.com,+6288332094916,P,1980-10-06,2019-03-24
+97,Drajat Wahyudin,kusumocarla@hotmail.com,+6286668843088,P,1972-10-17,2020-09-11
+98,Kasusra Wacana,wakiman59@hotmail.com,+6284079221091,L,1991-10-21,2020-11-11
+99,"Drs. Puti Rahmawati, M.TI.",qmaulana@yahoo.com,+6282339788164,P,1967-05-10,2019-06-29
+100,"Sutan Taufan Sitorus, S.Pt",hirawan@yahoo.com,+6282694406740,L,1971-10-15,2020-03-05
+101,"Tgk. Lantar Susanti, S.I.Kom",phidayanto@hotmail.com,+6282361707290,L,1988-12-08,2021-07-25
+102,Rini Santoso,ehastuti@gmail.com,+6288791863699,P,1983-06-21,2019-11-14
+103,Ika Anggriawan,intanmansur@hotmail.com,+6287789761359,P,1992-08-11,2022-04-25
+104,"dr. Niyaga Riyanti, S.IP",salahudindaliman@yahoo.com,+6283470615245,P,1973-05-31,2019-05-28
+105,Laras Yuniar,kamidinanggraini@yahoo.com,+6280582342715,L,1974-05-08,2021-11-10
+106,Zelaya Suryono,natsirridwan@hotmail.com,+6289660769358,L,1996-07-25,2021-04-11
+107,"Puti Ellis Gunawan, M.Farm",saptonohasta@yahoo.com,+6281197378662,P,1969-04-12,2022-04-29
+108,KH. Catur Maryati,griyanti@yahoo.com,+6282131866409,P,1982-10-18,2019-05-10
+109,"Ir. Raden Halim, M.Farm",pangestuhairyanto@yahoo.com,+6283423737617,P,1980-07-09,2021-10-15
+110,drg. Endah Mansur,arsipatra62@hotmail.com,+6282240736299,P,1992-03-01,2019-05-14
+111,Hani Siregar,hutapearahman@hotmail.com,+6282279515954,P,1968-09-18,2022-04-08
+112,Viktor Nasyiah,rusman54@yahoo.com,+6285561869596,P,1969-03-03,2019-01-19
+113,Lanjar Sitompul,narji11@yahoo.com,+6283039710369,L,1978-09-02,2020-04-18
+114,"Dt. Cahyanto Purwanti, S.Sos",budiyantogenta@gmail.com,+6281352538032,P,2007-08-22,2019-02-17
+115,"dr. Bakijan Kusmawati, S.Farm",wpudjiastuti@hotmail.com,+6286411348664,L,1975-12-15,2020-12-19
+116,Latif Mayasari,chelseamaryadi@yahoo.com,+6289876915743,P,1987-07-06,2021-02-02
+117,Olga Adriansyah,drajatwidodo@yahoo.com,+6285605095185,L,2004-09-10,2019-07-22
+118,"Dt. Wardi Wahyuni, S.Ked",omangunsong@gmail.com,+6286402447723,L,1967-05-15,2021-05-24
+119,drg. Daliono Siregar,safitrielon@yahoo.com,+6289593227290,P,1981-11-05,2021-12-15
+120,"Drs. Cakrawangsa Sihotang, S.Pt",rahmawatigaliono@yahoo.com,+6286053155047,L,1967-02-10,2020-07-19
+121,"Daniswara Nainggolan, S.Pd",emanfarida@yahoo.com,+6287214114059,P,1978-01-10,2019-07-19
+122,Jamalia Firmansyah,psamosir@yahoo.com,+6280332541268,P,1987-10-22,2021-04-26
+123,Sakura Sitorus,najwanatsir@hotmail.com,+6284307537654,P,1967-08-21,2021-05-21
+124,Drs. Dinda Yuniar,mandasaribagiya@gmail.com,+6289495043488,P,1976-10-08,2021-02-11
+125,Danu Riyanti,martana47@gmail.com,+6284306413701,P,2003-06-23,2021-03-30
+126,Ir. Prayoga Wijayanti,vicky03@yahoo.com,+6289579323354,P,1986-03-30,2022-01-08
+127,H. Galang Natsir,endah98@gmail.com,+6289892539174,P,1982-03-14,2019-05-13
+128,Zahra Prayoga,halimahwani@yahoo.com,+6287217671954,P,2005-01-31,2019-09-07
+129,"Cut Hana Usamah, S.E.I",emplukhutagalung@hotmail.com,+6280558092014,P,1976-07-30,2020-03-21
+130,"Adika Irawan, M.Kom.",natsirwirda@hotmail.com,+6282073717171,P,1974-10-03,2021-03-19
+131,"Dt. Karta Putra, S.IP",kajenkusumo@gmail.com,+6287850005121,L,1969-03-04,2019-12-21
+132,R. Qori Santoso,wirabudiyanto@gmail.com,+6284678575852,L,1974-12-11,2020-06-20
+133,Lembah Safitri,mustofaagus@gmail.com,+6289265718837,P,1977-09-01,2020-01-18
+134,Hj. Hana Kuswoyo,gentawastuti@hotmail.com,+6287630917395,L,1973-04-06,2019-06-11
+135,Puti Hakim,wijayantinabila@hotmail.com,+6288039500500,P,2006-04-28,2020-06-08
+136,Jumadi Sihombing,irfanzulaika@yahoo.com,+6286274400344,L,1976-08-05,2021-11-22
+137,"Kamidin Salahudin, M.Ak",siraitraihan@gmail.com,+6286891876529,P,2001-11-26,2020-02-23
+138,Paiman Riyanti,namagasadina@yahoo.com,+6288367017328,L,2004-04-01,2020-02-09
+139,"R.A. Farhunnisa Oktaviani, M.M.",chandra89@hotmail.com,+6287790157407,L,2004-06-15,2021-08-14
+140,"Safina Namaga, M.TI.",ysaragih@gmail.com,+6285494737979,L,1975-05-06,2021-09-09
+141,Drs. Ikin Irawan,balamantri79@yahoo.com,+6287151259591,L,1972-04-17,2020-02-19
+142,Rosman Rahmawati,opung08@yahoo.com,+6282051450957,P,1980-11-28,2019-10-18
+143,Lidya Firmansyah,pangeran55@yahoo.com,+6281453967589,P,1972-01-21,2019-02-25
+144,"Wirda Safitri, M.M.",hasna42@hotmail.com,+6282529385061,L,2006-01-30,2021-04-21
+145,"Ivan Mardhiyah, M.TI.",septi75@yahoo.com,+6286610832190,P,1989-10-26,2019-11-22
+146,"Novi Lazuardi, S.Pd",taswir65@hotmail.com,+6282813521396,P,1978-03-15,2019-02-16
+147,"Cinta Setiawan, S.Farm",kurniawanamalia@yahoo.com,+6282082348165,L,1971-06-06,2021-11-28
+148,Ifa Suryono,wwulandari@yahoo.com,+6288579839821,L,2002-03-16,2021-07-12
+149,"Laksana Farida, S.IP",mahesayolanda@gmail.com,+6286266463757,L,1993-02-02,2021-01-29
+150,Ir. Ulya Wulandari,marwata51@gmail.com,+6285049328042,P,1984-02-19,2021-07-28
+151,Drs. Artawan Habibi,jumadiwibisono@yahoo.com,+6287450656901,P,1982-11-21,2019-05-29
+152,R.M. Kenari Pertiwi,ksimbolon@yahoo.com,+6288361277578,P,1989-08-19,2020-10-10
+153,drg. Juli Samosir,zkusmawati@gmail.com,+6288019009910,P,1972-10-07,2019-07-30
+154,"T. Balapati Hidayat, S.Pd",karta11@hotmail.com,+6281058799321,P,1994-10-21,2021-04-30
+155,"Simon Nugroho, M.Kom.",ibudiyanto@gmail.com,+6286281456780,P,1970-10-08,2021-04-09
+156,"Bella Thamrin, S.Pd",jumadisaputra@yahoo.com,+6284714188442,P,1999-05-27,2020-12-02
+157,Rahmat Zulaika,usaragih@hotmail.com,+6282255956282,L,1999-11-26,2020-05-08
+158,Samiah Agustina,mulyamaryati@gmail.com,+6286318858885,L,1983-05-10,2019-01-16
+159,"Pia Haryanti, S.H.",blestari@yahoo.com,+6283099784239,P,2005-01-03,2022-03-23
+160,Safina Sinaga,anggrainicarla@hotmail.com,+6284577036461,P,1995-05-24,2020-07-10
+161,Violet Pratiwi,bahuraksa97@gmail.com,+6282269727907,L,1988-06-14,2019-08-11
+162,Saka Simanjuntak,jayadi98@yahoo.com,+6281894147647,L,1970-07-15,2020-05-24
+163,"Jindra Zulaika, S.H.",hamzah98@yahoo.com,+6284654407290,L,2001-05-15,2020-10-15
+164,Nurul Habibi,primamaryadi@gmail.com,+6282035143557,L,2004-11-18,2020-01-23
+165,Yunita Wasita,hsiregar@yahoo.com,+6284102869464,L,2002-05-14,2019-10-03
+166,Zizi Budiman,cagerpurnawati@hotmail.com,+6281856760796,L,1994-06-18,2019-02-08
+167,Zamira Pertiwi,pmaryati@hotmail.com,+6289207258454,P,1987-05-16,2020-08-10
+168,Dodo Prasetyo,ziziandriani@yahoo.com,+6289946099147,L,2007-12-25,2020-03-01
+169,"Tgk. Gina Prasetyo, M.Farm",kusuma82@hotmail.com,+6286185600138,P,1985-12-26,2021-03-22
+170,Jagaraga Fujiati,umaysuartini@hotmail.com,+6282772307988,P,1993-10-06,2019-07-06
+171,Julia Susanti,harjayamelani@yahoo.com,+6284120862701,P,1995-10-17,2021-10-30
+172,Digdaya Widodo,nyoman08@gmail.com,+6285525830929,P,2007-10-07,2021-02-19
+173,R. Ade Usamah,santosovirman@yahoo.com,+6280873674129,P,2002-03-13,2021-09-20
+174,Purwadi Rahimah,vanesaharyanto@hotmail.com,+6289826905813,L,1989-12-24,2020-05-12
+175,Naradi Fujiati,gmanullang@yahoo.com,+6286916782132,L,1994-05-13,2020-08-20
+176,drg. Wulan Rajasa,rmaulana@hotmail.com,+6283167499514,P,1977-07-03,2019-03-18
+177,Gandewa Waskita,imanullang@gmail.com,+6281418528500,L,1985-08-01,2022-03-08
+178,Hasim Wahyudin,irwan02@hotmail.com,+6284158424827,L,1984-05-02,2021-12-25
+179,Kezia Megantara,laksanamaryadi@hotmail.com,+6281879285093,L,2008-08-24,2019-01-01
+180,Ir. Padmi Habibi,heryantosirait@hotmail.com,+6286757054824,L,1993-02-13,2021-03-19
+181,Dwi Adriansyah,qoktaviani@yahoo.com,+6283599221264,P,2008-08-07,2020-08-21
+182,Ridwan Maheswara,waskitakarma@yahoo.com,+6287992618121,L,1987-10-15,2020-07-21
+183,"R.A. Mila Ardianto, M.Kom.",darijan77@yahoo.com,+6286808028504,P,1970-12-15,2021-06-26
+184,Calista Palastri,saputrawahyu@gmail.com,+6288644399290,L,1988-12-15,2019-04-17
+185,Halim Handayani,vhutagalung@hotmail.com,+6288525007191,P,1992-05-12,2019-11-09
+186,Balangga Pratiwi,dwaluyo@yahoo.com,+6287229378272,P,2001-04-26,2022-05-04
+187,"Darmana Lazuardi, S.I.Kom",jpurwanti@yahoo.com,+6288162746297,L,2002-08-09,2019-10-26
+188,Jefri Nababan,fmaheswara@yahoo.com,+6280932822797,L,1996-01-30,2022-04-16
+189,Jane Rahimah,padmasarigaluh@yahoo.com,+6280358107515,P,2008-01-26,2020-02-16
+190,Patricia Budiman,yhastuti@gmail.com,+6286749144780,L,1975-03-12,2022-06-24
+191,Zaenab Hastuti,elvinawaluyo@yahoo.com,+6284877651540,P,2007-02-28,2021-03-26
+192,drg. Lidya Nababan,harto95@hotmail.com,+6280801860269,P,1998-06-15,2020-02-20
+193,Usyi Natsir,haryantodarmaji@hotmail.com,+6282179550402,P,2008-04-30,2020-11-02
+194,"Kasiyah Rajata, M.Farm",edi61@gmail.com,+6282708478023,P,1979-12-24,2021-07-22
+195,"Drs. Prasetya Suartini, S.Kom",ksimanjuntak@yahoo.com,+6281584035264,P,1980-12-31,2019-05-21
+196,Qori Wibisono,baktiadianggriawan@yahoo.com,+6289242010440,L,1998-03-06,2020-08-13
+197,Paris Haryanti,lazuardirestu@hotmail.com,+6284614208063,L,1985-09-26,2019-05-14
+198,Dt. Bagiya Manullang,galur42@yahoo.com,+6280254079385,L,1990-08-31,2019-06-06
+199,"Lidya Suartini, S.IP",uwaisyunita@yahoo.com,+6282632583410,L,1965-09-20,2020-11-14
+200,Gamblang Wijayanti,lasmantonuraini@gmail.com,+6286496754297,L,1972-11-27,2020-08-01
+201,Dr. Ika Purwanti,luwar83@yahoo.com,+6287342041986,L,1998-09-25,2021-06-21
+202,Nyana Firmansyah,mangunsongkala@gmail.com,+6286865656883,L,1972-03-18,2020-04-12
+203,Dodo Prakasa,zmaryadi@yahoo.com,+6284250832632,L,1980-03-19,2020-12-24
+204,Ajiman Santoso,mayasarielisa@hotmail.com,+6285929041301,L,1985-08-22,2019-12-14
+205,Natalia Prabowo,efujiati@hotmail.com,+6280279969345,P,1997-05-16,2020-10-13
+206,Panji Suryono,udanababan@hotmail.com,+6281179602246,P,2005-08-14,2020-09-16
+207,Drs. Bagiya Prasetya,utama38@yahoo.com,+6286801164135,P,1990-08-04,2020-02-08
+208,Bagiya Agustina,jfirgantoro@hotmail.com,+6281914619534,P,1992-03-19,2020-12-31
+209,Puji Usamah,pia90@gmail.com,+6289042512930,P,1981-04-17,2021-05-15
+210,Belinda Prasasta,lukman62@hotmail.com,+6285882678683,P,2006-04-12,2021-07-31
+211,"Ade Lestari, M.Kom.",kdabukke@yahoo.com,+6282144015994,L,1992-06-27,2022-05-28
+212,Harto Maheswara,karyanatsir@hotmail.com,+6288776018892,P,1992-04-24,2022-06-14
+213,Najam Pradipta,utamamulyani@yahoo.com,+6281477722109,L,1975-07-09,2020-07-08
+214,Fitria Najmudin,lazuardiadikara@gmail.com,+6288777626766,P,2002-07-07,2021-12-24
+215,"Aswani Simanjuntak, S.IP",hutagalungcornelia@hotmail.com,+6287060537288,L,1999-11-27,2021-10-17
+216,Mujur Dongoran,nlaksita@hotmail.com,+6280568819584,L,2003-08-23,2020-08-28
+217,R.M. Cakrabuana Fujiati,slamet04@hotmail.com,+6285549317621,L,2002-02-24,2021-03-13
+218,"Dr. Karta Waluyo, S.E.I",lestarirestu@gmail.com,+6288244503952,L,1980-05-06,2020-05-22
+219,Baktianto Rahimah,asmanrahmawati@hotmail.com,+6282992133532,L,1985-04-14,2019-07-05
+220,R. Rachel Suwarno,ratna17@hotmail.com,+6280840535052,L,1984-12-26,2022-05-01
+221,Hafshah Firmansyah,kuntharasitorus@hotmail.com,+6281861939003,P,2003-03-23,2020-08-09
+222,"Sabri Jailani, S.Sos",opudjiastuti@gmail.com,+6289181464446,L,1975-09-18,2022-03-23
+223,Cut Ratih Novitasari,jatmiko21@gmail.com,+6286429335471,P,1976-08-25,2022-05-14
+224,"Opan Gunawan, S.Ked",tirtaoktaviani@yahoo.com,+6283605199276,L,1999-01-17,2020-05-09
+225,Sutan Rafi Aryani,hmaryati@gmail.com,+6289438063353,P,1980-11-12,2020-06-23
+226,"Lintang Maryati, S.Gz",catur10@hotmail.com,+6282086144629,L,1978-01-13,2020-03-06
+227,"Tgk. Lanjar Jailani, S.I.Kom",timbulsalahudin@yahoo.com,+6284857651316,L,1990-03-15,2020-12-01
+228,Damar Puspasari,hassanahhadi@yahoo.com,+6285693564149,L,1973-10-28,2021-07-24
+229,Safina Yolanda,napitupuludarijan@gmail.com,+6280989323746,P,2005-11-01,2019-12-25
+230,Taufan Handayani,marbunpurwanto@gmail.com,+6282566037652,L,1995-07-12,2021-09-25
+231,Puput Mansur,narpatiindah@gmail.com,+6289096652374,L,1986-12-30,2021-08-12
+232,Hani Anggraini,vpradipta@hotmail.com,+6288879058619,P,1987-10-31,2019-09-05
+233,Dr. Putri Nuraini,narpatiaswani@hotmail.com,+6283181241926,P,1997-05-24,2021-04-29
+234,"Gina Narpati, S.E.",icha09@yahoo.com,+6282820228599,L,2001-11-07,2021-08-19
+235,Febi Prayoga,karsana00@gmail.com,+6283248043492,L,1979-01-04,2020-12-13
+236,Titi Yuniar,bakti71@gmail.com,+6281683295887,L,1981-03-11,2022-06-04
+237,"Paiman Nababan, M.M.",harja37@yahoo.com,+6288724808724,L,1995-11-29,2019-06-22
+238,Uda Laksmiwati,zamirapurwanti@yahoo.com,+6283437445892,L,1975-02-12,2020-06-15
+239,Elisa Hutasoit,lastuti@yahoo.com,+6281438357877,L,1965-10-14,2019-10-06
+240,R. Zamira Nugroho,zwibowo@hotmail.com,+6284027416275,L,1991-01-18,2019-02-04
+241,Drs. Uda Permadi,xhutagalung@hotmail.com,+6285431512004,L,2002-02-18,2021-07-30
+242,"Dalima Wibisono, S.Ked",novalailasari@yahoo.com,+6286975023955,P,1993-03-28,2019-09-05
+243,Hj. Shania Lailasari,udapranowo@hotmail.com,+6284581531404,L,2003-01-13,2019-01-20
+244,Maya Nasyidah,hariyahkartika@hotmail.com,+6284392061698,P,1968-08-05,2019-01-09
+245,"Koko Sitompul, M.TI.",irma68@yahoo.com,+6285700028143,P,1988-02-29,2021-12-17
+246,"Tgk. Lala Maheswara, M.Pd",ulipradana@gmail.com,+6289410495939,L,1983-01-12,2019-04-28
+247,Himawan Kuswoyo,sihombingcakrabuana@hotmail.com,+6289996340386,P,1979-04-27,2019-05-11
+248,"Puti Samiah Mandasari, S.Gz",najib14@hotmail.com,+6283149104106,L,2007-01-03,2019-01-23
+249,Ophelia Oktaviani,olailasari@gmail.com,+6287791260519,L,2005-10-06,2020-02-29
+250,Kenes Irawan,jarwa65@yahoo.com,+6283278489032,L,1981-12-23,2019-12-02
+251,"Cut Jessica Safitri, M.Kom.",rprasasta@yahoo.com,+6283298725044,P,1991-03-24,2021-08-31
+252,"Vanesa Santoso, S.Kom",taridamanik@yahoo.com,+6286076788975,P,1999-06-15,2020-10-18
+253,"Nasab Suryatmi, S.Ked",wisnu45@hotmail.com,+6281258842093,L,2007-03-12,2022-06-23
+254,Kenari Rajata,sihotangraden@gmail.com,+6283062947046,P,1978-09-21,2022-06-08
+255,Prabawa Susanti,riyantipuput@gmail.com,+6285655407707,P,2000-11-20,2019-02-08
+256,"R. Elon Pradipta, S.IP",tambavicky@hotmail.com,+6284354786909,L,1993-11-25,2021-02-14
+257,Bagus Lazuardi,rahayurahmi@gmail.com,+6282881265026,P,1977-11-19,2019-05-31
+258,R.M. Caket Sirait,sihombingbalijan@gmail.com,+6283049996368,P,2006-04-23,2019-11-09
+259,"drg. Dacin Saefullah, S.Pd",ivanharyanto@hotmail.com,+6287482261432,L,1995-03-29,2019-01-18
+260,"Tgk. Bahuwirya Maheswara, S.Ked",eirawan@gmail.com,+6288483090622,P,2000-11-28,2021-04-08
+261,Teddy Sihombing,tambalaksana@gmail.com,+6281564707362,L,1985-01-21,2022-04-11
+262,drg. Alika Tarihoran,shania36@yahoo.com,+6285389530651,P,1989-11-07,2020-04-16
+263,"Dt. Nalar Mangunsong, S.T.",puspitamaras@gmail.com,+6286524842771,P,1988-07-26,2019-07-12
+264,Gabriella Sihombing,nugraha77@gmail.com,+6280107224069,L,1970-08-18,2020-03-02
+265,Dr. Jasmani Nasyidah,prayogairwan@hotmail.com,+6283163723572,L,2002-11-19,2019-04-26
+266,Kairav Maheswara,wardaya81@yahoo.com,+6286249998433,L,1970-07-29,2019-04-08
+267,Lantar Kurniawan,kunthara39@gmail.com,+6283848811939,L,1979-06-21,2019-07-22
+268,"Timbul Laksmiwati, M.Farm",ghaliyatisafitri@gmail.com,+6288629438027,L,1971-06-02,2021-06-18
+269,Yuni Fujiati,bakimannababan@gmail.com,+6289060454619,P,1975-09-29,2019-02-18
+270,"Sutan Nardi Prasetya, M.Kom.",amulyani@yahoo.com,+6285918620541,L,1972-12-17,2020-07-28
+271,"Hj. Salwa Astuti, S.IP",qpermadi@yahoo.com,+6281489676785,L,1994-02-21,2021-10-08
+272,"drg. Jaka Purnawati, M.TI.",xbudiyanto@gmail.com,+6284089656101,L,2005-02-14,2020-03-16
+273,Dina Setiawan,galih40@gmail.com,+6282905525136,P,1988-02-15,2022-01-01
+274,"Ir. Yani Maheswara, S.Gz",safitrihartana@yahoo.com,+6286623676952,P,2003-02-05,2021-04-01
+275,Heryanto Mandasari,ifasantoso@yahoo.com,+6281339638494,L,1978-12-12,2022-06-18
+276,Puspa Wacana,cecep72@yahoo.com,+6280380190513,L,1988-04-11,2020-11-26
+277,Rudi Winarno,garaprasetya@hotmail.com,+6283839350126,L,2005-04-14,2022-01-15
+278,Himawan Novitasari,jaissafitri@yahoo.com,+6289058742812,P,1973-04-10,2021-07-14
+279,"Puti Laila Usamah, S.Kom",maryadijanet@hotmail.com,+6289887850476,L,1973-05-11,2021-08-09
+280,dr. Dimas Januar,jono94@hotmail.com,+6285735153031,L,1975-05-09,2022-02-14
+281,"Drs. Uli Halim, M.Pd",paramita83@hotmail.com,+6289848640460,L,1996-09-19,2022-01-11
+282,Raihan Aryani,kokomandasari@yahoo.com,+6289586530766,P,1985-05-26,2021-08-24
+283,"R. Icha Sihotang, S.Ked",artawan22@yahoo.com,+6280136441869,L,1996-04-16,2021-01-04
+284,Cemplunk Sinaga,dabukkeajeng@yahoo.com,+6280500414872,P,1966-02-21,2019-03-04
+285,Ega Uwais,prabowodaruna@gmail.com,+6282483132670,L,1991-04-11,2020-02-24
+286,"Dr. Yance Nababan, M.Kom.",pertiwiestiono@hotmail.com,+6284369826976,P,1971-01-21,2019-06-09
+287,Prabu Latupono,radensamosir@hotmail.com,+6288049656207,P,2007-10-07,2022-03-09
+288,Tri Padmasari,ilyasmaulana@yahoo.com,+6287729210378,P,2004-03-23,2020-02-28
+289,Bakda Wibowo,cnuraini@gmail.com,+6285143041388,P,1990-07-29,2022-04-01
+290,"H. Virman Latupono, M.M.",eramadan@yahoo.com,+6287429730894,P,1982-02-06,2019-07-21
+291,Latika Gunawan,legawa78@gmail.com,+6282705212244,L,1988-12-17,2020-12-29
+292,"Wasis Wijayanti, S.Psi",danggriawan@yahoo.com,+6289391679126,L,1983-07-05,2020-12-03
+293,Salsabila Kusumo,triprasetyo@hotmail.com,+6287657883503,L,2006-12-21,2021-11-29
+294,"Eka Sitompul, S.Gz",lukita16@yahoo.com,+6287418845146,L,2003-05-28,2022-06-24
+295,"R.M. Asirwanda Pangestu, S.E.",kawacasitumorang@hotmail.com,+6285094269535,L,2004-03-22,2021-10-19
+296,dr. Ade Pratiwi,cengkalhariyah@yahoo.com,+6286817633939,L,2003-08-27,2019-02-27
+297,Karimah Budiman,gada37@yahoo.com,+6289187807745,L,1987-12-27,2020-08-07
+298,Rafid Mandasari,opan11@hotmail.com,+6289354830649,L,1973-01-30,2022-06-01
+299,"Dt. Waluyo Novitasari, M.Kom.",ilsamangunsong@hotmail.com,+6285466677925,P,1999-12-30,2019-03-14
+300,Yance Jailani,chastuti@hotmail.com,+6289762269814,P,1969-02-07,2019-01-24
+301,Tantri Habibi,wahyudinharto@hotmail.com,+6288873240680,L,1986-12-15,2020-09-01
+302,Jaya Nuraini,prasetyowijaya@hotmail.com,+6283566299390,L,1996-12-04,2022-04-07
+303,Yance Fujiati,gangsar68@hotmail.com,+6282978283504,P,1969-04-25,2020-12-24
+304,Nalar Fujiati,rkurniawan@hotmail.com,+6284405878292,P,1968-02-13,2019-03-11
+305,R. Sadina Mahendra,cawisonouyainah@gmail.com,+6288307500388,P,1999-08-07,2020-11-18
+306,"Drs. Lalita Nuraini, S.Pd",artantowibisono@hotmail.com,+6284723576099,P,1994-05-13,2019-10-05
+307,Nova Prastuti,hardana14@gmail.com,+6281589891541,L,1980-11-27,2020-05-25
+308,Chelsea Dongoran,rsitumorang@gmail.com,+6280362972038,L,1998-03-12,2021-02-12
+309,"R. Ciaobella Santoso, S.T.",hasan87@yahoo.com,+6281036577747,P,1983-02-20,2020-11-01
+310,Banawi Namaga,galarfarida@hotmail.com,+6286998461452,L,1990-04-07,2021-05-31
+311,Puti Hilda Prastuti,putralaras@yahoo.com,+6281050082179,L,1977-05-16,2019-03-19
+312,Upik Thamrin,handayanisaadat@gmail.com,+6287525188282,L,2005-01-27,2019-08-11
+313,Taufan Simanjuntak,zeldahastuti@gmail.com,+6282937284212,P,1997-06-03,2021-10-24
+314,drg. Janet Handayani,prasetyoamelia@gmail.com,+6288775966079,P,1970-06-09,2020-11-16
+315,Vino Wibowo,faridacawuk@hotmail.com,+6288649424893,L,2002-08-27,2022-02-18
+316,Salimah Yulianti,gangsarsihombing@yahoo.com,+6287921455111,L,1967-10-15,2020-12-13
+317,"Viktor Gunarto, M.Pd",tirtanababan@yahoo.com,+6289574173840,L,1991-04-08,2020-04-29
+318,Rahmi Melani,imangunsong@yahoo.com,+6288729936061,P,1985-02-27,2019-08-31
+319,Halima Hutapea,ssamosir@yahoo.com,+6286455084373,P,1974-07-13,2021-06-07
+320,Unggul Yolanda,mahfud17@hotmail.com,+6289169289633,P,1980-11-15,2022-05-01
+321,Drs. Anom Palastri,csihombing@yahoo.com,+6289034751036,L,1998-02-28,2022-01-08
+322,Jaya Puspita,prabowosadina@yahoo.com,+6283413275438,L,1985-09-18,2020-07-28
+323,"R. Vero Simbolon, S.Sos",lsimbolon@hotmail.com,+6280566019593,P,1984-08-29,2020-10-14
+324,KH. Emong Tampubolon,nhutagalung@gmail.com,+6284465824130,P,1986-10-14,2021-06-11
+325,"Cut Zamira Wastuti, S.E.",qwaluyo@hotmail.com,+6283541953852,L,1974-11-29,2021-09-21
+326,"dr. Qori Budiman, M.Farm",ardiantonatalia@gmail.com,+6284054712478,P,1973-04-01,2021-09-04
+327,"dr. Dalimin Oktaviani, M.Ak",sarahsirait@hotmail.com,+6284495566299,L,2004-04-12,2019-06-11
+328,Jumari Ardianto,keneshardiansyah@gmail.com,+6286872520576,P,1979-02-20,2020-08-01
+329,Emil Utami,waluyo26@hotmail.com,+6284356226472,P,1984-12-24,2021-09-27
+330,Sutan Ajimat Pratiwi,wwacana@yahoo.com,+6282169166092,L,1970-03-05,2021-03-20
+331,"Dr. Ratna Hutagalung, M.Pd",budimanjayeng@hotmail.com,+6282845704269,P,1969-09-30,2021-06-02
+332,"R. Hasta Hasanah, S.I.Kom",namagaemin@hotmail.com,+6283444398687,P,1992-10-20,2020-10-12
+333,Ophelia Firmansyah,eminwidodo@yahoo.com,+6288275063506,P,1995-04-26,2019-07-22
+334,Galur Uyainah,mandalacinthia@hotmail.com,+6281905245953,P,1966-02-16,2019-11-14
+335,"Rina Damanik, S.T.",winda51@hotmail.com,+6289124777744,L,1972-01-28,2020-08-03
+336,"Lantar Siregar, M.M.",saputrawawan@yahoo.com,+6289949808095,L,1998-08-16,2022-02-09
+337,Adikara Yulianti,latifhasanah@yahoo.com,+6280385792317,P,1974-06-18,2019-11-02
+338,Ella Prayoga,bwijaya@yahoo.com,+6286437249646,P,1998-11-01,2020-10-11
+339,Puti Janet Tarihoran,qnatsir@yahoo.com,+6288815925129,L,1994-07-27,2021-09-18
+340,Garang Kuswandari,balidin96@gmail.com,+6280200751303,P,2003-05-31,2019-02-22
+341,Salimah Laksmiwati,utamasabar@gmail.com,+6282443572333,P,1986-12-12,2021-04-04
+342,Bagus Oktaviani,darunamarbun@hotmail.com,+6283270681185,L,1977-09-01,2021-11-25
+343,"Umaya Permadi, S.Pd",jaga94@gmail.com,+6288895742386,L,1976-07-02,2022-03-05
+344,"Puti Genta Kuswoyo, M.M.",baryani@gmail.com,+6283577252220,L,1994-09-12,2021-03-08
+345,Galang Saragih,ikuswoyo@gmail.com,+6288681655622,L,1980-04-05,2021-06-12
+346,Tania Damanik,hasanahprabu@hotmail.com,+6288438733513,L,1965-10-07,2021-08-31
+347,Ulya Mahendra,karmahalimah@gmail.com,+6280192047160,P,1972-01-31,2021-07-01
+348,Najwa Putra,mandasarisalwa@yahoo.com,+6286105200665,P,1972-06-10,2020-10-29
+349,"Enteng Pradipta, M.Pd",gtamba@hotmail.com,+6287987139318,L,2007-01-18,2019-08-24
+350,Samiah Puspasari,amustofa@gmail.com,+6283194862856,L,1967-06-20,2022-03-30
+351,"Puti Sari Zulaika, S.IP",awasita@hotmail.com,+6284041057526,L,1985-02-14,2022-04-23
+352,Yunita Simanjuntak,rpuspasari@gmail.com,+6284356782520,P,1985-06-21,2020-09-23
+353,"Sutan Ihsan Iswahyudi, S.Pd",purwahakim@gmail.com,+6288604612346,P,2005-08-19,2021-03-25
+354,R.A. Cinta Pranowo,yosefpratama@yahoo.com,+6287821356951,L,1983-11-24,2019-02-10
+355,"R. Darimin Yuliarti, M.Kom.",usadabagiya@yahoo.com,+6280071153625,P,2003-04-20,2022-06-13
+356,Agus Rajasa,xsalahudin@gmail.com,+6281678474651,L,1993-03-22,2019-08-27
+357,"Jarwi Januar, S.E.I",lintang78@gmail.com,+6285205356774,L,1991-03-27,2019-05-17
+358,"Hj. Intan Sitorus, S.IP",utamaiswahyudi@hotmail.com,+6282279528484,P,1986-09-20,2020-06-26
+359,"Edward Yulianti, S.E.I",umi92@hotmail.com,+6288635549410,L,1979-01-09,2021-12-20
+360,Jail Pangestu,wacanajaswadi@gmail.com,+6289711390843,L,1986-01-18,2021-11-26
+361,Hari Mangunsong,rizkisitorus@hotmail.com,+6288483872738,P,1990-12-12,2021-01-27
+362,"Victoria Pradipta, S.Psi",icha08@yahoo.com,+6284550014661,P,2005-10-26,2021-11-07
+363,drg. Yani Wibisono,pratiwikardi@yahoo.com,+6284432012528,L,2005-03-08,2021-09-04
+364,"Rama Kuswoyo, S.Psi",puspasarivivi@hotmail.com,+6287514292367,L,1977-07-19,2019-10-05
+365,Prasetya Prakasa,emilwacana@yahoo.com,+6281155557781,P,1975-05-08,2021-07-02
+366,"Cut Queen Saragih, S.T.",umardhiyah@gmail.com,+6286090122761,P,1994-02-21,2019-07-31
+367,"Puti Nadine Saputra, S.H.",bagiyanapitupulu@hotmail.com,+6281281260286,P,1970-02-17,2019-11-23
+368,Sakura Rahimah,jaimansaefullah@gmail.com,+6280486106348,P,1999-01-31,2020-09-11
+369,"Taufan Najmudin, S.Gz",kenarifirmansyah@hotmail.com,+6285508884434,L,1981-08-17,2020-07-10
+370,Vega Dongoran,rajasaelvin@gmail.com,+6285198063101,L,2003-07-20,2019-09-21
+371,Nasab Permata,dpermadi@hotmail.com,+6284595530398,P,1995-11-20,2022-04-10
+372,Mustofa Oktaviani,gunartocengkir@gmail.com,+6286445289293,P,1987-11-22,2019-11-23
+373,Mitra Farida,makutasaragih@hotmail.com,+6288793135705,L,1978-07-29,2021-09-09
+374,Rika Suwarno,muni39@hotmail.com,+6287400895085,P,1978-04-12,2020-02-07
+375,Bakti Padmasari,damarrajasa@gmail.com,+6286774650230,P,1981-07-08,2022-01-28
+376,"Jamalia Widiastuti, S.E.",hidayantokayun@yahoo.com,+6286844686915,P,2008-09-10,2021-05-02
+377,"Ganjaran Haryanti, M.M.",rhariyah@hotmail.com,+6284799792622,P,2002-03-02,2021-11-22
+378,"Cut Suci Yulianti, M.Kom.",donousamah@gmail.com,+6285356047992,L,2004-11-15,2019-05-01
+379,Daruna Wacana,yani28@gmail.com,+6287906627172,P,1987-08-14,2019-11-04
+380,Sadina Januar,mwahyuni@yahoo.com,+6288279776485,P,2000-10-07,2020-05-01
+381,dr. Raditya Natsir,sidiqhabibi@hotmail.com,+6280705253036,P,1973-06-20,2019-03-04
+382,Yulia Nasyiah,dzulkarnain@yahoo.com,+6282072072614,P,1979-10-22,2021-01-09
+383,"Gaman Mandasari, S.Gz",kardi51@hotmail.com,+6287239206770,P,1979-04-10,2019-03-07
+384,"KH. Heryanto Uyainah, M.Farm",salahudinrina@hotmail.com,+6284489073842,P,1975-05-15,2020-09-30
+385,Lamar Hidayanto,nugrohomumpuni@gmail.com,+6286779218373,L,2003-08-09,2021-07-11
+386,"Manah Rahimah, M.M.",ztarihoran@yahoo.com,+6281420755503,L,1974-02-13,2021-05-16
+387,Suci Kusmawati,zkuswandari@gmail.com,+6287549102838,L,1977-02-21,2021-04-15
+388,"Puti Hamima Oktaviani, S.Pd",kamidin73@yahoo.com,+6287306573836,L,1979-06-07,2021-08-09
+389,Oliva Nashiruddin,sakasitumorang@gmail.com,+6281362176391,P,2000-01-14,2021-02-17
+390,Ida Wijayanti,bsitumorang@gmail.com,+6282042815183,L,2002-06-06,2022-05-15
+391,Gandi Mayasari,hartonuraini@hotmail.com,+6283558114729,L,1988-10-20,2019-07-29
+392,"R. Mariadi Zulkarnain, S.E.I",balamantri29@hotmail.com,+6282424593796,L,1992-11-03,2020-06-19
+393,Dr. Fitriani Melani,radika34@yahoo.com,+6285971094493,P,1974-10-30,2020-08-17
+394,"Tgk. Raina Narpati, S.E.",vimanprasasta@hotmail.com,+6289128382245,L,1989-03-23,2020-10-15
+395,"R.A. Amalia Damanik, M.TI.",simanjuntaksaka@gmail.com,+6283709636609,L,1967-10-03,2022-06-25
+396,dr. Rahmi Irawan,bahuraksawulandari@yahoo.com,+6289953848352,P,2000-11-23,2021-06-01
+397,"Icha Mayasari, S.Psi",dadappratiwi@hotmail.com,+6280947560881,P,1966-06-19,2020-07-11
+398,drg. Oni Maulana,halimdarmana@hotmail.com,+6286348062246,P,1974-07-25,2020-01-06
+399,"Restu Pranowo, S.Gz",damanikanom@gmail.com,+6287179976180,P,2005-11-07,2020-05-17
+400,Victoria Oktaviani,puspitamaimunah@yahoo.com,+6285767875212,L,1996-11-18,2022-05-23
+401,Cinta Tampubolon,sabar77@yahoo.com,+6288423291414,L,1986-04-14,2019-03-15
+402,Mustofa Adriansyah,ademangunsong@yahoo.com,+6281207078691,P,1971-07-05,2019-08-08
+403,Elma Jailani,adriansyahdamu@gmail.com,+6284247569741,L,1969-11-11,2021-01-10
+404,KH. Mujur Pertiwi,talianugroho@hotmail.com,+6285130963288,P,1986-04-20,2021-07-27
+405,"Drs. Kayla Prastuti, S.Sos",mitra27@gmail.com,+6284055925215,L,1997-07-03,2020-03-16
+406,"drg. Dinda Latupono, S.E.",kardi37@gmail.com,+6284284565178,L,1973-03-20,2019-02-06
+407,"Puji Rahmawati, S.I.Kom",janet66@hotmail.com,+6289673532907,L,1979-12-14,2019-02-15
+408,Umar Maulana,luwarjailani@yahoo.com,+6282088240840,P,1994-11-18,2022-03-05
+409,"Yessi Nasyidah, M.Farm",samiahanggriawan@gmail.com,+6283525260477,P,1975-01-09,2020-07-27
+410,Kani Haryanti,fitrianinainggolan@hotmail.com,+6281246650392,P,2006-06-13,2021-04-14
+411,Mila Purwanti,faizah62@gmail.com,+6286666758372,L,1990-06-07,2021-05-07
+412,Genta Safitri,latif56@gmail.com,+6289417741430,P,1972-01-15,2021-04-07
+413,Galih Ardianto,paiman66@hotmail.com,+6282793793880,P,2004-06-23,2019-02-15
+414,"Ibun Saragih, S.Pd",salahudinjarwa@yahoo.com,+6281407042800,P,1992-10-17,2020-12-18
+415,Dt. Adikara Suartini,mandasarislamet@hotmail.com,+6280471701038,L,1982-05-05,2019-05-14
+416,Tiara Nainggolan,laras54@yahoo.com,+6281469884498,L,1976-01-04,2021-10-04
+417,"T. Ibrani Wasita, M.Pd",ibrahimwasita@yahoo.com,+6284033395709,P,1999-11-18,2021-10-30
+418,Paris Usada,agustinabaktianto@gmail.com,+6286327043535,P,1970-10-03,2020-08-10
+419,Gilda Rajata,apradipta@yahoo.com,+6281347956353,P,1990-10-23,2021-11-26
+420,Rahmi Kuswandari,nilampradana@yahoo.com,+6285335047322,P,1987-08-22,2019-02-04
+421,Dewi Kusmawati,gatramustofa@yahoo.com,+6280723763964,P,1971-09-21,2021-09-05
+422,"Wage Puspasari, S.E.I",gardianto@gmail.com,+6285843773628,P,1990-06-14,2020-04-05
+423,"Prabu Januar, M.Kom.",safitriwage@hotmail.com,+6280908451728,P,1967-10-05,2021-06-15
+424,Ozy Wahyuni,rahayuraden@yahoo.com,+6289097523339,L,1974-10-17,2021-12-24
+425,R.M. Prima Prabowo,budiyantorahmi@hotmail.com,+6286663014201,P,1973-07-13,2019-02-01
+426,Vicky Hidayat,aslijan87@gmail.com,+6286154621553,L,1982-05-14,2020-05-16
+427,Devi Hutasoit,nashiruddinestiawan@gmail.com,+6280609032777,L,2002-01-11,2020-04-06
+428,Tantri Rajasa,mahmud88@yahoo.com,+6283072046233,P,1991-04-11,2021-12-23
+429,Natalia Habibi,tarihoranajimin@hotmail.com,+6283800725801,L,1971-04-15,2021-10-16
+430,"Puji Sudiati, S.E.",kusmawatisiska@hotmail.com,+6280561697328,L,1986-05-10,2020-05-12
+431,Dagel Hakim,among88@hotmail.com,+6280834542205,P,1972-09-12,2021-11-22
+432,"Saiful Mustofa, S.Gz",dabukkeellis@hotmail.com,+6289357117533,P,1968-10-13,2021-06-09
+433,H. Ganjaran Uyainah,bahuwarnazulkarnain@hotmail.com,+6284881409966,P,1971-07-01,2022-05-23
+434,Kayla Hariyah,upik12@gmail.com,+6283065661887,L,1981-02-13,2019-11-26
+435,Edi Puspita,prabausamah@gmail.com,+6286589383068,P,1971-05-05,2019-12-30
+436,Saka Maheswara,kanda53@hotmail.com,+6288216156143,L,1967-02-01,2019-05-26
+437,Ophelia Hutapea,lestaritira@hotmail.com,+6289749183377,P,2000-01-14,2022-06-14
+438,Harjaya Simbolon,ellanashiruddin@hotmail.com,+6282336370782,L,1994-04-22,2021-11-12
+439,Kamidin Kusumo,saiful47@yahoo.com,+6283292416165,P,1993-07-02,2020-11-24
+440,Dr. Tania Mansur,utamamurti@gmail.com,+6287621863953,P,2001-02-19,2022-02-11
+441,Hesti Samosir,prabowocahyono@hotmail.com,+6284339610052,L,1976-07-06,2019-12-31
+442,Zelaya Wijayanti,elvina94@gmail.com,+6284070203177,L,2003-12-01,2021-03-25
+443,"Ani Sihombing, M.Kom.",simbolonprakosa@yahoo.com,+6288002576479,P,1974-10-09,2019-04-21
+444,Calista Uwais,lsuartini@yahoo.com,+6280143137540,L,1968-09-23,2021-12-03
+445,Artawan Halim,kasim29@yahoo.com,+6281361662487,L,1972-03-17,2021-04-26
+446,Baktianto Zulkarnain,budi29@yahoo.com,+6284207230941,P,1972-09-29,2019-07-09
+447,Lurhur Widodo,wsuartini@gmail.com,+6288443299253,L,1986-07-20,2019-01-02
+448,Rahmi Safitri,fmaheswara@gmail.com,+6284822009795,P,1994-05-04,2021-08-02
+449,"Saka Yulianti, S.E.",fujiatihardana@gmail.com,+6283388440265,L,1981-04-20,2021-03-12
+450,Purwadi Prasetya,almira48@yahoo.com,+6287788292902,P,1995-05-30,2022-02-10
+451,Farah Hutagalung,kalayulianti@gmail.com,+6289262149038,L,1986-04-27,2020-02-22
+452,Zaenab Lestari,rsihotang@hotmail.com,+6281034121422,L,1985-12-25,2022-06-24
+453,"T. Gaman Halim, M.TI.",rikapurnawati@yahoo.com,+6289720199795,L,1970-05-17,2021-03-20
+454,"Mustofa Aryani, S.Gz",corneliaharyanti@gmail.com,+6285042567341,L,2002-06-12,2019-05-29
+455,"Dirja Fujiati, M.Ak",paramitapradana@yahoo.com,+6282425652728,L,1970-09-10,2019-12-25
+456,Dt. Kayun Namaga,ksiregar@yahoo.com,+6280923323249,P,1976-03-13,2019-11-23
+457,Dono Prasasta,dadriansyah@hotmail.com,+6285408253893,P,1991-09-27,2020-02-21
+458,Gina Siregar,melindatamba@yahoo.com,+6283026718502,P,1992-04-20,2021-09-27
+459,"Ir. Bakiono Natsir, M.Kom.",eprasasta@yahoo.com,+6288183208704,P,2000-04-11,2019-06-04
+460,R.A. Wirda Nasyidah,jarwasusanti@hotmail.com,+6289507305174,P,1988-06-16,2020-06-08
+461,Yance Anggriawan,hsiregar@gmail.com,+6283063109161,L,1994-03-29,2019-07-13
+462,Cawisadi Sitorus,wulandariirwan@gmail.com,+6281036561347,L,1971-09-15,2022-01-02
+463,H. Yono Natsir,ahariyah@gmail.com,+6283592210766,L,1984-09-02,2021-11-05
+464,"Puti Tania Kusmawati, S.Farm",shania70@yahoo.com,+6286255390559,L,1973-09-20,2019-04-14
+465,Rika Pertiwi,karman23@gmail.com,+6283736372579,P,1978-08-28,2021-04-04
+466,"Dr. Marsudi Habibi, S.Gz",riyantiajimat@yahoo.com,+6288470969438,L,1992-11-09,2019-10-08
+467,"Hafshah Hariyah, S.T.",narpatilanggeng@hotmail.com,+6284977220873,P,1983-02-15,2019-07-10
+468,Puti Padmi Hutasoit,hana06@hotmail.com,+6283491611010,P,1995-02-10,2020-01-19
+469,Maimunah Handayani,adityahartati@yahoo.com,+6282474449721,L,1978-01-13,2021-09-01
+470,Hafshah Megantara,winarsihmurti@gmail.com,+6289678321198,P,1978-09-18,2021-01-30
+471,Warsita Megantara,argono60@yahoo.com,+6284014187232,L,1968-05-26,2019-01-18
+472,Ana Sinaga,raina58@hotmail.com,+6280305100874,L,1967-10-16,2021-12-22
+473,"Harimurti Halim, S.I.Kom",zizi74@yahoo.com,+6284773369396,L,2007-02-06,2022-02-01
+474,"Nadine Marpaung, S.Sos",eoktaviani@gmail.com,+6280626063377,L,1977-10-29,2022-06-03
+475,Rini Anggriawan,marbunlegawa@hotmail.com,+6289079392495,P,2007-04-18,2021-02-20
+476,R. Mulyono Lestari,ooktaviani@gmail.com,+6285166746024,L,1997-11-18,2020-08-17
+477,"Maria Januar, M.Ak",upik67@gmail.com,+6287452995100,P,1995-09-05,2021-10-14
+478,Padma Prabowo,siska75@gmail.com,+6282729775539,P,1982-09-14,2019-03-17
+479,Dalima Puspasari,wacanamelinda@hotmail.com,+6284117295294,P,1990-06-22,2021-12-28
+480,Gamani Latupono,puspitajono@yahoo.com,+6284249050870,P,2000-04-17,2022-02-28
+481,Drs. Mutia Mustofa,psiregar@gmail.com,+6287206279681,L,1997-09-25,2020-02-29
+482,Yoga Nainggolan,kayunoktaviani@gmail.com,+6285165684902,L,1974-12-04,2020-11-03
+483,R. Kala Setiawan,mulyono74@hotmail.com,+6288907222894,L,1973-04-28,2019-07-31
+484,Keisha Usada,kamal40@yahoo.com,+6281880164579,P,1998-08-25,2020-05-31
+485,R.M. Muhammad Yulianti,safitripuji@yahoo.com,+6284260140320,P,2001-02-05,2019-01-01
+486,Nova Wahyudin,edamanik@hotmail.com,+6289305800866,P,1973-01-30,2021-07-18
+487,"Puti Elvina Pertiwi, M.Kom.",harimurti29@yahoo.com,+6286864050403,P,1973-09-16,2019-05-27
+488,Vanesa Najmudin,zutami@yahoo.com,+6289630964801,L,1984-10-13,2019-08-01
+489,drg. Fathonah Riyanti,roktaviani@hotmail.com,+6281527670192,L,1967-02-19,2019-05-02
+490,"T. Waluyo Nuraini, S.Kom",setiawancahyadi@gmail.com,+6289474541857,P,1991-01-12,2021-04-08
+491,Syahrini Lestari,tarimarbun@yahoo.com,+6280666920031,L,1997-12-31,2021-12-12
+492,"Sutan Margana Mardhiyah, S.I.Kom",nilam92@gmail.com,+6281505422084,L,1982-07-07,2021-12-28
+493,Tgk. Cornelia Mangunsong,wibisonoradika@yahoo.com,+6287466897779,L,2001-03-05,2020-07-22
+494,"drg. Vero Marbun, M.Pd",nababanhendra@yahoo.com,+6285056150494,P,1981-07-31,2019-01-11
+495,"Jessica Prabowo, S.H.",panca84@yahoo.com,+6286479476794,P,1994-06-20,2019-08-09
+496,Karsana Farida,kala25@gmail.com,+6285915093148,P,1990-04-04,2021-06-18
+497,dr. Syahrini Tampubolon,tsihombing@gmail.com,+6284707173694,P,2002-01-15,2020-06-11
+498,Dt. Lembah Wahyuni,opratama@hotmail.com,+6280361439541,L,1968-03-01,2022-04-10
+499,Kemba Namaga,glazuardi@yahoo.com,+6282361800087,P,2008-04-23,2019-08-27
+500,"Cecep Tampubolon, S.E.",aditya31@hotmail.com,+6281749390913,P,2006-05-17,2021-08-04
+501,"H. Uda Kusmawati, S.E.",lrajasa@gmail.com,+6288000511966,P,1981-01-30,2019-12-08
+502,"R.M. Caraka Putra, M.TI.",tlatupono@hotmail.com,+6283481484369,L,1985-08-09,2019-01-01
+503,"Tgk. Sabrina Siregar, M.Kom.",hutagalunghartaka@yahoo.com,+6281739601571,L,1969-10-24,2022-05-25
+504,Sabri Anggriawan,jasminsimbolon@yahoo.com,+6286508453522,L,2002-06-13,2021-04-09
+505,Diah Susanti,estiawan49@yahoo.com,+6289530678586,P,1968-07-22,2019-06-03
+506,Sakura Nasyidah,emashariyah@yahoo.com,+6284073004103,P,1991-07-03,2019-12-10
+507,"Drs. Raditya Pratiwi, S.Ked",ngunawan@hotmail.com,+6287495406081,L,2003-09-03,2021-08-20
+508,Lalita Samosir,marpaungsidiq@gmail.com,+6286925502001,P,1983-12-08,2019-12-29
+509,H. Jaeman Puspita,irnanto34@yahoo.com,+6289323874267,L,1976-01-11,2022-02-26
+510,"Kania Prayoga, S.Psi",vadriansyah@yahoo.com,+6283870249522,P,1995-09-12,2021-07-17
+511,Jamil Natsir,unababan@gmail.com,+6280609632363,L,1976-09-24,2021-05-04
+512,Dalima Hutasoit,garan60@gmail.com,+6285846560893,P,1985-10-21,2020-09-17
+513,"T. Salman Wulandari, S.Gz",bnamaga@yahoo.com,+6282848866852,L,1970-02-16,2022-05-18
+514,Ana Simbolon,enapitupulu@yahoo.com,+6288555154576,L,1983-03-11,2019-08-31
+515,Winda Iswahyudi,rahmat91@gmail.com,+6287323011639,P,1972-05-06,2022-02-20
+516,Eka Wahyuni,lailasaripandu@hotmail.com,+6281363810607,P,2005-05-09,2019-01-26
+517,"Paramita Utama, S.Kom",rrahayu@gmail.com,+6287039502216,L,1984-02-23,2022-02-25
+518,Putri Pudjiastuti,waskitanaradi@gmail.com,+6289374049870,L,1994-12-21,2021-07-13
+519,Tari Kusmawati,zwastuti@yahoo.com,+6284630722265,L,2006-03-06,2021-10-28
+520,Victoria Mangunsong,cindywijaya@gmail.com,+6280309688519,P,1976-08-13,2019-09-09
+521,Ghani Maryadi,gaduhhastuti@gmail.com,+6281308429425,P,1974-01-31,2019-02-06
+522,Adinata Winarsih,astutibagus@yahoo.com,+6285567870489,P,2003-12-20,2022-02-16
+523,"R. Sabrina Prasetya, S.I.Kom",prayitna67@gmail.com,+6283731981189,L,1980-01-22,2021-07-16
+524,Daniswara Megantara,ztarihoran@hotmail.com,+6285060412032,L,1995-06-29,2020-11-10
+525,Ifa Iswahyudi,banawipratiwi@hotmail.com,+6281987238807,P,1969-09-26,2022-05-13
+526,Ir. Qori Mandala,mangunsongjasmani@yahoo.com,+6286939511248,L,1984-08-28,2020-09-07
+527,"Widya Oktaviani, S.Sos",jarwiwidiastuti@gmail.com,+6283309152249,P,1972-12-02,2020-07-16
+528,"Marsito Wulandari, S.E.",arajasa@yahoo.com,+6280897052042,P,1988-02-17,2020-07-02
+529,Zizi Susanti,carakahidayat@gmail.com,+6283043061238,L,1986-09-15,2021-07-16
+530,Drs. Rosman Setiawan,qori85@hotmail.com,+6288433866667,P,1986-08-02,2021-08-15
+531,Lasmono Nashiruddin,pranowojessica@yahoo.com,+6287766438859,L,1977-05-30,2020-07-29
+532,Restu Susanti,diana33@gmail.com,+6284303881026,P,1972-08-10,2021-03-15
+533,"R. Siti Pratama, S.H.",auyainah@yahoo.com,+6288618470454,L,1990-09-27,2020-10-17
+534,Dr. Ana Nasyiah,tanggriawan@hotmail.com,+6283198210476,L,1999-09-27,2021-05-07
+535,Jail Marbun,bkuswandari@gmail.com,+6281930934479,L,2002-09-12,2021-12-17
+536,Aswani Rahayu,csaragih@yahoo.com,+6281283349111,P,2003-08-19,2019-01-24
+537,"Harjo Mayasari, S.H.",pujifarida@yahoo.com,+6283549736207,L,1984-12-24,2021-11-01
+538,Intan Laksmiwati,nadia90@hotmail.com,+6284241717233,L,1973-02-25,2019-12-23
+539,Maida Puspita,radit04@hotmail.com,+6286864958295,P,1974-04-30,2021-04-29
+540,Perkasa Mahendra,unggulsaragih@yahoo.com,+6285866742698,P,1991-08-09,2020-02-09
+541,Nyoman Oktaviani,jakapratama@yahoo.com,+6284620440388,L,1998-06-13,2019-08-22
+542,Ani Yuliarti,yani62@gmail.com,+6286750639539,P,2004-07-09,2021-01-16
+543,Marsudi Winarsih,timbul21@hotmail.com,+6283912012472,P,1985-10-28,2019-01-17
+544,"Septi Maheswara, S.Gz",fitria12@yahoo.com,+6284661611365,P,2002-07-23,2019-12-23
+545,Balidin Mandala,fmulyani@hotmail.com,+6286885647071,L,2008-09-13,2019-08-14
+546,Mumpuni Mangunsong,lsuryatmi@gmail.com,+6284868597988,P,1975-10-28,2019-03-12
+547,Tirta Megantara,ssalahudin@gmail.com,+6284938903862,P,1984-04-24,2022-02-08
+548,Dasa Megantara,swacana@gmail.com,+6285361383560,L,1996-01-21,2020-01-27
+549,Dt. Jarwadi Januar,puspitaridwan@yahoo.com,+6286066723925,P,1968-10-23,2022-04-07
+550,Luis Hakim,dimaz50@hotmail.com,+6283378436029,L,1967-05-05,2021-03-13
+551,"drg. Nova Saputra, S.T.",dabukkejaeman@yahoo.com,+6286127671920,L,1981-05-11,2019-07-26
+552,Jail Simanjuntak,hendrasimbolon@hotmail.com,+6283007155988,P,1988-05-26,2019-04-27
+553,Rina Haryanto,wibowomarsudi@gmail.com,+6284602018645,P,1996-01-26,2019-09-15
+554,Eka Yolanda,asmuni70@gmail.com,+6289494077007,P,1995-02-22,2022-05-02
+555,Safina Puspita,mardhiyahwakiman@yahoo.com,+6286517511053,P,1974-09-08,2020-10-13
+556,Elvina Ardianto,zalindrasamosir@gmail.com,+6283315962640,L,1981-05-27,2020-06-13
+557,Violet Lazuardi,fujiatiyosef@gmail.com,+6287578579289,L,1983-01-08,2019-08-12
+558,Samiah Puspasari,suwais@hotmail.com,+6280928490401,P,1999-05-25,2020-06-14
+559,Langgeng Hastuti,rahimahwadi@yahoo.com,+6284174590244,P,2003-09-30,2022-03-10
+560,Saka Mansur,mumpuni88@gmail.com,+6287864131885,L,1986-05-11,2019-04-11
+561,Putri Utama,malik60@hotmail.com,+6284689631367,P,1995-04-21,2020-07-21
+562,Jarwi Anggriawan,kalimrajata@gmail.com,+6283678434170,L,2000-08-11,2020-09-21
+563,Bakiono Laksmiwati,rajatagarda@gmail.com,+6287797986715,L,1976-01-14,2022-01-23
+564,"Irfan Mayasari, S.Psi",mahendraarsipatra@hotmail.com,+6284321151688,P,2005-06-06,2020-02-11
+565,Vera Rajata,irnanto61@hotmail.com,+6288800834078,P,1968-04-07,2019-05-17
+566,Cici Mahendra,lmahendra@hotmail.com,+6285993797307,L,1989-08-31,2019-10-22
+567,Raisa Mangunsong,paramita52@gmail.com,+6285289840130,P,2002-05-28,2019-05-03
+568,Lasmono Yuliarti,smaryati@hotmail.com,+6282635423291,L,2006-05-14,2022-02-21
+569,Uchita Suartini,karya97@gmail.com,+6282361545040,L,1983-06-22,2019-05-21
+570,Kiandra Wahyudin,baktiadi69@hotmail.com,+6282668277411,P,1992-12-07,2019-11-26
+571,Mustofa Maryati,napitupuluutama@gmail.com,+6282534859082,L,1971-02-17,2020-07-12
+572,dr. Wawan Dongoran,perkasa11@yahoo.com,+6281805933837,P,1991-06-15,2020-03-26
+573,R. Mutia Oktaviani,gantar70@hotmail.com,+6285110723389,P,2004-01-22,2022-01-13
+574,"Drs. Salsabila Farida, S.Pd",mahfuddamanik@yahoo.com,+6286588093716,P,1999-05-12,2019-06-07
+575,Kani Sirait,hendriwibisono@hotmail.com,+6283507119998,P,1997-01-23,2022-05-23
+576,Ratih Thamrin,jakapuspasari@yahoo.com,+6284284835066,L,1999-09-16,2021-01-25
+577,Hafshah Mahendra,winarnosepti@gmail.com,+6281646974234,P,1985-07-25,2020-08-30
+578,"dr. Hardi Permata, M.M.",cjanuar@yahoo.com,+6281007449628,P,1966-09-17,2021-01-21
+579,"Ir. Ayu Saefullah, S.H.",endra26@hotmail.com,+6287312723641,L,1996-10-08,2022-06-24
+580,Prakosa Widodo,kayunmaheswara@gmail.com,+6287317197131,L,1986-10-25,2020-11-10
+581,R.M. Marsito Nasyidah,karmanlailasari@hotmail.com,+6288919817693,P,1989-10-31,2021-12-17
+582,T. Bakti Sudiati,qpratiwi@yahoo.com,+6285395381126,P,1985-11-11,2020-04-05
+583,Dalima Hassanah,msinaga@gmail.com,+6289403644164,L,1972-07-24,2019-02-28
+584,Rachel Kuswoyo,yulianasusanti@yahoo.com,+6285342719845,L,1981-11-10,2022-05-19
+585,Amalia Lailasari,gamblang64@yahoo.com,+6285216221944,P,1966-12-12,2020-07-15
+586,Prayitna Prasetya,nilamlaksita@yahoo.com,+6282083116987,P,1982-10-20,2021-12-15
+587,Ami Kusmawati,safitrisabrina@yahoo.com,+6288652747914,P,2001-09-13,2021-06-11
+588,Raina Santoso,siregarkenzie@yahoo.com,+6288993970729,P,2002-10-06,2021-06-12
+589,"R.A. Salsabila Hutagalung, S.Sos",cengkirsaptono@yahoo.com,+6284913364542,P,1982-08-28,2022-02-20
+590,"Bambang Hidayanto, S.Pd",ygunarto@hotmail.com,+6286097501857,L,1992-03-31,2019-03-13
+591,Budi Pudjiastuti,heryanto84@gmail.com,+6286822775586,L,2000-08-01,2020-07-22
+592,"Wadi Adriansyah, M.Ak",maryadikayla@hotmail.com,+6289764647816,P,1995-10-08,2019-09-14
+593,Balangga Hardiansyah,gunartoakarsana@yahoo.com,+6286391097345,L,2002-01-20,2021-11-27
+594,Nardi Prabowo,gilangputra@yahoo.com,+6283875393830,L,1979-02-21,2021-05-01
+595,Gawati Mayasari,cakrawala35@gmail.com,+6288530836204,L,1984-02-01,2020-01-03
+596,Wirda Manullang,napitupulugalang@yahoo.com,+6281952435642,L,1973-10-05,2021-07-10
+597,drg. Garda Marpaung,raditrahayu@hotmail.com,+6286884176088,P,1994-06-11,2021-08-17
+598,Sabar Hassanah,ynarpati@yahoo.com,+6282359330908,L,1977-05-27,2022-06-08
+599,Bahuraksa Simbolon,inamaga@gmail.com,+6289648001579,P,1968-08-06,2019-07-25
+600,Zalindra Kurniawan,latikahandayani@gmail.com,+6280054274274,L,1997-04-20,2019-08-16

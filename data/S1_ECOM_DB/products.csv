@@ -1,0 +1,62 @@
+product_id,sku,category_id,product_name,brand,base_price,is_active
+1,SKU-1001-996,10,H&M Atasan Accusantium Pro,H&M,7282710,True
+2,SKU-1002-563,3,Apple Laptop Eos,Apple,208680,True
+3,SKU-1003-881,4,UGREEN Aksesoris Elektronik Facilis,UGREEN,26880870,True
+4,SKU-1004-217,10,Erigo Atasan Dolor Pro,Erigo,6301470,True
+5,SKU-1005-879,2,Samsung Smartphone Beatae Classic,Samsung,1078920,True
+6,SKU-1006-364,4,Logitech Aksesoris Elektronik Possimus,Logitech,28340520,True
+7,SKU-1007-262,10,Uniqlo Atasan Maiores Pro,Uniqlo,240870,True
+8,SKU-1008-418,12,Compass Sepatu Facere,Compass,11495160,True
+9,SKU-1009-542,12,Adidas Sepatu Accusamus Pro,Adidas,975690,True
+10,SKU-1010-742,12,Compass Sepatu Nisi Series 2,Compass,16314780,True
+11,SKU-1011-925,3,Acer Laptop Vitae,Acer,1597290,True
+12,SKU-1012-402,10,H&M Atasan Sunt,H&M,3434340,True
+13,SKU-1013-431,12,Adidas Sepatu Nisi,Adidas,14182470,True
+14,SKU-1014-496,6,Informa Meja Reiciendis,Informa,10900200,True
+15,SKU-1015-122,7,Informa Kursi Quaerat Lite,Informa,199800,True
+16,SKU-1016-401,12,Compass Sepatu Voluptatem Pro,Compass,3268950,True
+17,SKU-1017-107,2,Samsung Smartphone Et Classic,Samsung,17170590,True
+18,SKU-1018-184,2,Oppo Smartphone Corporis Lite,Oppo,385170,True
+19,SKU-1019-558,2,Samsung Smartphone Atque 128GB,Samsung,1590630,True
+20,SKU-1020-522,2,Oppo Smartphone Sint,Oppo,10264170,True
+21,SKU-1021-425,4,Logitech Aksesoris Elektronik Blanditiis,Logitech,16038390,True
+22,SKU-1022-387,2,Oppo Smartphone Est 128GB,Oppo,451770,True
+23,SKU-1023-142,8,Informa Lemari Ea 256GB,Informa,6580080,True
+24,SKU-1024-358,11,Uniqlo Bawahan Aperiam 256GB,Uniqlo,7155060,True
+25,SKU-1025-707,11,Erigo Bawahan Numquam Pro,Erigo,1727160,True
+26,SKU-1026-112,8,Informa Lemari Est,Informa,429570,True
+27,SKU-1027-398,7,IKEA Kursi Vero Series 2,IKEA,16310340,True
+28,SKU-1028-292,7,Informa Kursi Ea Lite,Informa,18742350,True
+29,SKU-1029-801,10,Erigo Atasan Quos 256GB,Erigo,16359180,True
+30,SKU-1030-814,2,Apple Smartphone Rem 256GB,Apple,13992660,True
+31,SKU-1031-175,3,Apple Laptop Pariatur,Apple,932400,True
+32,SKU-1032-194,6,IKEA Meja Nesciunt,IKEA,977910,True
+33,SKU-1033-833,7,Olympic Kursi Ducimus,Olympic,24816270,True
+34,SKU-1034-858,6,IKEA Meja Quo,IKEA,25200330,True
+35,SKU-1035-120,12,Compass Sepatu Architecto,Compass,17612370,True
+36,SKU-1036-882,4,Anker Aksesoris Elektronik Quidem Series 2,Anker,449550,True
+37,SKU-1037-502,8,Graver Lemari Repellat Lite,Graver,26605590,True
+38,SKU-1038-461,8,Informa Lemari Ipsa Series 2,Informa,1597290,True
+39,SKU-1039-416,11,H&M Bawahan Ducimus,H&M,1962480,True
+40,SKU-1040-608,10,H&M Atasan Ea Lite,H&M,214230,True
+41,SKU-1041-802,6,IKEA Meja Nulla 256GB,IKEA,1928070,True
+42,SKU-1042-681,7,IKEA Kursi Aliquid Lite,IKEA,25364610,True
+43,SKU-1043-852,3,Acer Laptop Sapiente Series 2,Acer,1048950,True
+44,SKU-1044-261,4,UGREEN Aksesoris Elektronik Eius 256GB,UGREEN,7307130,True
+45,SKU-1045-479,10,Erigo Atasan Cumque,Erigo,489510,True
+46,SKU-1046-757,8,Graver Lemari Beatae,Graver,15631020,True
+47,SKU-1047-632,6,Olympic Meja Unde Classic,Olympic,1014540,True
+48,SKU-1048-662,3,Asus Laptop Reiciendis Series 2,Asus,20024400,True
+49,SKU-1049-681,8,Olympic Lemari Sed 128GB,Olympic,29713590,True
+50,SKU-1050-490,3,Apple Laptop Maiores,Apple,236430,True
+51,SKU-1051-497,12,Adidas Sepatu Quibusdam Series 2,Adidas,1011210,True
+52,SKU-1052-565,12,Nike Sepatu Quidem Classic,Nike,355200,True
+53,SKU-1053-210,10,Erigo Atasan Beatae,Erigo,17362620,True
+54,SKU-1054-551,10,Uniqlo Atasan Maxime,Uniqlo,3919410,True
+55,SKU-1055-227,10,Uniqlo Atasan At Pro,Uniqlo,6739920,True
+56,SKU-1056-561,11,H&M Bawahan Ducimus,H&M,15275820,True
+57,SKU-1057-577,2,Xiaomi Smartphone Nemo,Xiaomi,15443430,True
+58,SKU-1058-491,12,Compass Sepatu Dolor Series 2,Compass,19803510,True
+59,SKU-1059-906,12,Adidas Sepatu In Lite,Adidas,24367830,True
+60,SKU-1060-546,7,IKEA Kursi Ratione,IKEA,14468850,True
+61,SKU-NEWARR-001,2,Smartphone Model Terbaru (Belum Terdaftar di ERP),Apple,21000000,True

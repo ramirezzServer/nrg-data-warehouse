@@ -1,0 +1,154 @@
+﻿No,Sumber,Tabel/Berkas Sumber,Kolom Sumber,Tipe Sumber,Tabel Target,Kolom Target,Aturan Transformasi,Transformation / Step Pentaho
+1,S1,categories,category_id,INT,—,—,Kunci join products.category_id → categories,t_04 Table input (JOIN)
+2,S1,categories,parent_category_id,INT,dim_produk,kategori,Nama kategori induk (self-join) dipakai HANYA utk produk inferred,t_04 Table input (LEFT JOIN)
+3,S1,categories,category_name,VARCHAR,dim_produk,sub_kategori,HANYA utk produk inferred; produk lain pakai sub_kategori S4,t_04 Table input
+4,S1,products,product_id,INT,— (tidak dimuat),—,"Surrogate OLTP; tidak dipakai, join lewat sku",—
+5,S1,products,sku,VARCHAR,map_produk,kode_sumber,Regex ^SKU-(\d{4})-\d+$ → 'P-'+grup1 = material_no; tak ada di S4 → material_no = sku (inferred),t_05 Regex evaluation + Stream lookup
+6,S1,products,category_id,INT,—,—,Join ke categories,t_04 Table input
+7,S1,products,product_name,VARCHAR,map_produk / dim_produk,nama_sumber / nama_produk (inferred),Disimpan sbg nama versi ECOM; nama resmi tetap S4,t_05 / t_04
+8,S1,products,brand,VARCHAR,dim_produk,brand (inferred),HANYA utk produk inferred,t_04
+9,S1,products,base_price,DECIMAL,— (tidak dimuat),—,Harga katalog (incl PPN); fakta memakai harga transaksi order_items.unit_price,—
+10,S1,products,is_active,BOOLEAN,— (tidak dimuat),—,Tidak dibutuhkan pertanyaan bisnis,—
+11,S1,customers,customer_id,INT,dim_pelanggan,customer_id_web,Disalin; dipakai lookup fakta S1,t_06 Table input
+12,S1,customers,full_name,VARCHAR,dim_pelanggan,nama_pelanggan,Prioritas nama S1 jika cocok dgn member,t_06 Formula
+13,S1,customers,email,VARCHAR,— (tidak dimuat),—,"PII, tidak perlu untuk analisis",—
+14,S1,customers,phone,VARCHAR,dim_pelanggan,"hp_normal, pelanggan_nk","Buang non-digit, buang awalan 62/0 → kunci pencocokan dgn member S2",t_06 Replace in string
+15,S1,customers,gender,CHAR,dim_pelanggan,gender,Disalin,t_06
+16,S1,customers,birth_date,DATE,— (tidak dimuat),—,Tidak dibutuhkan 4 pertanyaan,—
+17,S1,customers,registered_at,DATETIME,— (tidak dimuat),—,Tidak dibutuhkan 4 pertanyaan,—
+18,S1,customer_addresses,address_id,INT,— (tidak dimuat),—,—,—
+19,S1,customer_addresses,customer_id,INT,—,—,Join ke customers,t_06 Table input
+20,S1,customer_addresses,label,VARCHAR,— (tidak dimuat),—,—,—
+21,S1,customer_addresses,address_line,VARCHAR,— (tidak dimuat),—,PII,—
+22,S1,customer_addresses,city,VARCHAR,dim_pelanggan,kota,ATURAN: ambil alamat is_primary = 1 (tepat 1 per pelanggan); dibakukan via ref_kota,t_06 Table input + Stream lookup ref_kota
+23,S1,customer_addresses,province,VARCHAR,— (tidak dimuat),—,Tidak dimodelkan (member S2 tidak punya provinsi),—
+24,S1,customer_addresses,postal_code,VARCHAR,— (tidak dimuat),—,—,—
+25,S1,customer_addresses,is_primary,BOOLEAN,—,—,Filter pemilihan alamat (= 1),t_06 Table input (WHERE)
+26,S1,vouchers,voucher_id,INT,—,—,Join orders.voucher_id → vouchers,t_07 Database lookup
+27,S1,vouchers,promo_code,VARCHAR,fact_penjualan,promo_key,"UPPER+TRIM lalu lookup dim_promo (kode_promo, tgl_mulai); tak ketemu → -2; voucher NULL → -1",t_07 Database lookup dim_promo
+28,S1,vouchers,discount_type,VARCHAR,— (tidak dimuat),—,Nilai diskon aktual sudah ada di order_items.disc_amount,—
+29,S1,vouchers,discount_value,DECIMAL,— (tidak dimuat),—,Idem; target diskon resmi diambil dari S5,—
+30,S1,vouchers,min_purchase,DECIMAL,— (tidak dimuat),—,—,—
+31,S1,vouchers,quota,INT,— (tidak dimuat),—,—,—
+32,S1,vouchers,valid_from,DATE,fact_penjualan,promo_key,Bagian kunci lookup dim_promo.tgl_mulai (kode promo yg sama bisa >1 periode),t_07 Database lookup
+33,S1,vouchers,valid_to,DATE,— (tidak dimuat),—,Periode resmi diambil dari S5,—
+34,S1,orders,order_id,VARCHAR,fact_penjualan,no_transaksi,Degenerate dimension,t_07
+35,S1,orders,customer_id,INT,fact_penjualan,pelanggan_key,Lookup dim_pelanggan.customer_id_web,t_07 Database lookup
+36,S1,orders,order_ts,DATETIME,fact_penjualan,"waktu_transaksi_wib, tanggal_key",Sudah WIB; tanggal_key = yyyyMMdd,t_07 Select values + Formula
+37,S1,orders,status,VARCHAR,—,—,Filter: buang DIBATALKAN (304 item). SELESAI/DIKIRIM/RETUR dimuat,t_07 Filter rows
+38,S1,orders,voucher_id,INT,fact_penjualan,promo_key,NULL → -1 (tanpa promo),t_07 Database lookup + Formula
+39,S1,orders,payment_method,VARCHAR,— (tidak dimuat),—,Tidak dibutuhkan 4 pertanyaan,—
+40,S1,orders,shipping_fee,DECIMAL,— (tidak dimuat),—,"Ongkir level order, bukan penjualan produk → tidak masuk margin",—
+41,S1,orders,shipping_address_id,INT,— (tidak dimuat),—,Kota pelanggan memakai alamat utama (aturan dimensi),—
+42,S1,order_items,order_item_id,INT,fact_penjualan,is_retur,Lookup order_returns; ada → 1,t_07 Database lookup
+43,S1,order_items,order_id,VARCHAR,fact_penjualan,no_transaksi,Join ke orders,t_07 Table input
+44,S1,order_items,line_no,SMALLINT,fact_penjualan,no_baris,Disalin sbg teks,t_07 Select values
+45,S1,order_items,product_id,INT,— (tidak dimuat),—,Mapping produk lewat sku,—
+46,S1,order_items,sku,VARCHAR,fact_penjualan,produk_key,"map_produk(S1, sku) → material_no → dim_produk versi berlaku pada tanggal transaksi",t_07 Database lookup ×2
+47,S1,order_items,qty,INT,fact_penjualan,qty,Disalin,t_07
+48,S1,order_items,unit_price,DECIMAL,fact_penjualan,"harga_satuan, penjualan_kotor","harga_satuan = ROUND(unit_price/1.11,2); kotor = ROUND(qty*unit_price/1.11,2)",t_07 Calculator
+49,S1,order_items,disc_amount,DECIMAL,fact_penjualan,diskon,"ROUND(disc_amount/1.11,2)",t_07 Calculator
+50,S1,order_status_history,history_id,—,— (tidak dimuat),—,Riwayat status; status final sudah ada di orders.status,—
+51,S1,order_status_history,order_id,—,— (tidak dimuat),—,Riwayat status; status final sudah ada di orders.status,—
+52,S1,order_status_history,status,—,— (tidak dimuat),—,Riwayat status; status final sudah ada di orders.status,—
+53,S1,order_status_history,changed_at,—,— (tidak dimuat),—,Riwayat status; status final sudah ada di orders.status,—
+54,S1,payments,payment_id,—,— (tidak dimuat),—,Grain pembayaran ≠ grain item; tidak dibutuhkan 4 pertanyaan,—
+55,S1,payments,order_id,—,— (tidak dimuat),—,Grain pembayaran ≠ grain item; tidak dibutuhkan 4 pertanyaan,—
+56,S1,payments,provider,—,— (tidak dimuat),—,Grain pembayaran ≠ grain item; tidak dibutuhkan 4 pertanyaan,—
+57,S1,payments,amount,—,— (tidak dimuat),—,Grain pembayaran ≠ grain item; tidak dibutuhkan 4 pertanyaan,—
+58,S1,payments,paid_at,—,— (tidak dimuat),—,Grain pembayaran ≠ grain item; tidak dibutuhkan 4 pertanyaan,—
+59,S1,payments,status,—,— (tidak dimuat),—,Grain pembayaran ≠ grain item; tidak dibutuhkan 4 pertanyaan,—
+60,S1,shipments,shipment_id,—,— (tidak dimuat),—,Logistik; di luar lingkup 4 pertanyaan,—
+61,S1,shipments,order_id,—,— (tidak dimuat),—,Logistik; di luar lingkup 4 pertanyaan,—
+62,S1,shipments,courier,—,— (tidak dimuat),—,Logistik; di luar lingkup 4 pertanyaan,—
+63,S1,shipments,tracking_no,—,— (tidak dimuat),—,Logistik; di luar lingkup 4 pertanyaan,—
+64,S1,shipments,shipped_at,—,— (tidak dimuat),—,Logistik; di luar lingkup 4 pertanyaan,—
+65,S1,shipments,delivered_at,—,— (tidak dimuat),—,Logistik; di luar lingkup 4 pertanyaan,—
+66,S1,order_returns,return_id,INT,— (tidak dimuat),—,—,—
+67,S1,order_returns,order_item_id,INT,fact_penjualan,is_retur,Kunci lookup → is_retur = 1,t_07 Database lookup
+68,S1,order_returns,qty,—,— (tidak dimuat),—,Cukup ditandai is_retur; nilai retur tidak dikurangkan dari penjualan (asumsi laporan),—
+69,S1,order_returns,reason,—,— (tidak dimuat),—,Cukup ditandai is_retur; nilai retur tidak dikurangkan dari penjualan (asumsi laporan),—
+70,S1,order_returns,refund_amount,—,— (tidak dimuat),—,Cukup ditandai is_retur; nilai retur tidak dikurangkan dari penjualan (asumsi laporan),—
+71,S1,order_returns,status,—,— (tidak dimuat),—,Cukup ditandai is_retur; nilai retur tidak dikurangkan dari penjualan (asumsi laporan),—
+72,S1,order_returns,requested_at,—,— (tidak dimuat),—,Cukup ditandai is_retur; nilai retur tidak dikurangkan dari penjualan (asumsi laporan),—
+73,S2,trx_header_TSxx.csv,trx_no,String,fact_penjualan,no_transaksi,Kunci join line ↔ header,t_08 Stream lookup
+74,S2,trx_header_TSxx.csv,store_code,String,fact_penjualan,kanal_key,Lookup dim_kanal.kanal_kode,t_08 Database lookup
+75,S2,trx_header_TSxx.csv,cashier_id,String,— (tidak dimuat),—,Tidak dibutuhkan 4 pertanyaan,—
+76,S2,trx_header_TSxx.csv,member_no,String,fact_penjualan,pelanggan_key,Lookup dim_pelanggan.member_no; kosong → -1,t_08 Database lookup + If null
+77,S2,trx_header_TSxx.csv,trx_date,String dd/MM/yyyy,fact_penjualan,"tanggal_key, waktu_transaksi_wib",Parse format dd/MM/yyyy → Date; jam tidak tersedia (00:00),t_08 Text file input (format)
+78,S2,trx_header_TSxx.csv,payment_type,String,— (tidak dimuat),—,Grain pembayaran ≠ grain item,—
+79,S2,trx_header_TSxx.csv,status,String,—,—,Filter: buang VOID (175 trx / 242 baris),t_08 Filter rows
+80,S2,trx_line_TSxx.csv,trx_no,String,fact_penjualan,no_transaksi,Disalin,t_08
+81,S2,trx_line_TSxx.csv,line_seq,Integer,fact_penjualan,no_baris,Disalin sbg teks,t_08
+82,S2,trx_line_TSxx.csv,item_code,String,fact_penjualan,produk_key,"map_produk(S2,item_code) → dim_produk versi berlaku",t_08 Database lookup ×2
+83,S2,trx_line_TSxx.csv,qty,Integer,fact_penjualan,qty,Disalin,t_08
+84,S2,trx_line_TSxx.csv,unit_price_excl,Number,fact_penjualan,"harga_satuan, penjualan_kotor",Sudah tanpa PPN; kotor = qty*harga,t_08 Calculator
+85,S2,trx_line_TSxx.csv,disc_pct,Number,fact_penjualan,"diskon, promo_key","diskon = ROUND(kotor*disc_pct/100,2); >0 → cari kampanye aktif",t_08 Calculator + Database lookup
+86,S2,trx_payment_TSxx.csv,trx_no,—,— (tidak dimuat),—,SPLIT = >1 baris/trx; TIDAK di-join ke fakta agar baris item tidak berlipat (dipakai hanya utk rekonsiliasi),—
+87,S2,trx_payment_TSxx.csv,method,—,— (tidak dimuat),—,SPLIT = >1 baris/trx; TIDAK di-join ke fakta agar baris item tidak berlipat (dipakai hanya utk rekonsiliasi),—
+88,S2,trx_payment_TSxx.csv,amount,—,— (tidak dimuat),—,SPLIT = >1 baris/trx; TIDAK di-join ke fakta agar baris item tidak berlipat (dipakai hanya utk rekonsiliasi),—
+89,S2,store_master.csv,store_id,Integer,dim_kanal,store_id,Disalin,t_02
+90,S2,store_master.csv,store_code,String,dim_kanal,kanal_kode,Natural key,t_02
+91,S2,store_master.csv,store_name,String,dim_kanal,sub_kanal,Disalin,t_02
+92,S2,store_master.csv,city,String,dim_kanal,kota,Dibakukan via ref_kota,t_02 Stream lookup
+93,S2,store_master.csv,province,String,dim_kanal,provinsi,Disalin,t_02
+94,S2,store_master.csv,format_toko,String,dim_kanal,format_toko,Disalin,t_02
+95,S2,store_master.csv,opened_at,Date,dim_kanal,tanggal_buka,yyyy-MM-dd,t_02
+96,S2,employee_master.csv,employee_id,—,— (tidak dimuat),—,Kinerja kasir di luar 4 pertanyaan,—
+97,S2,employee_master.csv,employee_code,—,— (tidak dimuat),—,Kinerja kasir di luar 4 pertanyaan,—
+98,S2,employee_master.csv,store_id,—,— (tidak dimuat),—,Kinerja kasir di luar 4 pertanyaan,—
+99,S2,employee_master.csv,full_name,—,— (tidak dimuat),—,Kinerja kasir di luar 4 pertanyaan,—
+100,S2,employee_master.csv,position,—,— (tidak dimuat),—,Kinerja kasir di luar 4 pertanyaan,—
+101,S2,employee_master.csv,hired_at,—,— (tidak dimuat),—,Kinerja kasir di luar 4 pertanyaan,—
+102,S2,product_master_local.csv,item_code,String,map_produk,"kode_sumber, material_no",item_code sama dengan material_no (divalidasi ke S4),t_05
+103,S2,product_master_local.csv,barcode,String,— (tidak dimuat),—,—,—
+104,S2,product_master_local.csv,product_name,String,map_produk,nama_sumber,Disalin,t_05
+105,S2,product_master_local.csv,category_local,String,— (tidak dimuat),—,Kategori resmi dari S4,—
+106,S2,product_master_local.csv,unit_price_excl_ppn,Number,— (tidak dimuat),—,Harga transaksi dari trx_line,—
+107,S2,member.csv,member_no,String,dim_pelanggan,member_no,Disalin,t_06
+108,S2,member.csv,member_name,String,dim_pelanggan,nama_pelanggan,InitCap; dipakai jika tidak cocok dgn pelanggan web,t_06 String operations
+109,S2,member.csv,hp,String,dim_pelanggan,"hp_normal, pelanggan_nk",Baca sbg String! buang non-digit & awalan 62/0 → kunci Merge join dgn S1,t_06 Replace in string + Merge join
+110,S2,member.csv,kota,String,dim_pelanggan,kota,UPPER+TRIM → ref_kota → kota_baku (dipakai jika tidak ada kota S1),t_06 Stream lookup
+111,S2,member.csv,join_date,String,— (tidak dimuat),—,—,—
+112,S3,mpl_pull_page_xxx.json,page,Integer,— (tidak dimuat),—,Metadata paginasi,—
+113,S3,mpl_pull_page_xxx.json,pulled_at,String,— (tidak dimuat),—,Metadata tarikan,—
+114,S3,mpl_pull_page_xxx.json,records[].invoice,String,fact_penjualan,no_transaksi,"Bagian kunci dedup (invoice, seller_sku)",t_09 JSON input #1
+115,S3,mpl_pull_page_xxx.json,records[].paid_at,String ISO UTC,fact_penjualan,"waktu_transaksi_wib, tanggal_key",Parse yyyy-MM-dd'T'HH:mm:ss'Z' lalu +7 jam,t_09 Select values + Calculator
+116,S3,mpl_pull_page_xxx.json,records[].channel,String,fact_penjualan,kanal_key,"marketplace_a → MPL_A, marketplace_b → MPL_B",t_09 Value mapper + Database lookup
+117,S3,mpl_pull_page_xxx.json,records[].buyer.hash,String,dim_pelanggan / fact,"buyer_hash, pelanggan_nk='MPL:'+hash / pelanggan_key",Identitas anonim; tidak dicocokkan ke S1/S2,t_06 / t_09
+118,S3,mpl_pull_page_xxx.json,records[].buyer.city,String,dim_pelanggan,kota,Kota invoice TERAKHIR per hash; dibakukan via ref_kota,t_06 Sort + Unique rows
+119,S3,mpl_pull_page_xxx.json,records[].items[].seller_sku,String,map_produk / fact,"kode_sumber / no_baris, produk_key",'P-'+4 digit terakhir = material_no,t_05 / t_09
+120,S3,mpl_pull_page_xxx.json,records[].items[].qty,Integer,fact_penjualan,qty,Disalin,t_09 JSON input #2
+121,S3,mpl_pull_page_xxx.json,records[].items[].price,Number,fact_penjualan,"harga_satuan, penjualan_kotor",Incl PPN → /1.11,t_09 Calculator
+122,S3,mpl_pull_page_xxx.json,records[].items[].voucher,Number,fact_penjualan,"diskon, promo_key",Rupiah per baris incl PPN → /1.11; >0 → cari kampanye aktif,t_09 Calculator + Database lookup
+123,S3,mpl_pull_page_xxx.json,records[].fees.commission,Number,fact_penjualan,fee_marketplace,(commission+service) × porsi nilai bersih baris thd invoice,t_09 Group by + Stream lookup + Calculator
+124,S3,mpl_pull_page_xxx.json,records[].fees.service,Number,fact_penjualan,fee_marketplace,Idem,t_09
+125,S3,mpl_pull_page_xxx.json,records[].diambil_pada,String,—,—,"Dedup: urut DESC lalu Unique rows (invoice, seller_sku) → ambil tarikan terakhir",t_09 Sort rows + Unique rows
+126,S4,produk_master.csv,material_no,String,dim_produk,material_no,Natural key master produk,t_04
+127,S4,produk_master.csv,nama_produk,String,dim_produk,nama_produk,Disalin,t_04
+128,S4,produk_master.csv,brand,String,dim_produk,brand,Disalin,t_04
+129,S4,produk_master.csv,kategori,String,dim_produk,kategori,Disalin,t_04
+130,S4,produk_master.csv,sub_kategori,String,dim_produk,sub_kategori,Disalin,t_04
+131,S4,produk_master.csv,harga_pokok,Number,dim_produk / fact,harga_pokok / hpp,SCD2; hpp = qty × harga_pokok versi berlaku,t_04 / t_07-09
+132,S4,produk_master.csv,supplier,String,dim_produk,nama_supplier,Lookup supplier_master by nama,t_04 Stream lookup
+133,S4,produk_master.csv,status,String,dim_produk,status_produk,Disalin,t_04
+134,S4,produk_master.csv,berlaku_sejak,Date,dim_produk,"berlaku_mulai, berlaku_sampai, is_current",berlaku_sampai = LEAD(berlaku_sejak)−1 hari; NULL → 9999-12-31,t_04 Analytic query + Calculator
+135,S4,supplier_master.csv,supplier_id,String,dim_produk,supplier_id,Hasil lookup,t_04 Stream lookup
+136,S4,supplier_master.csv,nama_supplier,String,—,—,Kunci lookup,t_04
+137,S4,supplier_master.csv,kota,String,dim_produk,kota_supplier,"Disalin (nilai sudah baku, dicek terhadap ref_kota)",t_04 Stream lookup supplier
+138,S4,supplier_master.csv,kontak,String,— (tidak dimuat),—,PII,—
+139,S4,stok_harian_feb2023.csv,tanggal,—,— (tidak dimuat),—,"Sesuai ketentuan tugas: sampel 10 toko, tidak dimodelkan (batasan)",—
+140,S4,stok_harian_feb2023.csv,store_code,—,— (tidak dimuat),—,"Sesuai ketentuan tugas: sampel 10 toko, tidak dimodelkan (batasan)",—
+141,S4,stok_harian_feb2023.csv,material_no,—,— (tidak dimuat),—,"Sesuai ketentuan tugas: sampel 10 toko, tidak dimodelkan (batasan)",—
+142,S4,stok_harian_feb2023.csv,qty_on_hand,—,— (tidak dimuat),—,"Sesuai ketentuan tugas: sampel 10 toko, tidak dimodelkan (batasan)",—
+143,S4,stok_harian_feb2023.csv,qty_terjual_hari,—,— (tidak dimuat),—,"Sesuai ketentuan tugas: sampel 10 toko, tidak dimodelkan (batasan)",—
+144,S5,kampanye_marketing.csv,kode_promo,String,dim_promo,kode_promo,Buang baris kosong; TRIM + UPPER; hapus duplikat persis,t_03 Filter rows + String operations + Sort rows(unique)
+145,S5,kampanye_marketing.csv,nama_kampanye,String,dim_promo,nama_kampanye,TRIM,t_03 String operations
+146,S5,kampanye_marketing.csv,jenis_promo,String,dim_promo,jenis_promo,TRIM,t_03
+147,S5,kampanye_marketing.csv,kanal,String,dim_promo,kanal_promo,TRIM; dipakai saat atribusi promo S2/S3,t_03
+148,S5,kampanye_marketing.csv,tgl_mulai,String dd-MM-yyyy,dim_promo,tgl_mulai,Konversi ke Date,t_03 Select values
+149,S5,kampanye_marketing.csv,tgl_selesai,String dd-MM-yyyy,dim_promo,tgl_selesai,Konversi ke Date,t_03 Select values
+150,S5,kampanye_marketing.csv,target_diskon_persen,String,dim_promo / err_kampanye,target_diskon_persen,Validasi angka (regex); gagal ('sepuluh') → err_kampanye apa adanya,t_03 Data validator + error handling
+151,S5,kampanye_marketing.csv,pic,String,dim_promo,pic,TRIM,t_03
+152,REF,ref_kota.csv,alias,String,—,—,"UPPER+TRIM, unik → kunci lookup","t_02, t_06 Stream lookup"
+153,REF,ref_kota.csv,kota_baku,String,"dim_kanal.kota, dim_pelanggan.kota",kota,Hasil lookup; tak ketemu → nilai asli (TRIM),Stream lookup + Formula

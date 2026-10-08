@@ -1,0 +1,43 @@
+store_id,store_code,store_name,city,province,format_toko,opened_at
+1,TS01,NRG Store Jakarta Selatan 1,Jakarta Selatan,DKI Jakarta,Standalone,2020-02-06
+2,TS02,NRG Store Jakarta Barat 2,Jakarta Barat,DKI Jakarta,Mall,2019-01-27
+3,TS03,NRG Store Bandung 3,Bandung,Jawa Barat,Ruko,2020-03-30
+4,TS04,NRG Store Bekasi 4,Bekasi,Jawa Barat,Ruko,2021-05-22
+5,TS05,NRG Store Surabaya 5,Surabaya,Jawa Timur,Ruko,2017-07-13
+6,TS06,NRG Store Malang 6,Malang,Jawa Timur,Mall,2015-11-19
+7,TS07,NRG Store Semarang 7,Semarang,Jawa Tengah,Standalone,2017-08-25
+8,TS08,NRG Store Yogyakarta 8,Yogyakarta,DI Yogyakarta,Mall,2017-11-23
+9,TS09,NRG Store Medan 9,Medan,Sumatera Utara,Mall,2019-12-31
+10,TS10,NRG Store Palembang 10,Palembang,Sumatera Selatan,Standalone,2015-05-07
+11,TS11,NRG Store Makassar 11,Makassar,Sulawesi Selatan,Standalone,2021-09-22
+12,TS12,NRG Store Denpasar 12,Denpasar,Bali,Standalone,2020-08-19
+13,TS13,NRG Store Jakarta Selatan 13,Jakarta Selatan,DKI Jakarta,Standalone,2015-10-18
+14,TS14,NRG Store Jakarta Barat 14,Jakarta Barat,DKI Jakarta,Standalone,2015-06-26
+15,TS15,NRG Store Bandung 15,Bandung,Jawa Barat,Standalone,2021-10-17
+16,TS16,NRG Store Bekasi 16,Bekasi,Jawa Barat,Mall,2021-01-01
+17,TS17,NRG Store Surabaya 17,Surabaya,Jawa Timur,Ruko,2017-03-19
+18,TS18,NRG Store Malang 18,Malang,Jawa Timur,Standalone,2019-10-28
+19,TS19,NRG Store Semarang 19,Semarang,Jawa Tengah,Mall,2021-03-12
+20,TS20,NRG Store Yogyakarta 20,Yogyakarta,DI Yogyakarta,Standalone,2020-11-20
+21,TS21,NRG Store Medan 21,Medan,Sumatera Utara,Standalone,2015-10-23
+22,TS22,NRG Store Palembang 22,Palembang,Sumatera Selatan,Ruko,2019-08-27
+23,TS23,NRG Store Makassar 23,Makassar,Sulawesi Selatan,Standalone,2016-10-14
+24,TS24,NRG Store Denpasar 24,Denpasar,Bali,Standalone,2021-07-30
+25,TS25,NRG Store Jakarta Selatan 25,Jakarta Selatan,DKI Jakarta,Standalone,2020-08-18
+26,TS26,NRG Store Jakarta Barat 26,Jakarta Barat,DKI Jakarta,Ruko,2019-10-11
+27,TS27,NRG Store Bandung 27,Bandung,Jawa Barat,Ruko,2021-11-06
+28,TS28,NRG Store Bekasi 28,Bekasi,Jawa Barat,Standalone,2015-05-09
+29,TS29,NRG Store Surabaya 29,Surabaya,Jawa Timur,Ruko,2018-09-16
+30,TS30,NRG Store Malang 30,Malang,Jawa Timur,Standalone,2017-10-16
+31,TS31,NRG Store Semarang 31,Semarang,Jawa Tengah,Ruko,2015-11-30
+32,TS32,NRG Store Yogyakarta 32,Yogyakarta,DI Yogyakarta,Mall,2018-02-01
+33,TS33,NRG Store Medan 33,Medan,Sumatera Utara,Ruko,2019-02-09
+34,TS34,NRG Store Palembang 34,Palembang,Sumatera Selatan,Mall,2020-06-11
+35,TS35,NRG Store Makassar 35,Makassar,Sulawesi Selatan,Standalone,2018-10-05
+36,TS36,NRG Store Denpasar 36,Denpasar,Bali,Ruko,2015-01-07
+37,TS37,NRG Store Jakarta Selatan 37,Jakarta Selatan,DKI Jakarta,Ruko,2018-01-11
+38,TS38,NRG Store Jakarta Barat 38,Jakarta Barat,DKI Jakarta,Standalone,2018-10-22
+39,TS39,NRG Store Bandung 39,Bandung,Jawa Barat,Standalone,2017-11-10
+40,TS40,NRG Store Bekasi 40,Bekasi,Jawa Barat,Standalone,2020-07-07
+41,TS41,NRG Store Surabaya 41,Surabaya,Jawa Timur,Mall,2020-10-20
+42,TS42,NRG Store Malang 42,Malang,Jawa Timur,Standalone,2018-05-07
