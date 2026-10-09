@@ -1027,8 +1027,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>1248</xloc>
-      <yloc>736</yloc>
+      <xloc>704</xloc>
+      <yloc>512</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1069,8 +1069,8 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>944</xloc>
-      <yloc>512</yloc>
+      <xloc>544</xloc>
+      <yloc>400</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1581,8 +1581,8 @@ LEFT JOIN customer_addresses a
       </output>
     </remotesteps>
     <GUI>
-      <xloc>160</xloc>
-      <yloc>992</yloc>
+      <xloc>1312</xloc>
+      <yloc>512</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1620,8 +1620,8 @@ LEFT JOIN customer_addresses a
       </output>
     </remotesteps>
     <GUI>
-      <xloc>352</xloc>
-      <yloc>992</yloc>
+      <xloc>1168</xloc>
+      <yloc>512</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1659,8 +1659,8 @@ LEFT JOIN customer_addresses a
       </output>
     </remotesteps>
     <GUI>
-      <xloc>560</xloc>
-      <yloc>992</yloc>
+      <xloc>992</xloc>
+      <yloc>512</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1712,8 +1712,8 @@ LEFT JOIN customer_addresses a
       </output>
     </remotesteps>
     <GUI>
-      <xloc>752</xloc>
-      <yloc>992</yloc>
+      <xloc>848</xloc>
+      <yloc>512</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1870,7 +1870,7 @@ LEFT JOIN customer_addresses a
     </remotesteps>
     <GUI>
       <xloc>928</xloc>
-      <yloc>1088</yloc>
+      <yloc>848</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1909,7 +1909,7 @@ LEFT JOIN customer_addresses a
     </remotesteps>
     <GUI>
       <xloc>1120</xloc>
-      <yloc>1088</yloc>
+      <yloc>848</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -1981,7 +1981,7 @@ LEFT JOIN customer_addresses a
     </remotesteps>
     <GUI>
       <xloc>1328</xloc>
-      <yloc>1088</yloc>
+      <yloc>848</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -2069,7 +2069,7 @@ LEFT JOIN customer_addresses a
     </remotesteps>
     <GUI>
       <xloc>1520</xloc>
-      <yloc>1088</yloc>
+      <yloc>848</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -2215,7 +2215,7 @@ LEFT JOIN customer_addresses a
       </output>
     </remotesteps>
     <GUI>
-      <xloc>336</xloc>
+      <xloc>272</xloc>
       <yloc>288</yloc>
       <draw>Y</draw>
     </GUI>
@@ -2250,7 +2250,7 @@ LEFT JOIN customer_addresses a
       </output>
     </remotesteps>
     <GUI>
-      <xloc>536</xloc>
+      <xloc>400</xloc>
       <yloc>288</yloc>
       <draw>Y</draw>
     </GUI>
@@ -2290,7 +2290,7 @@ LEFT JOIN customer_addresses a
       </output>
     </remotesteps>
     <GUI>
-      <xloc>736</xloc>
+      <xloc>544</xloc>
       <yloc>288</yloc>
       <draw>Y</draw>
     </GUI>
@@ -2339,8 +2339,8 @@ LEFT JOIN customer_addresses a
       </output>
     </remotesteps>
     <GUI>
-      <xloc>936</xloc>
-      <yloc>288</yloc>
+      <xloc>672</xloc>
+      <yloc>400</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -2399,8 +2399,8 @@ LEFT JOIN customer_addresses a
       </output>
     </remotesteps>
     <GUI>
-      <xloc>1168</xloc>
-      <yloc>288</yloc>
+      <xloc>912</xloc>
+      <yloc>400</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -2474,8 +2474,8 @@ LEFT JOIN customer_addresses a
       </output>
     </remotesteps>
     <GUI>
-      <xloc>1040</xloc>
-      <yloc>288</yloc>
+      <xloc>784</xloc>
+      <yloc>400</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -2550,8 +2550,8 @@ LEFT JOIN customer_addresses a
       </output>
     </remotesteps>
     <GUI>
-      <xloc>1328</xloc>
-      <yloc>288</yloc>
+      <xloc>1072</xloc>
+      <yloc>400</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
