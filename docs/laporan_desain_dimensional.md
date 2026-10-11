@@ -1,9 +1,17 @@
 # Laporan Tugas Kelompok 1 — Pengembangan Data Warehouse Nusantara Retail Group (NRG)
 
-> **Draf.** Ganti nama kelompok/anggota, tambahkan screenshot dari Spoon dan hasil kueri dari laptop kalian, lalu ekspor ke PDF (`docs/laporan_desain_dimensional.pdf`).
+**Anggota:**
 
-**Kelompok:** … **Anggota:** … (NIM) · … (NIM) · … (NIM) · … (NIM)
-**Tools:** Pentaho Data Integration (Spoon) … · MySQL 8 …
+| Nama | NIM |
+|---|---|
+| Djaudza Djiyya Muhammad | 102022400133 |
+| Faris Yahya Ayyash Alfatih | 102022400029 |
+| Figo Al Ghifari | 102022400302 |
+| Muhammad Nabeel Ghifari | 102022400114 |
+
+**Tools:** Pentaho Data Integration (Spoon) · MySQL 8
+
+**Status dokumen:** laporan progres. Desain dimensional, t_01–t_07, dan fakta S1 sudah selesai; t_08, t_09, dan Job `j_00` masih dikerjakan.
 
 ---
 
@@ -31,6 +39,7 @@ NRG menjual elektronik, furnitur, dan pakaian lewat tiga kanal (42 toko fisik, s
 - S1 `sku` `SKU-1038-461` → regex `^SKU-(\d{4})-\d+$` → `P-1038` (diverifikasi: 60 nama produk identik dengan S4).
 - S2 `item_code` sudah sama dengan `material_no`.
 - S3 `seller_sku` `SAMSUN1005` → 4 digit terakhir → `P-1005`.
+
 Hasilnya disimpan di tabel `map_produk` (181 baris).
 
 ## 3. Desain dimensional
@@ -51,7 +60,7 @@ Proses bisnis: **penjualan item lintas kanal**.
 
 | Tabel | Jenis | Natural key | Keterangan |
 |---|---|---|---|
-| fact_penjualan | Fakta transaksi | (sumber_sistem, no_transaksi, no_baris) | 14.419 baris |
+| fact_penjualan | Fakta transaksi | (sumber_sistem, no_transaksi, no_baris) | target 14.419 baris; saat ini berisi 4.236 baris S1 |
 | dim_tanggal | Dimensi | tanggal | 730 hari (2022–2023), atribut kuartal untuk YoY |
 | dim_produk | Dimensi SCD2 | material_no + berlaku_mulai | 79 versi + 1 inferred; harga pokok per versi; supplier di-*denormalisasi* ke dalam dimensi |
 | dim_pelanggan | Dimensi *conformed* | pelanggan_nk (`HP:…` / `MPL:…`) | menyatukan web + member; flag `is_pelanggan_web`, `is_member_toko`, `segmen_identitas` |
@@ -80,7 +89,7 @@ Tabel pendukung (bukan bagian star schema): `map_produk` (pemetaan produk), `err
 **Alokasi fee marketplace:**
 `porsi_baris = (price × qty − voucher) / Σ(price × qty − voucher) per invoice`
 `fee_marketplace = ROUND((commission + service) × porsi_baris; 2)`
-Rekonsiliasi: Σ fee di fakta = Rp1.276.197.059 = Σ fee 1.500 invoice unik.
+Total fee dari 1.500 invoice unik adalah Rp1.276.197.059; setelah t_09 selesai, jumlah fee di fakta harus sama dengan angka ini.
 
 **Atribusi promo:**
 - S1: `orders.voucher_id → vouchers(promo_code, valid_from) → dim_promo(kode_promo, tgl_mulai)`. Tanpa voucher → -1. Voucher tidak ada di dim_promo (GAJIAN25 periode 28-06-2022 yang ditolak validasi) → -2.
@@ -104,45 +113,55 @@ Peta lengkap 153 baris (semua kolom S1–S5 + ref_kota, termasuk kolom yang seng
 
 ## 4. Pipeline ETL di Pentaho
 
-*(Tempel screenshot kanvas Spoon untuk setiap transformation dan Job di sini.)*
+Setiap transformation memakai variabel `${NRG_DATA_DIR}` dan koneksi `nrg_ecom_src` / `nrg_dw`.
 
-Job `j_00_main_nrg_dw.kjb`: `Start → SQL (01_ddl_dw.sql) → t_01 → t_02 → t_03 → t_04 → t_05 → t_06 → t_07 → t_08 → t_09 → Success`. Setiap transformation memakai variabel `${NRG_DATA_DIR}` dan koneksi `nrg_ecom_src` / `nrg_dw`.
+| Transformation | Step kunci | Status |
+|---|---|---|
+| t_01_dim_tanggal | Generate rows, Add sequence, Calculator (Date A + B days), Formula, Select values, Table output | Selesai |
+| t_02_dim_kanal | CSV/Text file input, String operations, Stream lookup (ref_kota), Data grid, Append streams, Table output | Selesai |
+| t_03_dim_promo | Text file input, Filter rows, String operations, Sort rows (unique), Data validator + error handling, Select values, Table output ×2 | Selesai |
+| t_04_dim_produk | Text file input, Sort rows, Analytic query (LEAD), Calculator, If field value is null, Stream lookup, Table input (S1), Regex evaluation, Filter rows, Table output ×2 | Selesai |
+| t_05_map_produk | Table input, Regex evaluation, Text file input, JSON input, Unique rows, Append streams, Table output | Selesai |
+| t_06_dim_pelanggan | Table input, Text file input, Replace in string, Merge join (FULL OUTER), Formula, JSON input, Sort rows, Unique rows, Table output | Selesai |
+| t_07_fact_web | Table input, Filter rows, Database lookup ×6, Calculator, Formula, Table output | Selesai |
+| t_08_fact_toko | Text file input ×2 (wildcard 42 file), Stream lookup, Filter rows, Database lookup ×6, Calculator, Formula, Table output | Dikerjakan |
+| t_09_fact_marketplace | JSON input ×2, Sort rows, Unique rows, Group by, Stream lookup, Calculator, Database lookup ×6, Formula, Table output | Dikerjakan |
 
-| Transformation | Step kunci |
-|---|---|
-| t_01_dim_tanggal | Generate rows, Add sequence, Calculator (Date A + B days), Formula, Select values, Table output |
-| t_02_dim_kanal | CSV/Text file input, String operations, Stream lookup (ref_kota), Data grid, Append streams, Table output |
-| t_03_dim_promo | Text file input, Filter rows, String operations, Sort rows (unique), Data validator + error handling, Select values, Table output ×2 |
-| t_04_dim_produk | Text file input, Sort rows, Analytic query (LEAD), Calculator, If field value is null, Stream lookup, Table input (S1), Regex evaluation, Filter rows, Table output ×2 |
-| t_05_map_produk | Table input, Regex evaluation, Text file input, JSON input, Unique rows, Append streams, Table output |
-| t_06_dim_pelanggan | Table input, Text file input, Replace in string, Merge join (FULL OUTER), Formula, JSON input, Sort rows, Unique rows, Table output |
-| t_07_fact_web | Table input, Filter rows, Database lookup ×6, Calculator, Formula, Table output |
-| t_08_fact_toko | Text file input ×2 (wildcard 42 file), Stream lookup, Filter rows, Database lookup ×6, Calculator, Formula, Table output |
-| t_09_fact_marketplace | JSON input ×2, Sort rows, Unique rows, Group by, Stream lookup, Calculator, Database lookup ×6, Formula, Table output |
+Rancangan Job `j_00_main_nrg_dw.kjb` (dikerjakan): `Start → SQL (01_ddl_dw.sql) → t_01 → t_02 → t_03 → t_04 → t_05 → t_06 → t_07 → t_08 → t_09 → Success`.
 
 ## 5. Hasil validasi ETL
 
+### 5.1 Tahap saat ini (dimensi + fakta S1)
+
 | Cek | Hasil |
 |---|---|
-| Baris fakta S1 / S2 / S3 | 4.236 / 8.386 / 1.797 = 14.419 |
+| dim_tanggal / dim_kanal / dim_promo | 730 / 45 / 17 baris |
+| err_kampanye | 1 baris |
+| dim_produk | 81 baris (79 versi + 1 inferred + 1 default) |
+| map_produk | 181 baris |
+| dim_pelanggan | 1.557 baris |
+| Baris fakta S1 | 4.236 |
 | Duplikat grain | 0 |
-| Baris VOID / DIBATALKAN di fakta | 0 |
-| Fee marketplace teralokasi = total fee invoice unik | Rp1.276.197.059 = Rp1.276.197.059 |
+| Baris DIBATALKAN di fakta | 0 |
 | Produk gagal lookup (produk_key = -1) | 0 |
 | ORD-9999 → produk inferred | ✓ (HPP NULL) |
 | Konsistensi `bersih − hpp − fee = margin` | 0 selisih |
 
-## 6. Hasil kueri pembuktian
+### 5.2 Target untuk t_08 dan t_09
 
-**Q1 – Margin YoY (2023-Q1 vs 2022-Q1).** Margin kotor % per kanal: Toko Fisik 19,28% → 19,49%, Situs Web 19,33% → 19,62%, Marketplace 12,20% → 13,65%. Marketplace selalu termurah marginnya karena fee komisi (± 5–6% dari nilai transaksi). Di tingkat sub-kategori, contoh penurunan terbesar: Meja di Marketplace (−54,8% YoY), Smartphone di Marketplace (−32,0%); kenaikan terbesar: Kursi di Situs Web (+39,4%), Lemari di Toko Fisik (+39,2%).
+Angka berikut berasal dari profiling data sumber dan menjadi acuan validasi setelah fakta S2 dan S3 dimuat.
 
-**Q2 – Pelanggan online vs member toko.** Dari 600 pelanggan web dan 600 member toko, **200 orang (33,3%) adalah orang yang sama** (cocok lewat nomor HP). 400 hanya belanja online, 400 hanya member toko. Kelompok beririsan aktif di kedua kanal (198 bertransaksi di web, 200 di toko). Pembeli marketplace (556 hash) tidak dapat dipadankan karena anonim.
+| Cek | Target |
+|---|---|
+| Baris fakta S2 | 8.386 |
+| Baris fakta S3 | 1.797 |
+| Total baris fakta | 14.419 |
+| Baris VOID di fakta | 0 |
+| Fee marketplace teralokasi = total fee invoice unik | Rp1.276.197.059 |
 
-**Q3 – Efektivitas kampanye.** Dengan metode sebelum–sesudah (30 hari sebelum vs selama kampanye, per kanal), 11 kombinasi kampanye–kanal tergolong **BERHASIL** (volume/hari naik, margin turun ≤ 1 poin), misalnya BUNDLE2 Oktober 2022 (+27,2% di Situs Web, +22,1% di Toko Fisik), HARBOLNAS Feb 2022 di Toko Fisik (+7,9%), WEEKEND20 Des 2022 di Toko Fisik (+7,7%). HARBOLNAS dan BACKSCHOOL di Marketplace menaikkan volume tetapi margin turun > 1 poin.
+## 6. Kueri pembuktian
 
-**Q4 – Kandidat realokasi stok ke marketplace.** 9 produk berada di kuartil teratas pangsa volume marketplace tetapi di separuh bawah toko+web, dipimpin P-1019 Samsung Smartphone Atque 128GB (rasio pangsa 1,76) dan P-1054 Uniqlo Atasan Maxime (1,71).
-
-*(Tempel tabel hasil lengkap / screenshot dari MySQL Workbench.)*
+Empat kueri pembuktian (Q1–Q4) sudah disiapkan di `sql/03_kueri_pembuktian.sql`. Karena keempat pertanyaan membutuhkan data dari ketiga kanal, hasilnya akan dilaporkan setelah fakta S2 dan S3 selesai dimuat.
 
 ## 7. Asumsi dan batasan
 
@@ -157,6 +176,9 @@ Job `j_00_main_nrg_dw.kjb`: `Start → SQL (01_ddl_dw.sql) → t_01 → t_02 →
 
 ## 8. Pembagian kerja
 
-| Anggota | Kontribusi |
-|---|---|
-| … | … |
+| Anggota | NIM | Kontribusi |
+|---|---|---|
+| Djaudza Djiyya Muhammad | 102022400133 | Desain dimensional dan dokumen |
+| Faris Yahya Ayyash Alfatih | 102022400029 | ETL dimensi (t_01 – t_06) |
+| Figo Al Ghifari | 102022400302 | ETL fakta (t_07 – t_09) dan Job |
+| Muhammad Nabeel Ghifari | 102022400114 | Kueri pembuktian dan laporan |
