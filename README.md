@@ -14,7 +14,7 @@ S1 ECOM_DB (MySQL), S2 POS_TOKO (CSV `;`), S3 MPL_API (JSON), S4 ERP_MASTER (CSV
 
 ![Star schema](docs/star_schema.png)
 
-## Status progres (11 Oktober 2026)
+## Status progres (17 Oktober 2026)
 
 | Komponen | Status |
 |---|---|
@@ -22,13 +22,13 @@ S1 ECOM_DB (MySQL), S2 POS_TOKO (CSV `;`), S3 MPL_API (JSON), S4 ERP_MASTER (CSV
 | Source-to-target mapping | Selesai |
 | t_01 – t_06 (dimensi + map_produk) | Selesai |
 | t_07_fact_web (S1) | Selesai |
-| t_08_fact_toko (S2) | Dikerjakan |
-| t_09_fact_marketplace (S3) | Dikerjakan |
-| Job `j_00_main_nrg_dw.kjb` | Dikerjakan |
-| Laporan desain dimensional | Draf (`.md`), PDF menyusul |
-| Screenshot run & hasil kueri | Belum |
+| t_08_fact_toko (S2) | Selesai |
+| t_09_fact_marketplace (S3) | Selesai |
+| Job `j_00_main_nrg_dw.kjb` | Selesai |
+| Validasi ETL (`sql/02_validasi_etl.sql`) & Kueri Pembuktian (`sql/03_kueri_pembuktian.sql`) | Selesai |
+| Laporan desain dimensional (`docs/laporan_desain_dimensional.md`) | Selesai |
 
-`02_validasi_etl.sql` dan `03_kueri_pembuktian.sql` sudah ditulis, tetapi baru bisa dijalankan penuh setelah t_08 dan t_09 selesai.
+Seluruh pipeline ETL (`t_01` s.d. `t_09`) yang diorkestrasi melalui `j_00_main_nrg_dw.kjb` telah selesai diuji dan lulus seluruh kueri validasi (`02_validasi_etl.sql`) serta kueri pembuktian bisnis (`03_kueri_pembuktian.sql`).
 
 ## Struktur repositori
 
@@ -43,7 +43,7 @@ nrg-data-warehouse/
 │   ├── 02_validasi_etl.sql            ← cek hasil ETL (aktual vs harapan)
 │   └── 03_kueri_pembuktian.sql        ← 4 kueri pembuktian (Q1–Q4)
 ├── pentaho/
-│   ├── j_00_main_nrg_dw.kjb           ← Job utama (belum ada)
+│   ├── j_00_main_nrg_dw.kjb           ← Job utama orkestrasi end-to-end
 │   ├── t_01_dim_tanggal.ktr
 │   ├── t_02_dim_kanal.ktr
 │   ├── t_03_dim_promo.ktr
@@ -51,14 +51,14 @@ nrg-data-warehouse/
 │   ├── t_05_map_produk.ktr
 │   ├── t_06_dim_pelanggan.ktr
 │   ├── t_07_fact_web.ktr
-│   ├── t_08_fact_toko.ktr             ← belum ada
-│   └── t_09_fact_marketplace.ktr      ← belum ada
+│   ├── t_08_fact_toko.ktr
+│   └── t_09_fact_marketplace.ktr
 └── docs/
-    ├── laporan_desain_dimensional.md  ← draf laporan
+    ├── laporan_desain_dimensional.md  ← laporan desain & hasil kueri pembuktian
     ├── star_schema.png
     ├── source_to_target_mapping.csv   ← peta S2T kolom demi kolom (153 baris)
     ├── source_to_target_mapping.md
-    └── screenshots/                   ← bukti run & hasil kueri (belum diisi)
+    └── screenshots/                   ← bukti run & hasil kueri
 ```
 
 ## Prasyarat
@@ -78,7 +78,11 @@ nrg-data-warehouse/
    mysql -u root -p < S1_ecom_db_schema_mysql.sql      # membuat database nrg_ecom
    python load_all.py                                   # memuat 11 CSV S1 ke nrg_ecom
    ```
-2. **Atur variabel Pentaho** di `~/.kettle/kettle.properties` (Windows: `C:\Users\<user>\.kettle\kettle.properties`):
+2. **Buat skema awal `nrg_dw`** (sekali saja sebelum menjalankan Job pertama kali):
+   ```bash
+   mysql -u root -p < sql/01_ddl_dw.sql
+   ```
+3. **Atur variabel Pentaho** di `~/.kettle/kettle.properties` (Windows: `C:\Users\<user>\.kettle\kettle.properties`):
    ```properties
    NRG_DATA_DIR=C:/Users/<user>/Documents/nrg-data-warehouse/data
    NRG_SQL_DIR=C:/Users/<user>/Documents/nrg-data-warehouse/sql
@@ -88,7 +92,7 @@ nrg-data-warehouse/
    NRG_DB_PASS=
    ```
    Gunakan `/` walaupun di Windows. Restart Spoon setelah mengubah file ini.
-3. **Koneksi database** (sudah tersimpan di setiap .ktr, memakai variabel di atas):
+4. **Koneksi database** (sudah tersimpan di setiap `.ktr` dan `.kjb`, memakai variabel di atas):
 
    | Nama koneksi | Database | Dipakai untuk |
    |---|---|---|
@@ -97,42 +101,16 @@ nrg-data-warehouse/
 
    Opsi koneksi: `serverTimezone=Asia/Jakarta`, `useSSL=false`, `allowPublicKeyRetrieval=true`.
 
-## Cara menjalankan (kondisi saat ini)
+## Cara menjalankan
 
-Selama Job belum ada, jalankan langkah berikut secara manual:
+### 1. Menjalankan sekaligus lewat Job utama (Direkomendasikan)
 
-1. Buat ulang `nrg_dw` beserta baris default. Skrip ini melakukan drop & create, jadi isi DW sebelumnya ikut terhapus.
-   ```bash
-   mysql -u root -p < sql/01_ddl_dw.sql
-   ```
-2. Jalankan transformation di Spoon sesuai urutan berikut (dimensi harus terisi sebelum fakta):
-
-   | No | Transformation | Isi |
-   |---|---|---|
-   | 1 | `t_01_dim_tanggal` | 730 tanggal 2022-01-01 s.d. 2023-12-31 |
-   | 2 | `t_02_dim_kanal` | 42 toko + Situs Web + 2 marketplace |
-   | 3 | `t_03_dim_promo` | S5 dibersihkan; baris gagal validasi → `err_kampanye` |
-   | 4 | `t_04_dim_produk` | S4 SCD2 harga pokok + produk inferred dari S1 |
-   | 5 | `t_05_map_produk` | pemetaan SKU S1 / item_code S2 / seller_sku S3 → material_no |
-   | 6 | `t_06_dim_pelanggan` | web + member (cocok via HP dinormalkan) + pembeli marketplace |
-   | 7 | `t_07_fact_web` | fakta dari S1 |
-
-3. Jalankan bagian 1 di `sql/02_validasi_etl.sql`. Semua dimensi harus sesuai harapan; `fact_penjualan` baru berisi 4.236 baris dari S1.
-
-## Rencana Job
-
-Setelah t_08 dan t_09 selesai, seluruh proses dijalankan lewat satu Job `pentaho/j_00_main_nrg_dw.kjb`:
+Buka `pentaho/j_00_main_nrg_dw.kjb` di Spoon lalu klik **Run** (`F9`), atau jalankan melalui command line (`Kitchen`):
 
 ```
-Start → SQL (01_ddl_dw.sql) → t_01 → t_02 → … → t_07 → t_08 → t_09 → Success
+START → sql_reset_dw → t_01 → t_02 → t_03 → t_04 → t_05 → t_06 → t_07 → t_08 → t_09 → Success
 ```
 
-- `t_08_fact_toko`: fakta dari S2 (42 toko, transaksi VOID dibuang)
-- `t_09_fact_marketplace`: fakta dari S3 (dedup tarikan API + alokasi fee per item)
-
-Entry SQL di Job memakai koneksi `nrg_ecom_src` karena database itu pasti sudah ada; `01_ddl_dw.sql` sendiri yang membuat `nrg_dw`. Dengan begitu Job tetap jalan walaupun `nrg_dw` belum pernah dibuat.
-
-Menjalankan lewat command line:
 ```bash
 # Windows
 Kitchen.bat /file:"C:\...\pentaho\j_00_main_nrg_dw.kjb" /level:Basic
@@ -140,11 +118,27 @@ Kitchen.bat /file:"C:\...\pentaho\j_00_main_nrg_dw.kjb" /level:Basic
 ./kitchen.sh -file=/.../pentaho/j_00_main_nrg_dw.kjb -level=Basic
 ```
 
-Setelah Job selesai, jalankan `sql/02_validasi_etl.sql` (semua kolom `aktual` harus sama dengan `harapan`), lalu `sql/03_kueri_pembuktian.sql` (Q1–Q4).
+Entry `sql_reset_dw` di awal Job mengosongkan (`TRUNCATE`) seluruh tabel di `nrg_dw` dan mengisi ulang baris default (`-1` dan `-2`) sebelum menjalankan `t_01` s.d. `t_09`, sehingga Job bersifat **idempoten** (aman dijalankan berulang kali tanpa duplikasi data).
+
+### 2. Urutan transformation di dalam Job
+
+| No | Transformation | Isi |
+|---|---|---|
+| 1 | `t_01_dim_tanggal` | 730 tanggal 2022-01-01 s.d. 2023-12-31 |
+| 2 | `t_02_dim_kanal` | 42 toko + Situs Web + 2 marketplace |
+| 3 | `t_03_dim_promo` | S5 dibersihkan; baris gagal validasi → `err_kampanye` |
+| 4 | `t_04_dim_produk` | S4 SCD2 harga pokok + produk inferred dari S1 |
+| 5 | `t_05_map_produk` | pemetaan SKU S1 / item_code S2 / seller_sku S3 → material_no |
+| 6 | `t_06_dim_pelanggan` | web + member (cocok via HP dinormalkan) + pembeli marketplace |
+| 7 | `t_07_fact_web` | fakta dari S1 (order DIBATALKAN dibuang, harga & diskon dibagi 1,11) |
+| 8 | `t_08_fact_toko` | fakta dari S2 (42 toko, transaksi VOID dibuang) |
+| 9 | `t_09_fact_marketplace` | fakta dari S3 (dedup tarikan API + konversi UTC→WIB + alokasi fee per item) |
+
+Setelah Job selesai, jalankan `sql/02_validasi_etl.sql` (semua kolom `aktual` sama dengan `harapan`), lalu `sql/03_kueri_pembuktian.sql` (Q1–Q4).
 
 ## Jumlah baris
 
-Angka S2, S3, dan total fakta masih berupa target dari profiling data sumber dan dipakai sebagai acuan validasi t_08 dan t_09.
+Seluruh angka hasil pemuatan ETL pada `nrg_dw` telah sesuai 100% dengan target rekonsiliasi data sumber:
 
 | Tabel | Baris | Keterangan |
 |---|---|---|
@@ -156,9 +150,9 @@ Angka S2, S3, dan total fakta masih berupa target dari profiling data sumber dan
 | map_produk | 181 (61 S1 + 60 S2 + 60 S3) | hasil run |
 | dim_pelanggan | 1.557 | hasil run |
 | fact_penjualan (S1) | 4.236 | hasil run |
-| fact_penjualan (S2) | 8.386 | target |
-| fact_penjualan (S3) | 1.797 | target |
-| fact_penjualan (total) | 14.419 | target |
+| fact_penjualan (S2) | 8.386 | hasil run |
+| fact_penjualan (S3) | 1.797 | hasil run |
+| fact_penjualan (total) | 14.419 | hasil run |
 
 ## Keputusan desain utama
 
