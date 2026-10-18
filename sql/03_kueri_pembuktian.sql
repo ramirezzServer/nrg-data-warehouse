@@ -1,18 +1,4 @@
--- =====================================================================
--- 03_kueri_pembuktian.sql
--- Empat kueri pembuktian di atas data warehouse nrg_dw
--- Jalankan setelah Job Pentaho j_00_main_nrg_dw selesai.
--- Kompatibel MySQL 8.x (butuh CTE & window function).
--- =====================================================================
 USE nrg_dw;
-
--- ---------------------------------------------------------------------
--- Q1. Margin kotor per sub-kategori produk per kanal, dibandingkan
---     dengan kuartal yang sama pada tahun lalu (Year-over-Year).
---     Data tersedia 2022-Q1 s.d. 2023-Q1, sehingga pembanding YoY yang
---     lengkap adalah 2023-Q1 vs 2022-Q1. Kuartal lain tetap tampil dengan
---     nilai tahun lalu = NULL.
--- ---------------------------------------------------------------------
 WITH margin_kuartal AS (
     SELECT  t.tahun,
             t.kuartal,
@@ -44,19 +30,9 @@ LEFT JOIN margin_kuartal lalu
        AND lalu.kuartal      = sek.kuartal
        AND lalu.sub_kategori = sek.sub_kategori
        AND lalu.kanal        = sek.kanal
-WHERE sek.tahun = 2023 AND sek.kuartal = 1          -- ganti sesuai kuartal yang ingin dianalisis
+WHERE sek.tahun = 2023 AND sek.kuartal = 1          
 ORDER BY sek.kategori, sek.sub_kategori, sek.kanal;
 
-
--- ---------------------------------------------------------------------
--- Q2. Apakah pelanggan online (situs web) adalah orang yang sama dengan
---     pemegang kartu member toko fisik?
---     Pencocokan dilakukan di ETL lewat nomor HP yang dinormalkan
---     (dim_pelanggan.segmen_identitas). Kueri ini (a) menghitung irisan,
---     (b) membandingkan perilaku belanja kelompok yang beririsan.
---     Catatan: pembeli marketplace (buyer.hash) tidak dapat dipadankan.
--- ---------------------------------------------------------------------
--- Q2a. Ringkasan irisan identitas
 SELECT  segmen_identitas,
         COUNT(*)                                                        AS jumlah_pelanggan,
         ROUND(100 * COUNT(*) / SUM(COUNT(*)) OVER (), 2)                AS pct_dari_semua,
@@ -67,7 +43,7 @@ WHERE pelanggan_key > 0
 GROUP BY segmen_identitas
 ORDER BY jumlah_pelanggan DESC;
 
--- Q2b. Perilaku belanja per segmen di tiap kanal
+
 SELECT  c.segmen_identitas,
         k.kanal,
         COUNT(DISTINCT c.pelanggan_key)       AS pelanggan_aktif,
@@ -82,19 +58,6 @@ GROUP BY c.segmen_identitas, k.kanal
 ORDER BY c.segmen_identitas, k.kanal;
 
 
--- ---------------------------------------------------------------------
--- Q3. Kampanye diskon mana yang menaikkan volume penjualan tanpa
---     menggerus margin?
---     Metode pre-post per kanal yang dicakup kampanye:
---       - PERIODE KAMPANYE : tgl_mulai s.d. tgl_selesai
---       - PERIODE SEBELUM  : 30 hari tepat sebelum tgl_mulai (baseline)
---     Ukuran:
---       - volume : rata-rata qty per hari kalender (hari tanpa transaksi = 0)
---       - margin : margin kotor / penjualan bersih (%)
---     Kampanye "BERHASIL" bila volume/hari naik DAN margin % tidak turun
---     lebih dari 1 poin persentase (ambang bisa diubah di CASE paling bawah).
---     Kanal kampanye mengikuti S5: 'Semua Kanal' = dievaluasi di 3 kanal.
--- ---------------------------------------------------------------------
 WITH promo_kanal AS (
     SELECT  pr.promo_key, pr.kode_promo, pr.nama_kampanye, pr.kanal_promo,
             pr.tgl_mulai, pr.tgl_selesai, pr.target_diskon_persen, k.kanal
@@ -114,7 +77,7 @@ penjualan_kanal AS (
     SELECT f.tanggal_key, k.kanal, f.qty, f.penjualan_bersih, f.margin_kotor
     FROM fact_penjualan f
     JOIN dim_kanal k ON k.kanal_key = f.kanal_key
-    WHERE f.margin_kotor IS NOT NULL                 -- buang baris tanpa HPP (inferred)
+    WHERE f.margin_kotor IS NOT NULL                 
 ),
 agregat AS (
     SELECT  p.promo_key, p.kanal, p.periode,
@@ -165,14 +128,6 @@ ORDER BY CASE WHEN qty_hari_kampanye > qty_hari_sebelum
          uplift_volume_pct DESC;
 
 
--- ---------------------------------------------------------------------
--- Q4. Produk dengan volume tinggi di marketplace tetapi rendah di toko
---     fisik dan situs web -> kandidat pemindahan alokasi stok ke marketplace.
---     Volume tiap kanal dinormalkan menjadi PANGSA (% dari total qty kanal
---     itu) karena ukuran kanal berbeda jauh, lalu dibandingkan.
---     Kandidat: pangsa marketplace masuk kuartil teratas (NTILE 4 = 1) DAN
---     pangsa toko+web berada di separuh bawah (NTILE 2 = 2).
--- ---------------------------------------------------------------------
 WITH qty_kanal AS (
     SELECT  p.material_no,
             MAX(p.nama_produk)                                                  AS nama_produk,
