@@ -14,7 +14,7 @@ S1 ECOM_DB (MySQL), S2 POS_TOKO (CSV `;`), S3 MPL_API (JSON), S4 ERP_MASTER (CSV
 
 ![Star schema](docs/star_schema.png)
 
-## Status progres (17 Oktober 2026)
+## Status (18 Oktober 2026)
 
 | Komponen | Status |
 |---|---|
@@ -58,7 +58,7 @@ nrg-data-warehouse/
     ├── star_schema.png
     ├── source_to_target_mapping.csv   ← peta S2T kolom demi kolom (153 baris)
     ├── source_to_target_mapping.md
-    └── screenshots/                   ← bukti run & hasil kueri
+    └── screenshots/                   ← tangkapan layar kanvas Job dan 9 transformation
 ```
 
 ## Prasyarat
@@ -78,14 +78,14 @@ nrg-data-warehouse/
    mysql -u root -p < S1_ecom_db_schema_mysql.sql      # membuat database nrg_ecom
    python load_all.py                                   # memuat 11 CSV S1 ke nrg_ecom
    ```
-2. **Buat skema awal `nrg_dw`** (sekali saja sebelum menjalankan Job pertama kali):
+   `load_all.py` memakai user `root` tanpa password. Kalau MySQL kamu memakai user/password lain, ubah bagian koneksi di skrip itu secara lokal (tidak perlu di-commit).
+2. **Skema `nrg_dw`** tidak perlu dibuat manual karena Job menjalankan `sql/01_ddl_dw.sql` di awal. Kalau ingin menjalankan transformation satu per satu tanpa Job, jalankan dulu:
    ```bash
    mysql -u root -p < sql/01_ddl_dw.sql
    ```
 3. **Atur variabel Pentaho** di `~/.kettle/kettle.properties` (Windows: `C:\Users\<user>\.kettle\kettle.properties`):
    ```properties
    NRG_DATA_DIR=C:/Users/<user>/Documents/nrg-data-warehouse/data
-   NRG_SQL_DIR=C:/Users/<user>/Documents/nrg-data-warehouse/sql
    NRG_DB_HOST=localhost
    NRG_DB_PORT=3306
    NRG_DB_USER=root
@@ -108,7 +108,7 @@ nrg-data-warehouse/
 Buka `pentaho/j_00_main_nrg_dw.kjb` di Spoon lalu klik **Run** (`F9`), atau jalankan melalui command line (`Kitchen`):
 
 ```
-START → sql_reset_dw → t_01 → t_02 → t_03 → t_04 → t_05 → t_06 → t_07 → t_08 → t_09 → Success
+START → buat_ulang_dw → t_01 → t_02 → t_03 → t_04 → t_05 → t_06 → t_07 → t_08 → t_09 → Success
 ```
 
 ```bash
@@ -118,7 +118,7 @@ Kitchen.bat /file:"C:\...\pentaho\j_00_main_nrg_dw.kjb" /level:Basic
 ./kitchen.sh -file=/.../pentaho/j_00_main_nrg_dw.kjb -level=Basic
 ```
 
-Entry `sql_reset_dw` di awal Job mengosongkan (`TRUNCATE`) seluruh tabel di `nrg_dw` dan mengisi ulang baris default (`-1` dan `-2`) sebelum menjalankan `t_01` s.d. `t_09`, sehingga Job bersifat **idempoten** (aman dijalankan berulang kali tanpa duplikasi data).
+Entry `buat_ulang_dw` (SQL, koneksi `nrg_ecom_src`) menjalankan `sql/01_ddl_dw.sql` lewat path relatif `${Internal.Entry.Current.Directory}/../sql/01_ddl_dw.sql`. Script itu menghapus dan membuat ulang database `nrg_dw` beserta baris default (`-1` dan `-2`), jadi Job selalu mulai dari kondisi kosong dan aman dijalankan berulang kali tanpa duplikasi data. Setiap hop memakai *Follow when result is true*, sehingga Job berhenti jika satu transformation gagal.
 
 ### 2. Urutan transformation di dalam Job
 

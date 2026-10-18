@@ -117,17 +117,17 @@ Setiap transformation memakai variabel `${NRG_DATA_DIR}` dan koneksi `nrg_ecom_s
 
 | Transformation | Step kunci | Status |
 |---|---|---|
-| t_01_dim_tanggal | Generate rows, Add sequence, Calculator (Date A + B days), Formula, Select values, Table output | Selesai |
-| t_02_dim_kanal | CSV/Text file input, String operations, Stream lookup (ref_kota), Data grid, Append streams, Table output | Selesai |
-| t_03_dim_promo | Text file input, Filter rows, String operations, Sort rows (unique), Data validator + error handling, Select values, Table output ×2 | Selesai |
-| t_04_dim_produk | Text file input, Sort rows, Analytic query (LEAD), Calculator, If field value is null, Stream lookup, Table input (S1), Regex evaluation, Filter rows, Table output ×2 | Selesai |
-| t_05_map_produk | Table input, Regex evaluation, Text file input, JSON input, Unique rows, Append streams, Table output | Selesai |
-| t_06_dim_pelanggan | Table input, Text file input, Replace in string, Merge join (FULL OUTER), Formula, JSON input, Sort rows, Unique rows, Table output | Selesai |
-| t_07_fact_web | Table input, Filter rows, Database lookup ×6, Calculator, Janino (`kunci_dan_flag`), Table output | Selesai |
-| t_08_fact_toko | Text file input ×2 (wildcard 42 file), Stream lookup, Filter rows, Database lookup ×5, Calculator, Janino (`kunci_dan_flag`), Table output | Selesai |
-| t_09_fact_marketplace | JSON input ×2, Sort rows, Unique rows, Group by, Stream lookup, Calculator, Value mapper, Database lookup ×5, Janino (`kunci_dan_flag`), Table output | Selesai |
+| t_01_dim_tanggal | Generate rows, Add sequence, Calculator (Date A + B days), User Defined Java Expression, Select values, Table output | Selesai |
+| t_02_dim_kanal | Text file input ×2, String operations, Sort rows, Stream lookup (ref_kota), User Defined Java Expression, Data grid (3 kanal online), Add constants, Select values, Table output ×2 | Selesai |
+| t_03_dim_promo | Text file input, Filter rows, String operations, Sort rows (unique), Data validator + error handling, Select values, Table output ×2 (`dim_promo`, `err_kampanye`) | Selesai |
+| t_04_dim_produk | Text file input ×2, Sort rows, Analytic query (LEAD), User Defined Java Expression, If field value is null, Stream lookup, Table input (S1), Regex evaluation, Filter rows, Table output ×2 | Selesai |
+| t_05_map_produk | Table input (S1), Regex evaluation, Text file input (S2), JSON input (S3), User Defined Java Expression, Sort rows, Stream lookup, Table output ×3 | Selesai |
+| t_06_dim_pelanggan | Table input, Text file input ×2, Replace in string, String operations, Merge join (FULL OUTER), User Defined Java Expression, JSON input, Sort rows, Unique rows, Stream lookup, Table output ×2 | Selesai |
+| t_07_fact_web | Table input, Filter rows, Database lookup ×7, Calculator, User Defined Java Expression (`kunci_dan_flag`), Table output | Selesai |
+| t_08_fact_toko | Text file input ×2 (wildcard 42 file), Stream lookup, Filter rows, Database lookup ×6, Calculator, User Defined Java Expression (`kunci_dan_flag`), Table output | Selesai |
+| t_09_fact_marketplace | JSON input ×2, Sort rows, Unique rows, Group by, Stream lookup, Calculator, Value mapper, Database lookup ×6, User Defined Java Expression (`kunci_dan_flag`), Table output | Selesai |
 
-Job utama `j_00_main_nrg_dw.kjb` (**Selesai**): `START → sql_reset_dw → t_01 → t_02 → t_03 → t_04 → t_05 → t_06 → t_07 → t_08 → t_09 → Success`.
+Job utama `j_00_main_nrg_dw.kjb` (**Selesai**): `START → buat_ulang_dw → t_01 → t_02 → t_03 → t_04 → t_05 → t_06 → t_07 → t_08 → t_09 → Success`. Entry `buat_ulang_dw` menjalankan `sql/01_ddl_dw.sql` sehingga `nrg_dw` dibuat ulang dari kosong setiap kali Job dijalankan.
 
 ## 5. Hasil validasi ETL
 
@@ -136,7 +136,7 @@ Seluruh pemeriksaan pada `sql/02_validasi_etl.sql` telah dijalankan setelah ekse
 | Cek | Aktual | Harapan | Status |
 |---|---|---|---|
 | `dim_tanggal` / `dim_kanal` / `dim_promo` | 730 / 45 / 17 baris | 730 / 45 / 17 baris | ✓ Sesuai |
-| `err_kampanye` (baris S5 ditolak validasi) | 1 baris (`NEWYEAR10`, `"sepuluh"`) | 1 baris | ✓ Sesuai |
+| `err_kampanye` (baris S5 ditolak validasi) | 1 baris (`GAJIAN25`, `"sepuluh"`) | 1 baris | ✓ Sesuai |
 | `dim_produk` (79 versi S4 + 1 inferred + 1 default) | 81 baris | 81 baris | ✓ Sesuai |
 | `map_produk` (61 S1 + 60 S2 + 60 S3) | 181 baris | 181 baris | ✓ Sesuai |
 | `dim_pelanggan` (400 web saja, 400 member saja, 200 irisan, 556 MPL, 1 default) | 1.557 baris | 1.557 baris | ✓ Sesuai |
