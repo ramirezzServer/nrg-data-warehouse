@@ -11,7 +11,7 @@
 
 **Tools:** Pentaho Data Integration (Spoon) · MySQL 8
 
-**Status dokumen:** selesai. Seluruh desain dimensional, pipeline ETL (`t_01`–`t_09`), Job orkestrasi (`j_00_main_nrg_dw.kjb`), validasi rekonsiliasi (`02_validasi_etl.sql`), dan kueri pembuktian bisnis (`03_kueri_pembuktian.sql`) telah selesai dijalankan dan diverifikasi.
+**Status dokumen:** selesai. Seluruh desain dimensional, pipeline ETL (`t_01`–`t_09`), Job orkestrasi (`j_00_main_nrg_dw.kjb`), dan kueri pembuktian bisnis (`02_kueri_pembuktian.sql`) telah selesai dijalankan dan diverifikasi.
 
 ---
 
@@ -129,142 +129,65 @@ Setiap transformation memakai variabel `${NRG_DATA_DIR}` dan koneksi `nrg_ecom_s
 
 Job utama `j_00_main_nrg_dw.kjb` (**Selesai**): `START → buat_ulang_dw → t_01 → t_02 → t_03 → t_04 → t_05 → t_06 → t_07 → t_08 → t_09 → Success`. Entry `buat_ulang_dw` menjalankan `sql/01_ddl_dw.sql` sehingga `nrg_dw` dibuat ulang dari kosong setiap kali Job dijalankan.
 
-## 5. Hasil validasi ETL
+## 5. Ringkasan hasil pemuatan ETL
 
-Seluruh pemeriksaan pada `sql/02_validasi_etl.sql` telah dijalankan setelah eksekusi penuh `j_00_main_nrg_dw.kjb` dengan hasil **100% sesuai target**:
+Setelah eksekusi penuh `j_00_main_nrg_dw.kjb`, berikut ringkasan jumlah baris yang dimuat ke dalam skema `nrg_dw`:
 
-| Cek | Aktual | Harapan | Status |
-|---|---|---|---|
-| `dim_tanggal` / `dim_kanal` / `dim_promo` | 730 / 45 / 17 baris | 730 / 45 / 17 baris | ✓ Sesuai |
-| `err_kampanye` (baris S5 ditolak validasi) | 1 baris (`GAJIAN25`, `"sepuluh"`) | 1 baris | ✓ Sesuai |
-| `dim_produk` (79 versi S4 + 1 inferred + 1 default) | 81 baris | 81 baris | ✓ Sesuai |
-| `map_produk` (61 S1 + 60 S2 + 60 S3) | 181 baris | 181 baris | ✓ Sesuai |
-| `dim_pelanggan` (400 web saja, 400 member saja, 200 irisan, 556 MPL, 1 default) | 1.557 baris | 1.557 baris | ✓ Sesuai |
-| `fact_penjualan` S1 (Situs Web) | 4.236 baris | 4.236 baris | ✓ Sesuai |
-| `fact_penjualan` S2 (Toko Fisik) | 8.386 baris | 8.386 baris | ✓ Sesuai |
-| `fact_penjualan` S3 (Marketplace) | 1.797 baris | 1.797 baris | ✓ Sesuai |
-| Total `fact_penjualan` | 14.419 baris | 14.419 baris | ✓ Sesuai |
-| Duplikat grain `(sumber_sistem, no_transaksi, no_baris)` | 0 | 0 | ✓ Sesuai |
-| Baris `DIBATALKAN` (S1) atau `VOID` (S2) yang bocor ke fakta | 0 | 0 | ✓ Sesuai |
-| Produk gagal lookup (`produk_key = -1`) | 0 | 0 | ✓ Sesuai |
-| `ORD-9999` → produk inferred (`SKU-NEWARR-001`) | 1 baris (`hpp` & `margin_kotor` NULL) | 1 baris | ✓ Sesuai |
-| Total `fee_marketplace` S3 teralokasi vs total fee 1.500 invoice unik | Rp1.276.197.059,00 | Rp1.276.197.059,00 | ✓ Sesuai |
-| Distribusi promo S1 (`Tanpa Promo` / `Tanpa Kampanye Valid` / `Kampanye Teridentifikasi`) | 2.741 / 86 / 1.409 | 2.741 / 86 / 1.409 | ✓ Sesuai |
-| Distribusi promo S2 (`Tanpa Promo` / `Tanpa Kampanye Valid` / `Kampanye Teridentifikasi`) | 5.076 / 1.742 / 1.568 | 5.076 / 1.742 / 1.568 | ✓ Sesuai |
-| Distribusi promo S3 (`Tanpa Promo` / `Tanpa Kampanye Valid` / `Kampanye Teridentifikasi`) | 900 / 649 / 248 | 900 / 649 / 248 | ✓ Sesuai |
-| Ketidakkonsistensi rumus `penjualan_bersih − hpp − fee_marketplace = margin_kotor` | 0 baris | 0 baris | ✓ Sesuai |
+| Tabel / Komponen | Jumlah Baris | Keterangan |
+|---|---:|---|
+| `dim_tanggal` | 730 | Kalender harian 2022–2023 |
+| `dim_kanal` | 45 | 42 toko fisik + Situs Web + 2 Marketplace |
+| `dim_promo` | 17 | 15 kampanye valid + 2 baris default (`-1`, `-2`) |
+| `err_kampanye` | 1 | Baris S5 yang ditolak validasi (`GAJIAN25`, `"sepuluh"`) |
+| `dim_produk` | 81 | 79 versi S4 + 1 produk *inferred* (`SKU-NEWARR-001`) + 1 baris default (`-1`) |
+| `map_produk` | 181 | Pemetaan 61 SKU S1 + 60 item S2 + 60 seller SKU S3 |
+| `dim_pelanggan` | 1.557 | 400 web saja + 400 member saja + 200 irisan + 556 pembeli MPL + 1 default (`-1`) |
+| `fact_penjualan` (S1 — Situs Web) | 4.236 | Setelah membuang 304 baris dari order `DIBATALKAN` |
+| `fact_penjualan` (S2 — Toko Fisik) | 8.386 | Setelah membuang 242 baris dari transaksi `VOID` |
+| `fact_penjualan` (S3 — Marketplace) | 1.797 | Setelah deduplikasi 34 baris retry API |
+| **Total `fact_penjualan`** | **14.419** | Seluruh kanal terintegrasi |
 
-## 6. Hasil kueri pembuktian (Q1–Q4)
+## 6. Kueri pembuktian bisnis (Pertanyaan 2)
 
-Keempat kueri pembuktian di `sql/03_kueri_pembuktian.sql` telah dijalankan di atas `nrg_dw` untuk menjawab empat pertanyaan bisnis Direktur Penjualan:
+Sesuai instruksi Bagian 3.3, kueri pembuktian pada `sql/02_kueri_pembuktian.sql` difokuskan untuk menjawab **Pertanyaan 2 Direktur Penjualan**:
 
-### 6.1 Pertanyaan 1 (Q1) — Margin Kotor per Sub-Kategori per Kanal vs Kuartal yang Sama Tahun Lalu (YoY)
+> *"Apakah pelanggan yang berbelanja secara online adalah orang yang sama dengan pemegang kartu member di toko fisik?"*
 
-Perbandingan kuartal penuh YoY dilakukan antara **2023-Q1** dan **2022-Q1** (karena data transaksi 2023 berakhir pada April 2023 sehingga Q1 adalah satu-satunya kuartal penuh yang dapat dibandingkan *apple-to-apple* secara YoY):
+### 6.1 Kueri SQL (`sql/02_kueri_pembuktian.sql`)
 
-| Kuartal | Kategori | Sub-Kategori | Kanal | Penjualan Bersih (Rp) | Margin Kotor 2023-Q1 (Rp) | Margin % 2023-Q1 | Margin Kotor 2022-Q1 (Rp) | Margin % 2022-Q1 | Pertumbuhan Margin YoY (%) |
-|---|---|---|---|---:|---:|---:|---:|---:|---:|
-| 2023-Q1 | Elektronik | Aksesoris Elektronik | Marketplace | 430.117.451 | 75.607.504 | 17,58% | 64.985.673 | 16,97% | +16,34% |
-| 2023-Q1 | Elektronik | Aksesoris Elektronik | Situs Web | 1.341.176.254 | 316.427.207 | 23,59% | 277.827.618 | 22,98% | +13,89% |
-| 2023-Q1 | Elektronik | Aksesoris Elektronik | Toko Fisik | 2.452.559.500 | 586.368.178 | 23,91% | 506.540.308 | 22,94% | +15,76% |
-| 2023-Q1 | Elektronik | Laptop | Marketplace | 96.415.000 | 16.543.537 | 17,16% | 20.753.705 | 19,24% | -20,29% |
-| 2023-Q1 | Elektronik | Laptop | Situs Web | 377.408.102 | 101.579.512 | 26,92% | 81.625.909 | 27,10% | +24,45% |
-| 2023-Q1 | Elektronik | Laptop | Toko Fisik | 641.207.100 | 167.251.064 | 26,08% | 223.208.361 | 26,66% | -25,07% |
-| 2023-Q1 | Elektronik | Smartphone | Marketplace | 238.521.803 | 24.702.738 | 10,36% | 36.344.721 | 8,40% | -32,03% |
-| 2023-Q1 | Elektronik | Smartphone | Situs Web | 853.820.223 | 147.379.808 | 17,26% | 141.780.609 | 15,75% | +3,95% |
-| 2023-Q1 | Elektronik | Smartphone | Toko Fisik | 1.548.233.800 | 271.854.079 | 17,56% | 275.828.236 | 14,88% | -1,44% |
-| 2023-Q1 | Furnitur | Kursi | Marketplace | 718.171.103 | 73.561.091 | 10,24% | 58.526.734 | 9,25% | +25,69% |
-| 2023-Q1 | Furnitur | Kursi | Situs Web | 1.954.761.452 | 327.936.377 | 16,78% | 235.221.718 | 16,91% | +39,42% |
-| 2023-Q1 | Furnitur | Kursi | Toko Fisik | 2.893.781.050 | 487.127.195 | 16,83% | 459.352.469 | 17,29% | +6,05% |
-| 2023-Q1 | Furnitur | Lemari | Marketplace | 669.207.202 | 110.336.482 | 16,49% | 141.446.912 | 17,57% | -21,99% |
-| 2023-Q1 | Furnitur | Lemari | Situs Web | 1.186.522.402 | 274.953.149 | 23,17% | 246.749.815 | 20,91% | +11,43% |
-| 2023-Q1 | Furnitur | Lemari | Toko Fisik | 2.653.761.500 | 599.855.655 | 22,60% | 431.014.716 | 22,68% | +39,17% |
-| 2023-Q1 | Furnitur | Meja | Marketplace | 209.558.902 | 20.478.407 | 9,77% | 45.273.936 | 10,41% | -54,77% |
-| 2023-Q1 | Furnitur | Meja | Situs Web | 634.687.151 | 109.629.653 | 17,27% | 125.243.231 | 16,98% | -12,47% |
-| 2023-Q1 | Furnitur | Meja | Toko Fisik | 1.366.397.300 | 213.584.924 | 15,63% | 222.060.360 | 16,60% | -3,82% |
-| 2023-Q1 | Pakaian | Atasan | Marketplace | 537.770.253 | 78.942.794 | 14,68% | 67.269.833 | 13,25% | +17,35% |
-| 2023-Q1 | Pakaian | Atasan | Situs Web | 1.066.095.055 | 228.612.987 | 21,44% | 179.009.838 | 20,29% | +27,71% |
-| 2023-Q1 | Pakaian | Atasan | Toko Fisik | 1.638.478.100 | 339.430.244 | 20,72% | 390.078.083 | 20,17% | -12,98% |
-| 2023-Q1 | Pakaian | Bawahan | Marketplace | 203.681.500 | 28.316.061 | 13,90% | 32.935.700 | 12,85% | -14,03% |
-| 2023-Q1 | Pakaian | Bawahan | Situs Web | 337.288.300 | 73.923.531 | 21,92% | 98.481.291 | 21,47% | -24,94% |
-| 2023-Q1 | Pakaian | Bawahan | Toko Fisik | 710.991.700 | 152.547.870 | 21,46% | 137.207.901 | 21,88% | +11,18% |
-| 2023-Q1 | Pakaian | Sepatu | Marketplace | 403.768.952 | 50.302.586 | 12,46% | 59.815.962 | 7,86% | -15,90% |
-| 2023-Q1 | Pakaian | Sepatu | Situs Web | 1.813.342.405 | 292.558.527 | 16,13% | 406.077.338 | 18,38% | -27,95% |
-| 2023-Q1 | Pakaian | Sepatu | Toko Fisik | 2.970.389.950 | 470.862.347 | 15,85% | 465.282.749 | 16,73% | +1,20% |
+```sql
+USE nrg_dw;
 
-**Temuan utama Q1:**
-- Persentase margin kotor di kanal **Marketplace** secara konsisten lebih rendah **6–9 poin persentase** dibandingkan Situs Web dan Toko Fisik pada sub-kategori yang sama (misal Meja di Marketplace hanya **9,77%** vs Situs Web **17,27%**), akibat potongan `commission` + `service` fee marketplace.
-- Sub-kategori **Aksesoris Elektronik** dan **Kursi** tumbuh positif di ketiga kanal secara YoY pada 2023-Q1, sedangkan **Meja** mengalami penurunan margin YoY di seluruh kanal (terdalam di Marketplace **-54,77%**).
+SELECT  segmen_identitas,
+        COUNT(*)                                                        AS jumlah_pelanggan,
+        ROUND(100 * COUNT(*) / SUM(COUNT(*)) OVER (), 2)                AS pct_dari_semua,
+        ROUND(100 * SUM(is_pelanggan_web) / NULLIF(
+              (SELECT SUM(is_pelanggan_web) FROM dim_pelanggan), 0), 2) AS pct_dari_pelanggan_web
+FROM dim_pelanggan
+WHERE pelanggan_key > 0
+GROUP BY segmen_identitas
+ORDER BY jumlah_pelanggan DESC;
+```
 
-### 6.2 Pertanyaan 2 (Q2a & Q2b) — Irisan Pelanggan Situs Web vs Pemegang Kartu Member Toko
+### 6.2 Hasil eksekusi dan bukti tangkapan layar
 
-**Q2a — Proporsi di `dim_pelanggan` (pencocokan nomor HP yang dinormalkan):**
+![Bukti Query untuk Masalah Nomor 2](screenshots/Bukti%20Query%20untuk%20Masalah%20Nomor%202%20.jpeg)
 
-| Segmen Identitas | Jumlah Pelanggan | % dari Semua Pelanggan | % dari Pelanggan Web (600) |
+| `segmen_identitas` | `jumlah_pelanggan` | `pct_dari_semua` (%) | `pct_dari_pelanggan_web` (%) |
 |---|---:|---:|---:|
-| `MARKETPLACE` (hash anonim) | 556 | 35,73% | 0,00% |
+| `MARKETPLACE` | 556 | 35,73% | 0,00% |
 | `WEB_SAJA` | 400 | 25,71% | **66,67%** |
 | `MEMBER_SAJA` | 400 | 25,71% | 0,00% |
-| `WEB_DAN_MEMBER` (Omnichannel) | 200 | 12,85% | **33,33%** |
+| `WEB_DAN_MEMBER` | 200 | 12,85% | **33,33%** |
 
-**Q2b — Kontribusi belanja per segmen di tiap kanal:**
+### 6.3 Analisis dan jawaban bisnis
 
-| Segmen Identitas | Kanal Belanja | Pelanggan Aktif | Jumlah Transaksi | Penjualan Bersih (Rp) | Rata-rata Belanja per Pelanggan di Kanal (Rp) |
-|---|---|---:|---:|---:|---:|
-| `MEMBER_SAJA` | Toko Fisik | 399 | 2.119 | 30.561.710.900 | 76.595.767 |
-| `WEB_DAN_MEMBER` | Situs Web | 198 | 905 | 15.561.879.837 | 78.595.353 |
-| `WEB_DAN_MEMBER` | Toko Fisik | 200 | 1.086 | 16.464.164.450 | 82.320.822 |
-| `WEB_SAJA` | Situs Web | 396 | 1.902 | 34.073.272.310 | 86.043.617 |
-
-**Temuan utama Q2:**
-- Dari 600 pelanggan terdaftar di Situs Web dan 600 member Toko Fisik, tepat **200 orang (33,33%) adalah orang yang sama** (`WEB_DAN_MEMBER`).
-- Pelanggan omnichannel (`WEB_DAN_MEMBER`) berbelanja aktif di kedua kanal dengan total nilai gabungan **Rp32,03 miliar** (rata-rata **~Rp160,9 juta per pelanggan** jika kedua kanal digabung), hampir **2× lipat** nilai belanja pelanggan satu kanal (`MEMBER_SAJA` Rp76,6 juta; `WEB_SAJA` Rp86,0 juta).
-
-### 6.3 Pertanyaan 3 (Q3) — Evaluasi Kampanye Diskon (Volume Harian vs Margin % terhadap Baseline 30 Hari Sebelum Kampanye)
-
-Dari 27 evaluasi pasangan kampanye × kanal, **11 evaluasi dinyatakan `BERHASIL`** (menaikkan qty/hari sekaligus menjaga penurunan margin ≤ 1 poin persentase), **2 evaluasi menggerus margin**, dan **14 evaluasi tidak menaikkan volume**:
-
-| Kode Promo | Nama Kampanye | Kanal Evaluasi | Periode | Qty/Hari Sebelum | Qty/Hari Kampanye | Uplift Volume (%) | Margin % Sebelum | Margin % Kampanye | Selisih Margin (poin) | Kesimpulan |
-|---|---|---|---|---:|---:|---:|---:|---:|---:|---|
-| `BUNDLE2` | Beli 2 Diskon | Situs Web | 2022-10-06 s.d. 10-13 | 11,40 | 14,50 | **+27,19%** | 20,07% | 19,50% | -0,57 | **BERHASIL** |
-| `BUNDLE2` | Beli 2 Diskon | Toko Fisik | 2022-10-06 s.d. 10-13 | 19,97 | 24,38 | **+22,08%** | 19,58% | 20,70% | +1,12 | **BERHASIL** |
-| `HARBOLNAS` | Hari Belanja Online Nasional | Toko Fisik | 2022-02-16 s.d. 03-13 | 21,10 | 22,77 | +7,91% | 19,28% | 19,48% | +0,21 | **BERHASIL** |
-| `WEEKEND20` | Diskon Akhir Pekan | Toko Fisik | 2022-12-07 s.d. 01-06 | 21,60 | 23,26 | +7,68% | 19,49% | 19,27% | -0,22 | **BERHASIL** |
-| `IMLEK24` | Promo Imlek | Toko Fisik | 2022-09-18 s.d. 10-13 | 19,90 | 21,35 | +7,27% | 18,91% | 19,86% | +0,95 | **BERHASIL** |
-| `MEMBER15` | Diskon Member | Toko Fisik | 2022-03-23 s.d. 04-08 | 21,30 | 22,71 | +6,60% | 19,46% | 19,70% | +0,24 | **BERHASIL** |
-| `WEEKEND20` | Diskon Akhir Pekan | Situs Web | 2022-03-14 s.d. 04-12 | 12,27 | 13,07 | +6,52% | 19,17% | 19,74% | +0,56 | **BERHASIL** |
-| `HARBOLNAS` | Hari Belanja Online Nasional | Situs Web | 2022-02-16 s.d. 03-13 | 11,63 | 12,31 | +5,80% | 19,36% | 19,09% | -0,27 | **BERHASIL** |
-| `BUNDLE2` | Beli 2 Diskon | Situs Web | 2022-03-14 s.d. 04-04 | 12,27 | 12,95 | +5,61% | 19,17% | 19,95% | +0,78 | **BERHASIL** |
-| `FLASH50` | Flash Sale Akhir Bulan | Toko Fisik | 2022-11-19 s.d. 12-11 | 22,53 | 23,61 | +4,77% | 19,65% | 19,30% | -0,35 | **BERHASIL** |
-| `IMLEK24` | Promo Imlek | Situs Web | 2022-09-18 s.d. 10-13 | 12,10 | 12,27 | +1,40% | 19,34% | 20,20% | +0,86 | **BERHASIL** |
-| `HARBOLNAS` | Hari Belanja Online Nasional | Marketplace | 2022-02-16 s.d. 03-13 | 5,93 | 6,50 | +9,55% | 12,84% | 11,35% | **-1,49** | Volume naik, margin tergerus |
-| `BACKSCHOOL` | Promo Back to School | Marketplace | 2022-02-21 s.d. 03-22 | 5,70 | 5,93 | +4,09% | 13,08% | 11,97% | **-1,11** | Volume naik, margin tergerus |
-
-*(14 evaluasi lainnya menunjukkan pertumbuhan volume negatif sehingga dikategorikan `Volume tidak naik`.)*
-
-**Temuan utama Q3:**
-- Kampanye **`BUNDLE2` (Beli 2 Diskon)** adalah kampanye paling efektif karena mendorong lonjakan volume tertinggi (**+27,19%** di Situs Web dan **+22,08%** di Toko Fisik) tanpa menggerus margin kotor.
-- Di kanal **Marketplace**, tidak ada satu pun kampanye diskon yang masuk kategori `BERHASIL`: `HARBOLNAS` dan `BACKSCHOOL` memang menaikkan volume di Marketplace, namun menggerus margin lebih dari 1 poin persentase (turun ke ~11%) karena beban diskon bertumpuk dengan *fee* marketplace.
-
-### 6.4 Pertanyaan 4 (Q4) — 10 Produk Laris di Marketplace tetapi Lemah di Toko & Web (Kandidat Realokasi Stok)
-
-Karena volume total Toko Fisik + Situs Web (~15.968 unit) sekitar 6,3× volume Marketplace (~2.525 unit), perbandingan dilakukan menggunakan **rasio pangsa unit** (`pangsa_mpl_pct / pangsa_toko_web_pct`) agar adil:
-
-| Peringkat | Material No | Nama Produk | Sub-Kategori | Qty Marketplace | Qty Toko + Web | Pangsa MPL (%) | Pangsa Toko+Web (%) | Rasio Pangsa (MPL vs Toko+Web) |
-|---:|---|---|---|---:|---:|---:|---:|---:|
-| 1 | `P-1019` | Samsung Smartphone Atque 128GB | Smartphone | 70 | 251 | 2,77% | 1,57% | **1,76×** |
-| 2 | `P-1054` | Uniqlo Atasan Maxime | Atasan | 72 | 266 | 2,85% | 1,67% | **1,71×** |
-| 3 | `P-1031` | Apple Laptop Pariatur | Laptop | 58 | 262 | 2,30% | 1,64% | **1,40×** |
-| 4 | `P-1024` | Uniqlo Bawahan Aperiam 256GB | Bawahan | 52 | 237 | 2,06% | 1,48% | **1,39×** |
-| 5 | `P-1045` | Erigo Atasan Cumque | Atasan | 52 | 244 | 2,06% | 1,53% | **1,35×** |
-| 6 | `P-1049` | Olympic Lemari Sed 128GB | Lemari | 52 | 252 | 2,06% | 1,58% | **1,30×** |
-| 7 | `P-1014` | Informa Meja Reiciendis | Meja | 51 | 250 | 2,02% | 1,57% | **1,29×** |
-| 8 | `P-1015` | Informa Kursi Quaerat Lite | Kursi | 48 | 238 | 1,90% | 1,49% | **1,28×** |
-| 9 | `P-1027` | IKEA Kursi Vero Series 2 | Kursi | 50 | 258 | 1,98% | 1,62% | **1,23×** |
-| 10 | `P-1028` | Informa Kursi Ea Lite | Kursi | 50 | 262 | 1,98% | 1,64% | **1,21×** |
-
-**Temuan utama Q4:**
-- **`P-1019` (Samsung Smartphone Atque 128GB)** dan **`P-1054` (Uniqlo Atasan Maxime)** memiliki porsi permintaan di Marketplace hingga **1,76×** dan **1,71×** lebih tinggi dibandingkan porsinya di Toko Fisik & Situs Web, sehingga menjadi prioritas utama untuk realokasi *buffer stock* gudang marketplace.
+1. **Irisan pelanggan Situs Web dan Member Toko Fisik (`WEB_DAN_MEMBER`):**
+   Melalui pencocokan nomor HP yang telah dinormalkan (`hp_normal`) pada proses ETL `t_06_dim_pelanggan`, dari total **600 pelanggan terdaftar di Situs Web** (S1) dan **600 pemegang kartu member di Toko Fisik** (S2), ditemukan tepat **200 orang (33,33% dari pelanggan web, atau 12,85% dari seluruh identitas pelanggan)** merupakan **orang yang sama** yang terdaftar sekaligus sebagai pelanggan online di situs web dan pemegang kartu member toko fisik.
+2. **Pelanggan satu kanal (`WEB_SAJA` & `MEMBER_SAJA`):**
+   Sebanyak **400 pelanggan (66,67% dari pelanggan web)** hanya berbelanja di situs web tanpa memiliki kartu member toko fisik (`WEB_SAJA`), dan **400 member toko lainnya** hanya tercatat sebagai member toko fisik tanpa akun di situs web (`MEMBER_SAJA`).
+3. **Keterbatasan identifikasi pembeli Marketplace (`MARKETPLACE`):**
+   Terdapat **556 identitas pembeli marketplace** (`35,73%` dari total `dim_pelanggan`) yang hanya memiliki `buyer.hash` anonim dari API pihak ketiga tanpa nama maupun nomor telepon, sehingga secara struktural tidak dapat dipadankan dengan pelanggan situs web maupun member toko fisik.
 
 ## 7. Asumsi dan batasan
 
@@ -281,7 +204,7 @@ Karena volume total Toko Fisik + Situs Web (~15.968 unit) sekitar 6,3× volume M
 
 | Anggota | NIM | Kontribusi |
 |---|---|---|
-| Djaudza Djiyya Muhammad | 102022400133 | Desain dimensional dan dokumen |
-| Faris Yahya Ayyash Alfatih | 102022400029 | ETL dimensi (t_01 – t_06) |
-| Figo Al Ghifari | 102022400302 | ETL fakta (t_07 – t_09) dan Job |
-| Muhammad Nabeel Ghifari | 102022400114 | Kueri pembuktian dan laporan |
+| Djaudza Djiyya Muhammad | 102022400133 | Perancangan *star schema*, penyusunan skrip DDL (`01_ddl_dw.sql`), dan pemetaan *source-to-target* (S2T) |
+| Faris Yahya Ayyash Alfatih | 102022400029 | Pengembangan pipeline ETL tabel dimensi dan pemetaan produk (`t_01` sampai `t_06`) |
+| Figo Al Ghifari | 102022400302 | Pengembangan pipeline ETL tabel fakta (`t_07` sampai `t_09`), orkestrasi Job utama (`j_00`), dan pembuatan kueri pembuktian SQL (`02_kueri_pembuktian.sql`) |
+| Muhammad Nabeel Ghifari | 102022400114 | Interpretasi bisnis hasil kueri, serta penyusunan laporan akhir dan dokumentasi panduan (`README`) |

@@ -4,10 +4,10 @@ Tugas Kelompok 1 – Pengembangan Data Warehouse · Mata Kuliah Data Warehouse /
 
 | Nama | NIM | Peran |
 |---|---|---|
-| Djaudza Djiyya Muhammad | 102022400133 | Desain dimensional + dokumen |
-| Faris Yahya Ayyash Alfatih | 102022400029 | ETL dimensi (t_01 – t_06) |
-| Figo Al Ghifari | 102022400302 | ETL fakta (t_07 – t_09) + Job |
-| Muhammad Nabeel Ghifari | 102022400114 | Kueri pembuktian + laporan |
+| Djaudza Djiyya Muhammad | 102022400133 | Perancangan *star schema*, skrip DDL (`01_ddl_dw.sql`), dan pemetaan *source-to-target* (S2T) |
+| Faris Yahya Ayyash Alfatih | 102022400029 | Pengembangan ETL tabel dimensi dan pemetaan produk (`t_01` – `t_06`) |
+| Figo Al Ghifari | 102022400302 | Pengembangan ETL tabel fakta (`t_07` – `t_09`), Job utama (`j_00`), dan kueri pembuktian SQL (`02_kueri_pembuktian.sql`) |
+| Muhammad Nabeel Ghifari | 102022400114 | Interpretasi bisnis hasil kueri, dan penyusunan laporan akhir dan `README` |
 
 Satu tabel fakta (`fact_penjualan`, grain 1 baris = 1 item transaksi) dan lima dimensi (`dim_tanggal`, `dim_produk`, `dim_pelanggan`, `dim_kanal`, `dim_promo`) yang mengintegrasikan lima sumber:
 S1 ECOM_DB (MySQL), S2 POS_TOKO (CSV `;`), S3 MPL_API (JSON), S4 ERP_MASTER (CSV), S5 MKT_SHEET (CSV).
@@ -25,10 +25,10 @@ S1 ECOM_DB (MySQL), S2 POS_TOKO (CSV `;`), S3 MPL_API (JSON), S4 ERP_MASTER (CSV
 | t_08_fact_toko (S2) | Selesai |
 | t_09_fact_marketplace (S3) | Selesai |
 | Job `j_00_main_nrg_dw.kjb` | Selesai |
-| Validasi ETL (`sql/02_validasi_etl.sql`) & Kueri Pembuktian (`sql/03_kueri_pembuktian.sql`) | Selesai |
-| Laporan desain dimensional (`docs/laporan_desain_dimensional.md`) | Selesai |
+| Kueri Pembuktian (`sql/02_kueri_pembuktian.sql`) | Selesai |
+| Laporan desain dimensional (`docs/laporan_desain_dimensional.pdf` & `.md`) | Selesai |
 
-Seluruh pipeline ETL (`t_01` s.d. `t_09`) yang diorkestrasi melalui `j_00_main_nrg_dw.kjb` telah selesai diuji dan lulus seluruh kueri validasi (`02_validasi_etl.sql`) serta kueri pembuktian bisnis (`03_kueri_pembuktian.sql`).
+Seluruh pipeline ETL (`t_01` s.d. `t_09`) yang diorkestrasi melalui `j_00_main_nrg_dw.kjb` serta kueri pembuktian bisnis (`02_kueri_pembuktian.sql`) telah selesai dijalankan dan diuji.
 
 ## Struktur repositori
 
@@ -40,8 +40,7 @@ nrg-data-warehouse/
 │   └── S1_ECOM_DB/  S2_POS_TOKO/  S3_MPL_API/  S4_ERP_MASTER/  S5_MKT_SHEET/
 ├── sql/
 │   ├── 01_ddl_dw.sql                  ← DDL star schema + baris default (-1/-2)
-│   ├── 02_validasi_etl.sql            ← cek hasil ETL (aktual vs harapan)
-│   └── 03_kueri_pembuktian.sql        ← 4 kueri pembuktian (Q1–Q4)
+│   └── 02_kueri_pembuktian.sql        ← kueri pembuktian (Pertanyaan 2: irisan pelanggan online vs member toko)
 ├── pentaho/
 │   ├── j_00_main_nrg_dw.kjb           ← Job utama orkestrasi end-to-end
 │   ├── t_01_dim_tanggal.ktr
@@ -54,11 +53,12 @@ nrg-data-warehouse/
 │   ├── t_08_fact_toko.ktr
 │   └── t_09_fact_marketplace.ktr
 └── docs/
-    ├── laporan_desain_dimensional.md  ← laporan desain & hasil kueri pembuktian
+    ├── laporan_desain_dimensional.pdf ← laporan desain & hasil kueri pembuktian (PDF)
+    ├── laporan_desain_dimensional.md  ← laporan desain & hasil kueri pembuktian (Markdown)
     ├── star_schema.png
     ├── source_to_target_mapping.csv   ← peta S2T kolom demi kolom (153 baris)
     ├── source_to_target_mapping.md
-    └── screenshots/                   ← tangkapan layar kanvas Job dan 9 transformation
+    └── screenshots/                   ← tangkapan layar Job, transformation, dan kueri pembuktian
 ```
 
 ## Prasyarat
@@ -134,7 +134,7 @@ Entry `buat_ulang_dw` (SQL, koneksi `nrg_ecom_src`) menjalankan `sql/01_ddl_dw.s
 | 8 | `t_08_fact_toko` | fakta dari S2 (42 toko, transaksi VOID dibuang) |
 | 9 | `t_09_fact_marketplace` | fakta dari S3 (dedup tarikan API + konversi UTC→WIB + alokasi fee per item) |
 
-Setelah Job selesai, jalankan `sql/02_validasi_etl.sql` (semua kolom `aktual` sama dengan `harapan`), lalu `sql/03_kueri_pembuktian.sql` (Q1–Q4).
+Setelah Job selesai, jalankan `sql/02_kueri_pembuktian.sql` untuk melihat hasil kueri pembuktian bisnis (Pertanyaan 2: irisan pelanggan online vs member toko fisik).
 
 ## Jumlah baris
 

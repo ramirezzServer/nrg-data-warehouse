@@ -7,3 +7,4 @@ Thumbs.db
 __pycache__/
 # jangan commit kredensial lokal
 kettle.properties
+*.tex
